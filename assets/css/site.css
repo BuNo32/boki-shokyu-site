@@ -1,0 +1,20 @@
+/* Minimal styles for prototypes */
+
+/* Progress bar */
+.progress { background: #eee; height: 8px; border-radius: 4px; overflow: hidden; }
+.progress > span { display: block; height: 100%; width: 0; background: #4caf50; transition: width .3s ease; }
+
+/* Journal input table */
+table.jrnl { border-collapse: collapse; width: 100%; margin: .5rem 0 1rem; }
+table.jrnl th, table.jrnl td { border: 1px solid #ccc; padding: .4rem; }
+
+/* T-account quick layout */
+.taccount { display: flex; gap: 12px; }
+.taccount .col { flex: 1; border: 1px solid #ddd; padding: 8px; }
+.taccount .row { display: flex; justify-content: space-between; padding: 2px 0; }
+
+/* Trial balance table */
+table.trial-balance { border-collapse: collapse; width: 100%; }
+table.trial-balance th, table.trial-balance td { border: 1px solid #ddd; padding: .4rem; text-align: right; }
+table.trial-balance th:first-child, table.trial-balance td:first-child { text-align: left; }
+

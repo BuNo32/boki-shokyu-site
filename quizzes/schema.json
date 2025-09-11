@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Boki Quiz Item",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "topic": { "type": "string" },
+    "difficulty": { "type": "string", "enum": ["basic", "standard", "plus"] },
+    "question_type": { "type": "string", "enum": ["term_mcq", "journal_mcq", "journal_input"] },
+    "prompt_ja": { "type": "string" },
+    "choices": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "answer": {},
+    "explanation_ja": { "type": "string" },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "accounts_used": { "type": "array", "items": { "type": "string" } },
+        "tags": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "id",
+    "topic",
+    "difficulty",
+    "question_type",
+    "prompt_ja",
+    "answer",
+    "explanation_ja"
+  ],
+  "additionalProperties": true
+}
