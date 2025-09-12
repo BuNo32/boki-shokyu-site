@@ -471,7 +471,9 @@
     // 時間切れで入力とボタンを無効化
     document.querySelectorAll('#exam-root input, #exam-root button').forEach(el => el.disabled = true);
   });
-  loadQuiz('../quizzes/prototype.json','quiz-proto3', {quizId:'proto'});
+  // loadQuiz は遅延キューに積んでおく（quiz.js 読込後に処理）
+  window.__loadQuizQueue = window.__loadQuizQueue || [];
+  window.__loadQuizQueue.push(['../quizzes/prototype.json','quiz-proto3', {quizId:'proto'}]);
 </script>
 
 

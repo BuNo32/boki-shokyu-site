@@ -603,7 +603,9 @@
 <div id="quiz-proto"></div>
 
 <script>
-  loadQuiz('../quizzes/prototype.json','quiz-proto', {quizId:'proto'});
+  window.__loadQuizQueue = window.__loadQuizQueue || [];
+  window.__loadQuizQueue.push(['../quizzes/prototype.json','quiz-proto', {quizId:'proto'}]);
+  // quiz.js 読込後に処理されます
 </script>
 
 

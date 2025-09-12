@@ -256,3 +256,32 @@ async function loadQuiz(jsonPath, mountId, options) {
     el.appendChild(qWrap);
   });
 }
+
+// グローバル公開と遅延キュー処理（inline実行順の差異を吸収）
+if (typeof window !== 'undefined') {
+  // 公開
+  // @ts-expect-error expose to window
+  window.loadQuiz = loadQuiz;
+  // すでに積まれている呼び出しを処理
+  // 形式: window.__loadQuizQueue = [ [jsonPath, mountId, options], ... ]
+  const pending = Array.isArray(window.__loadQuizQueue) ? window.__loadQuizQueue.slice() : [];
+  if (pending.length) {
+    const run = () => {
+      pending.forEach((args) => {
+        try {
+          // @ts-expect-error spread tuple args from queue
+          loadQuiz.apply(null, args);
+        } catch (e) {
+          console.warn('deferred loadQuiz failed:', e);
+        }
+      });
+      // @ts-expect-error reset queue after processed
+      window.__loadQuizQueue = [];
+    };
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', run, { once: true });
+    } else {
+      setTimeout(run, 0);
+    }
+  }
+}
