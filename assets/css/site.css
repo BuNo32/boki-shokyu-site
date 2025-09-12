@@ -18,3 +18,22 @@ table.trial-balance { border-collapse: collapse; width: 100%; }
 table.trial-balance th, table.trial-balance td { border: 1px solid #ddd; padding: .4rem; text-align: right; }
 table.trial-balance th:first-child, table.trial-balance td:first-child { text-align: left; }
 
+/* 4列仕訳（公式方式） */
+table.jrnl4{
+  width:100%;
+  border-collapse: collapse;
+  margin:.5rem 0 0;
+}
+table.jrnl4 th, table.jrnl4 td{
+  border:1px solid #e5e7eb;
+  padding:.35rem .5rem;
+  vertical-align: middle;
+}
+table.jrnl4 th{ background:#f7f7f7; text-align:center; }
+table.jrnl4 td input[type="number"], table.jrnl4 td select{
+  width:100%;
+  box-sizing:border-box;
+}
+.jrnl4-total{
+  margin:.4rem 0 .2rem; font-size:.9rem; opacity:.9;
+}

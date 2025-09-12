@@ -559,8 +559,8 @@
 </ul>
 <h2 id="_2">よくある取引の型</h2>
 <ol>
-<li>現金→普通預金へ預入：（借）普通預金 /（貸）現金  </li>
-<li>振込で売掛回収：（借）普通預金 /（貸）売掛金  </li>
+<li>現金→普通預金へ預入：（借）普通預金 /（貸）現金</li>
+<li>振込で売掛回収：（借）普通預金 /（貸）売掛金</li>
 <li>小切手振出で支払：（借）費用・資産 /（貸）当座預金</li>
 </ol>
 <hr />
@@ -568,8 +568,11 @@
 <div id="quiz-ch05"></div>
 
 <script>
-  // ch05 ページからは 1 階層上に出て quizzes/ を参照
-  loadQuiz('../quizzes/ch05.json','quiz-ch05');
+  // 4列仕訳UI + ch05科目ドロップダウンを有効化
+  loadQuiz('../quizzes/ch05.json','quiz-ch05', {
+    quizId: 'ch05',
+    accountsSrc: '../assets/data/accounts.ch05.json'
+  });
 </script>
 
 
