@@ -186,16 +186,31 @@ async function loadQuiz(jsonPath, mountId, options) {
     }
     qWrap.appendChild(inputArea);
 
+    // 採点ボタン（クリック枠つき）
+    const frame = document.createElement('div');
+    frame.className = 'score-frame';
+    frame.setAttribute('role', 'button');
+    frame.setAttribute('tabindex', '0');
     const btn = document.createElement('button');
     btn.textContent = '採点';
+    frame.appendChild(btn);
     const fb = document.createElement('p');
     fb.className = 'fb';
     fb.dataset.answeredCorrect = '0';
-    btn.onclick = () => {
+    const handleScore = () => {
       let correct = false;
       if (q.question_type && q.question_type.endsWith('mcq')) {
         const sel = inputArea.querySelector('input[type="radio"]:checked');
-        correct = sel && String(sel.value) === String(q.answer);
+        if (!sel) {
+          fb.textContent = '選択してください。';
+          return;
+        }
+        correct = String(sel.value) === String(q.answer);
+        if (!correct) {
+          fb.textContent = q.explanation_ja
+            ? `❌ 不正解。ヒント：${q.explanation_ja}`
+            : '❌ 不正解。';
+        }
       } else if (q.question_type === 'journal_input') {
         // 入力値を4列×2段から収集
         const entries = [];
@@ -237,8 +252,10 @@ async function loadQuiz(jsonPath, mountId, options) {
           }
         });
         correct = matched === expected.length && used.filter((x) => x).length === expected.length;
-        if (!correct && q.explanation_ja) {
-          fb.textContent = `❌ 不正解。ヒント：${q.explanation_ja}`;
+        if (!correct) {
+          fb.textContent = q.explanation_ja
+            ? `❌ 不正解。ヒント：${q.explanation_ja}`
+            : '❌ 不正解。';
         }
       }
       if (correct && fb.dataset.answeredCorrect !== '1') {
@@ -251,7 +268,21 @@ async function loadQuiz(jsonPath, mountId, options) {
         fb.textContent = '✅ 正解！（既に加点済み）';
       }
     };
-    qWrap.appendChild(btn);
+    btn.onclick = (e) => {
+      e.preventDefault();
+      handleScore();
+    };
+    frame.onclick = (e) => {
+      e.preventDefault();
+      handleScore();
+    };
+    frame.onkeydown = (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        handleScore();
+      }
+    };
+    qWrap.appendChild(frame);
     qWrap.appendChild(fb);
     el.appendChild(qWrap);
   });

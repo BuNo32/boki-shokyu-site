@@ -33,7 +33,49 @@ table.jrnl4 th{ background:#f7f7f7; text-align:center; }
 table.jrnl4 td input[type="number"], table.jrnl4 td select{
   width:100%;
   box-sizing:border-box;
+  border:2px solid #cbd5e1; /* slate-300 */
+  border-radius:6px;
+  padding:.4rem .5rem;
+  background:#fff;
+}
+table.jrnl4 td input[type="number"]:focus, table.jrnl4 td select:focus{
+  outline:none;
+  border-color:#1976d2;
+  box-shadow:0 0 0 3px rgba(25,118,210,.15);
 }
 .jrnl4-total{
   margin:.4rem 0 .2rem; font-size:.9rem; opacity:.9;
+}
+
+/* 旧 2列仕訳の入力も目立たせる */
+table.jrnl td input[type="number"], table.jrnl td input[type="text"]{
+  width:100%;
+  box-sizing:border-box;
+  border:2px solid #cbd5e1;
+  border-radius:6px;
+  padding:.35rem .5rem;
+}
+table.jrnl td input:focus{ outline:none; border-color:#1976d2; box-shadow:0 0 0 3px rgba(25,118,210,.15); }
+
+/* 採点ボタンのクリック枠 */
+.q .score-frame{
+  display:inline-block;
+  margin-top:.6rem;
+  border:2px solid #1976d2;
+  background:#1976d2;
+  color:#fff;
+  border-radius:8px;
+  padding:.45rem .9rem;
+  cursor:pointer;
+  user-select:none;
+}
+.q .score-frame:hover{ background:#1565c0; border-color:#1565c0; }
+.q .score-frame:active{ transform: translateY(1px); }
+.q .score-frame button{
+  background:transparent;
+  border:0;
+  color:inherit;
+  font:inherit;
+  padding:0;
+  cursor:inherit;
 }
