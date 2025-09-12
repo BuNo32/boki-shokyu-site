@@ -18,6 +18,10 @@ async function renderDashboard(indexJsonPath, mountId) {
   table.innerHTML = `<thead><tr><th>章 / セクション</th><th>進捗</th><th>達成率</th><th>リンク</th></tr></thead>`;
   const tbody = document.createElement('tbody');
 
+  // 先頭スラッシュの絶対表記を現在パス相対に直す
+  const toRel = (p) =>
+    p && p.startsWith('/') ? location.pathname.replace(/[^/]+$/, '') + p.replace(/^\//, '') : p;
+
   for (const q of quizzes) {
     const keyBase = `quiz:${q.quizId}`;
     let score = Number(localStorage.getItem(`${keyBase}:score`) || 0);
@@ -26,7 +30,8 @@ async function renderDashboard(indexJsonPath, mountId) {
     // 未訪問でも合計問数が分かるよう、JSON を読んで補完
     if (!total && q.file) {
       try {
-        const res = await fetch(q.basePath ? q.basePath + q.file : q.file, { cache: 'no-store' });
+        const base = q.basePath ? toRel(q.basePath) : '';
+        const res = await fetch(base ? base + q.file : q.file, { cache: 'no-store' });
         const arr = await res.json();
         if (Array.isArray(arr)) total = arr.length;
       } catch (_) {
@@ -40,7 +45,7 @@ async function renderDashboard(indexJsonPath, mountId) {
       <td style="text-align:left">${q.title || q.quizId}</td>
       <td>${score} / ${total || '?'}</td>
       <td>${pct}%</td>
-      <td><a href="${q.page || '#'}">開く</a></td>`;
+      <td><a href="${q.page ? toRel(q.page) : '#'}">開く</a></td>`;
     tbody.appendChild(tr);
   }
 
