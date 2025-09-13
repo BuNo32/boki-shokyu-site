@@ -1,15 +1,18 @@
-
 // PATCH for content/assets/js/quiz.js: record updatedAt when score increments
-(function(){
+(function () {
   const orig = window.loadQuiz;
   if (typeof orig !== 'function') return;
-  window.loadQuiz = function(jsonPath, mountId, options){
+  window.loadQuiz = function (jsonPath, mountId, options) {
     const wrapped = options || {};
     const keyBase = wrapped.quizId ? `quiz:${wrapped.quizId}` : null;
 
-    function stamp(){
+    function stamp() {
       if (!keyBase) return;
-      try { localStorage.setItem(`${keyBase}:updatedAt`, String(Date.now())); } catch(_){}
+      try {
+        localStorage.setItem(`${keyBase}:updatedAt`, String(Date.now()));
+      } catch (_) {
+        void 0;
+      }
     }
 
     // Monkey-patch score increment inside result handling by wrapping console.log
@@ -21,16 +24,16 @@
       const el = document.getElementById(mountId);
       if (!el) return;
       const mo = new MutationObserver((mut) => {
-        for (const m of mut){
-          if (m.type === 'childList'){
+        for (const m of mut) {
+          if (m.type === 'childList') {
             // heuristic: when feedback text contains "正解" we stamp
-            el.querySelectorAll('.fb').forEach(fb => {
+            el.querySelectorAll('.fb').forEach((fb) => {
               if (/\u6b63\u89e3/.test(fb.textContent || '')) stamp(); // "正解"
             });
           }
         }
       });
-      mo.observe(el, {childList:true, subtree:true, characterData:true});
+      mo.observe(el, { childList: true, subtree: true, characterData: true });
     });
     return p;
   };
