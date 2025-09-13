@@ -11,3 +11,12 @@
 
 /* 早見表 */
 .table-compact th,.table-compact td{padding:.3rem .5rem}
+
+/* Dashboard actions */
+.dash-actions{white-space:nowrap}
+.dash-btn{display:inline-block;padding:.25rem .6rem;border:1px solid #94a3b8;border-radius:.375rem;background:#fff;color:#111827;text-decoration:none;cursor:pointer;font-size:.875rem}
+.dash-btn:hover{background:#f1f5f9}
+.dash-btn:focus{outline:2px solid #94a3b8;outline-offset:2px}
+.dash-btn.reset{color:#b91c1c;border-color:#fca5a5}
+.dash-btn.reset:hover{background:#fee2e2}
+.dash-details{font-size:.875rem;background:#f8fafc;border-left:3px solid #94a3b8;padding:.5rem .75rem;margin:.4rem 0}
