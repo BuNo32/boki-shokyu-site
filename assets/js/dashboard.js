@@ -113,13 +113,20 @@ async function renderDashboard(indexJsonPath, mountId) {
     tdUpd.textContent = fmtDate(updatedAt);
 
     const tdOps = document.createElement('td');
+    tdOps.className = 'dash-actions';
     const aOpen = document.createElement('a');
     aOpen.href = pageHref;
     aOpen.textContent = '開く';
+    aOpen.className = 'dash-btn';
+    aOpen.setAttribute('aria-label','このクイズページを開く');
     const btnInfo = document.createElement('button');
     btnInfo.textContent = '詳細';
+    btnInfo.type = 'button';
+    btnInfo.className = 'dash-btn';
     const btnReset = document.createElement('button');
     btnReset.textContent = 'リセット';
+    btnReset.type = 'button';
+    btnReset.className = 'dash-btn reset';
 
     btnInfo.onclick = async () => {
       alert(
