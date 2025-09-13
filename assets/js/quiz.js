@@ -315,4 +315,33 @@ if (typeof window !== 'undefined') {
       setTimeout(run, 0);
     }
   }
+
+  // data-属性による自動マウントをサポート
+  const autoMount = () => {
+    try {
+      const nodes = document.querySelectorAll('[data-quiz-src]');
+      nodes.forEach((el, idx) => {
+        const elem = el;
+        const src = elem.getAttribute('data-quiz-src');
+        if (!src) return;
+        const quizId = elem.getAttribute('data-quiz-id') || undefined;
+        const accountsSrc = elem.getAttribute('data-accounts-src') || undefined;
+        let id = elem.id;
+        if (!id) {
+          id = `quiz-auto-${idx}`;
+          elem.id = id;
+        }
+        // 直接実行（HTMLElement の dataset からの安全な文字列取得のため）
+        // @ts-expect-error spread of loosely-typed dataset values is intentional
+        loadQuiz(src, id, { quizId, accountsSrc });
+      });
+    } catch (e) {
+      console.warn('autoMount failed:', e);
+    }
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', autoMount, { once: true });
+  } else {
+    setTimeout(autoMount, 0);
+  }
 }
