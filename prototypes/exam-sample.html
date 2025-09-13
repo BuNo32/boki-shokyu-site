@@ -607,14 +607,35 @@
 </div>
 
 <script>
-  startTimer(600, 'timer', () => {
-    // 時間切れで入力とボタンを無効化
-    document.querySelectorAll('#exam-root input, #exam-root button').forEach(el => el.disabled = true);
+  // 外部スクリプト（quiz.js / exam.js）が読まれた後に実行されるように調整
+  (function runWhenReady(cb){
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', cb, { once: true });
+    } else {
+      setTimeout(cb, 0);
+    }
+  })(function(){
+    // タイマー開始（試験10分）
+    if (typeof startTimer === 'function') {
+      startTimer(600, 'timer', () => {
+        // 時間切れで入力とボタンを無効化
+        document
+          .querySelectorAll('#exam-root input, #exam-root button')
+          .forEach((el) => (el.disabled = true));
+      });
+    } else {
+      console.warn('startTimer is not available yet');
+    }
+
+    // loadQuiz は遅延キューに積んでおく（quiz.js 読込後に処理）
+    window.__loadQuizQueue = window.__loadQuizQueue || [];
+    window.__loadQuizQueue.push([
+      '../quizzes/prototype.json',
+      'quiz-proto3',
+      { quizId: 'proto' },
+    ]);
   });
-  // loadQuiz は遅延キューに積んでおく（quiz.js 読込後に処理）
-  window.__loadQuizQueue = window.__loadQuizQueue || [];
-  window.__loadQuizQueue.push(['../quizzes/prototype.json','quiz-proto3', {quizId:'proto'}]);
-</script>
+  </script>
 
 
 
