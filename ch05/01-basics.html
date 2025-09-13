@@ -41,6 +41,8 @@
     
       <link rel="stylesheet" href="../assets/css/site.css">
     
+      <link rel="stylesheet" href="../assets/css/site-append-ch05.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -351,7 +353,25 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      勘定の性質と増減
+      勘定の性質（要点表）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      判断フロー（最短3ステップ）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      セクションミニクイズ（3問）
     </span>
   </a>
   
@@ -631,7 +651,25 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      勘定の性質と増減
+      勘定の性質（要点表）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      判断フロー（最短3ステップ）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      セクションミニクイズ（3問）
     </span>
   </a>
   
@@ -653,14 +691,79 @@
 
 
 
-<h1 id="5-1">第5章 現金・預金 — 第1節 基本</h1>
-<p>この節では、現金・普通預金・当座預金・定期預金といった科目の性質と増減の方向を確認します。</p>
-<h2 id="_1">勘定の性質と増減</h2>
-<ul>
-<li>現金・普通預金・当座預金・定期預金はいずれも資産。</li>
-<li>資産は増加が借方（Dr）、減少が貸方（Cr）。</li>
-<li>小切手での支払は当座預金の減少、振込は普通預金の減少、現金支払は現金の減少。</li>
-</ul>
+<h1 id="5-1">第5章 1節：勘定の性質と増減</h1>
+<div class="infobox">
+  <h4>この節のゴール</h4>
+  <ul>
+    <li>現金・普通預金・当座預金・定期預金は<strong>資産</strong></li>
+    <li>増加は<strong>借方（Dr）</strong>、減少は<strong>貸方（Cr）</strong></li>
+    <li><span class="badge">小切手=当座</span>／<span class="badge">振込=普通</span>／<span class="badge">現金=現金</span></li>
+  </ul>
+</div>
+
+<h2 id="_1">勘定の性質（要点表）</h2>
+<table>
+<thead>
+<tr>
+<th>勘定</th>
+<th>区分</th>
+<th>増加</th>
+<th>減少</th>
+<th>代表例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>現金</td>
+<td>資産</td>
+<td>借方</td>
+<td>貸方</td>
+<td>現金売上／現金支払</td>
+</tr>
+<tr>
+<td>普通預金</td>
+<td>資産</td>
+<td>借方</td>
+<td>貸方</td>
+<td>現金を預入／振込受取／振込支払</td>
+</tr>
+<tr>
+<td>当座預金</td>
+<td>資産</td>
+<td>借方</td>
+<td>貸方</td>
+<td>受取小切手預入／<strong>小切手振出</strong></td>
+</tr>
+<tr>
+<td>定期預金</td>
+<td>資産</td>
+<td>借方</td>
+<td>貸方</td>
+<td>預入（振替で増）／満期解約（振替で減）</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">支払手段の見分け方</p>
+</div>
+<p><span class="badge">小切手支払 → 当座預金が減少</span><br />
+ <span class="badge">銀行振込 → 普通預金が減少</span><br />
+ <span class="badge">現金支払 → 現金が減少</span></p>
+<h2 id="3">判断フロー（最短3ステップ）</h2>
+<div class="flow-grid">
+  <div class="step"><h5>① 支払手段</h5>現金／小切手／振込</div>
+  <div class="step"><h5>② 何の取引？</h5>売掛回収・買掛支払・預入・解約 など</div>
+  <div class="step"><h5>③ 金額確認</h5><span class="kbd">借方合計 = 貸方合計</span></div>
+</div>
+
+<hr />
+<h2 id="3_1">セクションミニクイズ（3問）</h2>
+<div id="quiz-ch05-sec1"
+     data-quiz-src="../quizzes/ch05-sec1.json"
+     data-quiz-id="ch05-sec1"
+     data-accounts-src="../assets/data/accounts.ch05.json"></div>
+
+<p><a href="index.html">章の目次へ</a>　｜　<a href="02-patterns.html">次へ → 2節：よくある取引の型</a></p>
 
 
 
@@ -681,55 +784,9 @@
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  ページトップへ戻る
-</button>
-        
       </main>
       
         <footer class="md-footer">
-  
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="フッター" >
-        
-          
-          <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="前: 章の目次">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                前
-              </span>
-              <div class="md-ellipsis">
-                章の目次
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="02-patterns.html" class="md-footer__link md-footer__link--next" aria-label="次: 2節 よくある取引の型">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                次
-              </span>
-              <div class="md-ellipsis">
-                2節 よくある取引の型
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -755,7 +812,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.path", "navigation.footer", "navigation.top"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>

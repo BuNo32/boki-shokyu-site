@@ -41,6 +41,8 @@
     
       <link rel="stylesheet" href="../assets/css/site.css">
     
+      <link rel="stylesheet" href="../assets/css/site-append-ch05.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -397,7 +399,25 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      メモ
+      資金移動の早見表（振替）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      利息・手数料
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      セクションミニクイズ（4問：複合仕訳あり）
     </span>
   </a>
   
@@ -631,7 +651,25 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      メモ
+      資金移動の早見表（振替）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      利息・手数料
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      セクションミニクイズ（4問：複合仕訳あり）
     </span>
   </a>
   
@@ -653,13 +691,47 @@
 
 
 
-<h1 id="5-3">第5章 現金・預金 — 第3節 資金移動</h1>
-<p>この節では、口座間の振替や満期解約など、資産間の移動を扱います。</p>
-<h2 id="_1">メモ</h2>
+<h1 id="5-3">第5章 3節：資金移動・利息・手数料</h1>
+<h2 id="_1">資金移動の早見表（振替）</h2>
+<table>
+<thead>
+<tr>
+<th>取引</th>
+<th>仕訳</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>普通→現金 引出</td>
+<td>（借）現金 /（貸）普通預金</td>
+</tr>
+<tr>
+<td>普通→定期 預入</td>
+<td>（借）定期預金 /（貸）普通預金</td>
+</tr>
+<tr>
+<td>定期 満期解約→普通</td>
+<td>（借）普通預金 /（貸）定期預金</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_2">利息・手数料</h2>
 <ul>
-<li>普通預金⇄現金の引出・預入は資産間の振替（借貸同額）。</li>
-<li>定期預金の満期解約は、定期預金の減少と入金先の増加、利息があれば受取利息を計上。</li>
+<li><strong>定期の利息受取</strong>： （借）普通預金 /（貸）受取利息</li>
+<li><strong>振込手数料の引落</strong>： （借）支払手数料 /（貸）普通預金</li>
 </ul>
+<div class="admonition info">
+<p class="admonition-title">消費税の扱い（初級）</p>
+</div>
+<p>特段の指示がない限り、税計算は行わない（税抜方式の前提）。[^range]</p>
+<hr />
+<h2 id="4">セクションミニクイズ（4問：複合仕訳あり）</h2>
+<div id="quiz-ch05-sec3"
+     data-quiz-src="../quizzes/ch05-sec3.json"
+     data-quiz-id="ch05-sec3"
+     data-accounts-src="../assets/data/accounts.ch05.json"></div>
+
+<p><a href="02-patterns.html">← 前へ：2節</a>　｜　<a href="99-quiz.html">次へ → 章末クイズ（まとめ）</a>　｜　<a href="index.html">章の目次へ</a></p>
 
 
 
@@ -680,55 +752,9 @@
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  ページトップへ戻る
-</button>
-        
       </main>
       
         <footer class="md-footer">
-  
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="フッター" >
-        
-          
-          <a href="02-patterns.html" class="md-footer__link md-footer__link--prev" aria-label="前: 2節 よくある取引の型">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                前
-              </span>
-              <div class="md-ellipsis">
-                2節 よくある取引の型
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="99-quiz.html" class="md-footer__link md-footer__link--next" aria-label="次: 章末クイズ">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                次
-              </span>
-              <div class="md-ellipsis">
-                章末クイズ
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -754,7 +780,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.path", "navigation.footer", "navigation.top"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>

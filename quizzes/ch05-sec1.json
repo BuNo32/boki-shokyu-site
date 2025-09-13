@@ -1,0 +1,52 @@
+[
+  {
+    "id": "ch05s1-q01",
+    "topic": "現金・預金",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "次のうち、支払手段が「小切手」のとき主に減少する勘定はどれか？",
+    "choices": [
+      "現金",
+      "普通預金",
+      "当座預金",
+      "売掛金"
+    ],
+    "answer": "当座預金",
+    "explanation_ja": "小切手の振出は当座預金口座からの支払として処理する。"
+  },
+  {
+    "id": "ch05s1-q02",
+    "topic": "現金・預金",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "現金・普通預金・当座預金・定期預金の勘定区分は？",
+    "choices": [
+      "資産",
+      "負債",
+      "純資産",
+      "費用"
+    ],
+    "answer": "資産",
+    "explanation_ja": "いずれも資産勘定で、増加は借方、減少は貸方に記入する。"
+  },
+  {
+    "id": "ch05s1-q03",
+    "topic": "現金・預金",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】普通預金から現金20,000円を引き出した。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "現金",
+        "amount": 20000
+      },
+      {
+        "side": "Cr",
+        "account": "普通預金",
+        "amount": 20000
+      }
+    ],
+    "explanation_ja": "資産間の振替。現金が増加（借方）、普通預金が減少（貸方）。"
+  }
+]

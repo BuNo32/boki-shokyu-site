@@ -1,0 +1,13 @@
+/* infobox（要点1画面まとめ） */
+.infobox{border:1px solid #e5e7eb;border-radius:.5rem;padding:1rem;background:#f8fafc;margin:1rem 0}
+.infobox h4{margin:.2rem 0 .6rem;font-size:1rem}
+.badge{display:inline-block;padding:.15rem .5rem;border-radius:9999px;background:#eef2ff}
+.kbd{border:1px solid #cbd5e1;border-bottom-width:2px;padding:.06rem .3rem;border-radius:.25rem;font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace}
+
+/* flow-grid（判断フローのミニ図） */
+.flow-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.6rem;margin:.6rem 0}
+.flow-grid .step{border:1px dashed #cbd5e1;border-radius:.5rem;padding:.6rem;background:#fff}
+.flow-grid .step h5{margin:.1rem 0 .4rem;font-size:.95rem}
+
+/* 早見表 */
+.table-compact th,.table-compact td{padding:.3rem .5rem}

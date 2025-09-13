@@ -1,0 +1,87 @@
+[
+  {
+    "id": "ch05s3-q01",
+    "topic": "現金・預金",
+    "difficulty": "plus",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】定期預金100,000円を満期解約し、利息400円とともに普通預金に入金された（税等は考慮しない）。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "普通預金",
+        "amount": 100400
+      },
+      {
+        "side": "Cr",
+        "account": "定期預金",
+        "amount": 100000
+      },
+      {
+        "side": "Cr",
+        "account": "受取利息",
+        "amount": 400
+      }
+    ],
+    "explanation_ja": "解約により定期預金が減少、利息は受取利息、入金先の普通預金が増加（借方）。"
+  },
+  {
+    "id": "ch05s3-q02",
+    "topic": "現金・預金",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】振込手数料550円が普通預金から自動引落となった。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "支払手数料",
+        "amount": 550
+      },
+      {
+        "side": "Cr",
+        "account": "普通預金",
+        "amount": 550
+      }
+    ],
+    "explanation_ja": "手数料は費用、普通預金が減少。"
+  },
+  {
+    "id": "ch05s3-q03",
+    "topic": "現金・預金",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】普通預金から定期預金200,000円を預け入れた。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "定期預金",
+        "amount": 200000
+      },
+      {
+        "side": "Cr",
+        "account": "普通預金",
+        "amount": 200000
+      }
+    ],
+    "explanation_ja": "資産間の振替で借貸同額。"
+  },
+  {
+    "id": "ch05s3-q04",
+    "topic": "現金・預金",
+    "difficulty": "plus",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】銀行から150,000円を借り入れ、当座預金に入金された。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "当座預金",
+        "amount": 150000
+      },
+      {
+        "side": "Cr",
+        "account": "借入金",
+        "amount": 150000
+      }
+    ],
+    "explanation_ja": "借入金（負債）の増加は貸方、当座預金（資産）の増加は借方。"
+  }
+]
