@@ -1,7 +1,7 @@
-<svg class="block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260" aria-label="資金移動の対応図">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260" role="img" aria-label="資金移動の対応図">
   <style>
     .box{fill:#ffffff;stroke:#94a3b8;stroke-width:2}
-    .lbl{font:14px sans-serif}
+    .lbl{font:14px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
     .arrow{stroke:#10b981;stroke-width:2;marker-end:url(#b)}
     .arrow2{stroke:#f59e0b;stroke-width:2;marker-end:url(#c)}
   </style>
@@ -13,17 +13,25 @@
       <path d="M0,0 L0,6 L6,3 z" fill="#f59e0b"/>
     </marker>
   </defs>
-  <rect x="60" y="40" width="160" height="60" rx="8" class="box"/><text x="90" y="75" class="lbl">現金</text>
-  <rect x="280" y="40" width="160" height="60" rx="8" class="box"/><text x="310" y="75" class="lbl">普通預金</text>
-  <rect x="500" y="40" width="160" height="60" rx="8" class="box"/><text x="530" y="75" class="lbl">定期預金</text>
 
-  <text x="100" y="150" class="lbl">預け入れ</text>
+  <rect x="60" y="40" width="160" height="60" rx="8" class="box"/>
+  <text x="140" y="75" text-anchor="middle" class="lbl">現金</text>
+
+  <rect x="280" y="40" width="160" height="60" rx="8" class="box"/>
+  <text x="360" y="75" text-anchor="middle" class="lbl">普通預金</text>
+
+  <rect x="500" y="40" width="160" height="60" rx="8" class="box"/>
+  <text x="580" y="75" text-anchor="middle" class="lbl">定期預金</text>
+
+  <text x="170" y="145" text-anchor="middle" class="lbl">預け入れ</text>
   <line x1="220" y1="70" x2="280" y2="70" class="arrow"/>
-  <text x="360" y="150" class="lbl">定期へ預入</text>
+
+  <text x="440" y="145" text-anchor="middle" class="lbl">定期へ預入</text>
   <line x1="440" y1="70" x2="500" y2="70" class="arrow"/>
 
-  <text x="520" y="180" class="lbl">満期解約</text>
+  <text x="580" y="180" text-anchor="middle" class="lbl">満期解約</text>
   <line x1="580" y1="100" x2="360" y2="140" class="arrow2"/>
-  <text x="320" y="200" class="lbl">現金引出</text>
+
+  <text x="300" y="200" text-anchor="middle" class="lbl">現金引出</text>
   <line x1="300" y1="100" x2="140" y2="140" class="arrow2"/>
 </svg>

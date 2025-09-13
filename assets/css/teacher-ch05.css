@@ -1,0 +1,17 @@
+/* teacher-ch05.css */
+.svg-center { display:block; margin:.8rem auto; width:100%; max-width:720px; }
+.infobox, .note-box, .warn-box { border-radius:.6rem; padding:1rem; margin:1rem 0; }
+.infobox { border:1px solid #e5e7eb; background:#f8fafc; }
+.note-box { border:1px solid #dbeafe; background:#eff6ff; }
+.warn-box { border:1px solid #fde68a; background:#fffbeb; }
+.badge{display:inline-block;padding:.15rem .5rem;border-radius:9999px;background:#eef2ff}
+.kbd{border:1px solid #cbd5e1;border-bottom-width:2px;padding:.06rem .3rem;border-radius:.25rem;font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace}
+.table-compact th,.table-compact td{padding:.38rem .6rem}
+.table-focus tr:hover{background:#fcfcfc}
+/* lecture script tone */
+.script { border-left:4px solid #0ea5e9; background:#f0f9ff; padding:.8rem 1rem; border-radius:.25rem; margin:1rem 0; }
+.script .t { color:#0f172a; font-weight:600; }
+.script .s { color:#1f2937; }
+.script .cue { color:#64748b; font-style:italic; }
+.align-center { text-align:center; }
+.amount { text-align:right; }
