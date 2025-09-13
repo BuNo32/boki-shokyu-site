@@ -118,7 +118,7 @@ async function renderDashboard(indexJsonPath, mountId) {
     aOpen.href = pageHref;
     aOpen.textContent = '開く';
     aOpen.className = 'dash-btn';
-    aOpen.setAttribute('aria-label','このクイズページを開く');
+    aOpen.setAttribute('aria-label', 'このクイズページを開く');
     const btnInfo = document.createElement('button');
     btnInfo.textContent = '詳細';
     btnInfo.type = 'button';

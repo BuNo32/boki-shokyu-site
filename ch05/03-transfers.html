@@ -399,18 +399,33 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      資金移動の早見表（振替）
+      図で理解：資金の動き
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="図で理解：資金の動き">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      よくある振替
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       利息・手数料
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -651,18 +666,33 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      資金移動の早見表（振替）
+      図で理解：資金の動き
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="図で理解：資金の動き">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      よくある振替
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       利息・手数料
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -691,13 +721,15 @@
 
 
 
-<h1 id="5-3">第5章 3節：資金移動・利息・手数料</h1>
-<h2 id="_1">資金移動の早見表（振替）</h2>
+<h1 id="5-3">第5章 3節：資金移動・利息・手数料（やさしい版）</h1>
+<h2 id="_1">図で理解：資金の動き</h2>
+<p><img alt="資金移動の対応図" src="../assets/img/ch05/transfer_map.svg" /></p>
+<h3 id="_2">よくある振替</h3>
 <table>
 <thead>
 <tr>
 <th>取引</th>
-<th>仕訳</th>
+<th>仕訳（4列）</th>
 </tr>
 </thead>
 <tbody>
@@ -710,20 +742,20 @@
 <td>（借）定期預金 /（貸）普通預金</td>
 </tr>
 <tr>
-<td>定期 満期解約→普通</td>
+<td>定期 満期→普通</td>
 <td>（借）普通預金 /（貸）定期預金</td>
 </tr>
 </tbody>
 </table>
-<h2 id="_2">利息・手数料</h2>
+<h3 id="_3">利息・手数料</h3>
 <ul>
-<li><strong>定期の利息受取</strong>： （借）普通預金 /（貸）受取利息</li>
-<li><strong>振込手数料の引落</strong>： （借）支払手数料 /（貸）普通預金</li>
+<li><strong>利息を受け取った</strong> → 収益の <strong>受取利息</strong>（貸方）、入金先が増える（借方）</li>
+<li><strong>振込手数料を払った</strong> → 費用の <strong>支払手数料</strong>（借方）、普通預金が減る（貸方）</li>
 </ul>
-<div class="admonition info">
-<p class="admonition-title">消費税の扱い（初級）</p>
+<div class="admonition note">
+<p class="admonition-title">試験の前提</p>
 </div>
-<p>特段の指示がない限り、税計算は行わない（税抜方式の前提）。[^range]</p>
+<p>初級では<strong>税抜方式</strong>で、指示がない限り消費税の計算は行いません。</p>
 <hr />
 <h2 id="4">セクションミニクイズ（4問：複合仕訳あり）</h2>
 <div id="quiz-ch05-sec3"
@@ -731,7 +763,7 @@
      data-quiz-id="ch05-sec3"
      data-accounts-src="../assets/data/accounts.ch05.json"></div>
 
-<p><a href="02-patterns.html">← 前へ：2節</a>　｜　<a href="99-quiz.html">次へ → 章末クイズ（まとめ）</a>　｜　<a href="index.html">章の目次へ</a></p>
+<p><a href="02-patterns.html">← 前へ：2節</a>｜<a href="99-quiz.html">次へ → 章末クイズ</a>｜<a href="index.html">章の目次へ</a></p>
 
 
 
@@ -792,8 +824,6 @@
         <script src="../assets/js/exam.js"></script>
       
         <script src="../assets/js/dashboard.js"></script>
-      
-        <script src="../assets/js/quiz.autoload.js"></script>
       
     
   </body>

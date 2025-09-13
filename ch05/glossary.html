@@ -8,13 +8,9 @@
       
       
       
-        <link rel="canonical" href="https://buno32.github.io/boki-shokyu-site/prototypes/exam-sample.html">
+        <link rel="canonical" href="https://buno32.github.io/boki-shokyu-site/ch05/glossary.html">
       
       
-        <link rel="prev" href="quiz-sample.html">
-      
-      
-        <link rel="next" href="dashboard.html">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +18,7 @@
     
     
       
-        <title>模擬試験見本 - 簿記初級ラボ</title>
+        <title>第5章 用語ミニ辞典 - 簿記初級ラボ</title>
       
     
     
@@ -62,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#10" class="md-skip">
+        <a href="#5" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -98,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              模擬試験見本
+              第5章 用語ミニ辞典
             
           </span>
         </div>
@@ -276,7 +272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch05/index.html" class="md-nav__link">
+      <a href="index.html" class="md-nav__link">
         
   
   
@@ -299,7 +295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch05/01-basics.html" class="md-nav__link">
+      <a href="01-basics.html" class="md-nav__link">
         
   
   
@@ -322,7 +318,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch05/02-patterns.html" class="md-nav__link">
+      <a href="02-patterns.html" class="md-nav__link">
         
   
   
@@ -345,7 +341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch05/03-transfers.html" class="md-nav__link">
+      <a href="03-transfers.html" class="md-nav__link">
         
   
   
@@ -368,7 +364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch05/99-quiz.html" class="md-nav__link">
+      <a href="99-quiz.html" class="md-nav__link">
         
   
   
@@ -395,20 +391,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -424,7 +418,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             デザイン見本
@@ -438,7 +432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="lesson-sample.html" class="md-nav__link">
+      <a href="../prototypes/lesson-sample.html" class="md-nav__link">
         
   
   
@@ -461,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="quiz-sample.html" class="md-nav__link">
+      <a href="../prototypes/quiz-sample.html" class="md-nav__link">
         
   
   
@@ -481,19 +475,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="exam-sample.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../prototypes/exam-sample.html" class="md-nav__link">
         
   
   
@@ -504,7 +489,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -517,7 +501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="dashboard.html" class="md-nav__link">
+      <a href="../prototypes/dashboard.html" class="md-nav__link">
         
   
   
@@ -540,7 +524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="typography.html" class="md-nav__link">
+      <a href="../prototypes/typography.html" class="md-nav__link">
         
   
   
@@ -597,45 +581,57 @@
 
 
 
-<h1 id="10">模擬試験見本（10分タイマー）</h1>
-<blockquote>
-<p>本番は第1問（用語）・第2問（仕訳）・第3問（試算表）の3パート想定。ここではサンプル問題（3問）でタイマー動作のみ確認します。</p>
-</blockquote>
-<div id="timer"></div>
-<div id="exam-root">
-  <div id="quiz-proto3"></div>
-</div>
-
-<script>
-  // 外部スクリプト（quiz.js / exam.js）が読まれた後に実行されるように調整
-  (function runWhenReady(cb){
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', cb, { once: true });
-    } else {
-      setTimeout(cb, 0);
-    }
-  })(function(){
-    // タイマー開始（試験10分）
-    if (typeof startTimer === 'function') {
-      startTimer(600, 'timer', () => {
-        // 時間切れで入力とボタンを無効化
-        document
-          .querySelectorAll('#exam-root input, #exam-root button')
-          .forEach((el) => (el.disabled = true));
-      });
-    } else {
-      console.warn('startTimer is not available yet');
-    }
-
-    // loadQuiz は遅延キューに積んでおく（quiz.js 読込後に処理）
-    window.__loadQuizQueue = window.__loadQuizQueue || [];
-    window.__loadQuizQueue.push([
-      '../quizzes/prototype.json',
-      'quiz-proto3',
-      { quizId: 'proto' },
-    ]);
-  });
-  </script>
+<h1 id="5">第5章 用語ミニ辞典</h1>
+<table>
+<thead>
+<tr>
+<th>用語</th>
+<th>かんたんな説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>現金</td>
+<td>手元にあるお金のこと</td>
+</tr>
+<tr>
+<td>普通預金</td>
+<td>ふつうの銀行口座。振込・引落などで使う</td>
+</tr>
+<tr>
+<td>当座預金</td>
+<td>小切手の支払いに使う口座</td>
+</tr>
+<tr>
+<td>小切手</td>
+<td>振り出すと当座預金から支払われる証書</td>
+</tr>
+<tr>
+<td>定期預金</td>
+<td>期間を決めて預ける預金</td>
+</tr>
+<tr>
+<td>借方（左）</td>
+<td>増えた資産・費用などを書く側</td>
+</tr>
+<tr>
+<td>貸方（右）</td>
+<td>減った資産・負債の増加・収益などを書く側</td>
+</tr>
+<tr>
+<td>受取利息</td>
+<td>受け取った利息（収益）</td>
+</tr>
+<tr>
+<td>支払手数料</td>
+<td>振込などで払う手数料（費用）</td>
+</tr>
+<tr>
+<td>振替</td>
+<td>資産どうしの移動（例：普通→定期）</td>
+</tr>
+</tbody>
+</table>
 
 
 

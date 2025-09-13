@@ -1,0 +1,26 @@
+<svg class="block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" aria-label="支払手段→勘定科目の対応">
+  <style>
+    .box{fill:#ffffff;stroke:#94a3b8;stroke-width:2}
+    .lbl{font:14px sans-serif}
+    .arrow{stroke:#64748b;stroke-width:2;marker-end:url(#a)}
+  </style>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <!-- left: payment methods -->
+  <rect x="30" y="20" width="180" height="50" rx="8" class="box"/><text x="40" y="50" class="lbl">現金で支払う</text>
+  <rect x="30" y="85" width="180" height="50" rx="8" class="box"/><text x="40" y="115" class="lbl">銀行振込で支払う</text>
+  <rect x="30" y="150" width="180" height="50" rx="8" class="box"/><text x="40" y="180" class="lbl">小切手を振り出す</text>
+  <!-- right: accounts -->
+  <rect x="480" y="20" width="180" height="50" rx="8" class="box"/><text x="490" y="50" class="lbl">現金 が 減る</text>
+  <rect x="480" y="85" width="180" height="50" rx="8" class="box"/><text x="490" y="115" class="lbl">普通預金 が 減る</text>
+  <rect x="480" y="150" width="180" height="50" rx="8" class="box"/><text x="490" y="180" class="lbl">当座預金 が 減る</text>
+  <!-- arrows -->
+  <line x1="210" y1="45" x2="480" y2="45" class="arrow"/>
+  <line x1="210" y1="110" x2="480" y2="110" class="arrow"/>
+  <line x1="210" y1="175" x2="480" y2="175" class="arrow"/>
+  <!-- center text -->
+  <text x="280" y="20" class="lbl">支払手段 → 使う勘定（減少する側）</text>
+</svg>

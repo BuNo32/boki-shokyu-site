@@ -353,23 +353,29 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      勘定の性質（要点表）
+      まずは表で把握
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="まずは表で把握">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      例：現金を銀行に預けた
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      判断フロー（最短3ステップ）
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3_1" class="md-nav__link">
     <span class="md-ellipsis">
       セクションミニクイズ（3問）
     </span>
@@ -651,23 +657,29 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      勘定の性質（要点表）
+      まずは表で把握
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="まずは表で把握">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      例：現金を銀行に預けた
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      判断フロー（最短3ステップ）
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3_1" class="md-nav__link">
     <span class="md-ellipsis">
       セクションミニクイズ（3問）
     </span>
@@ -691,79 +703,87 @@
 
 
 
-<h1 id="5-1">第5章 1節：勘定の性質と増減</h1>
+<h1 id="5-1">第5章 1節：勘定の性質と増減（やさしい版）</h1>
 <div class="infobox">
-  <h4>この節のゴール</h4>
+  <h4>ゴール</h4>
   <ul>
     <li>現金・普通預金・当座預金・定期預金は<strong>資産</strong></li>
-    <li>増加は<strong>借方（Dr）</strong>、減少は<strong>貸方（Cr）</strong></li>
-    <li><span class="badge">小切手=当座</span>／<span class="badge">振込=普通</span>／<span class="badge">現金=現金</span></li>
+    <li>増えたら<strong>借方（左）</strong>、減ったら<strong>貸方（右）</strong></li>
+    <li>支払手段で使う勘定が決まる（<span class="badge">現金</span> / <span class="badge">普通預金</span> / <span class="badge">当座預金</span>）</li>
   </ul>
 </div>
 
-<h2 id="_1">勘定の性質（要点表）</h2>
+<h2 id="_1">まずは表で把握</h2>
 <table>
 <thead>
 <tr>
 <th>勘定</th>
-<th>区分</th>
-<th>増加</th>
-<th>減少</th>
-<th>代表例</th>
+<th>どんなもの？</th>
+<th>増えたとき</th>
+<th>減ったとき</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>現金</td>
-<td>資産</td>
-<td>借方</td>
-<td>貸方</td>
-<td>現金売上／現金支払</td>
+<td>手元のお金</td>
+<td>借方に書く</td>
+<td>貸方に書く</td>
 </tr>
 <tr>
 <td>普通預金</td>
-<td>資産</td>
+<td>銀行口座（振込など）</td>
 <td>借方</td>
 <td>貸方</td>
-<td>現金を預入／振込受取／振込支払</td>
 </tr>
 <tr>
 <td>当座預金</td>
-<td>資産</td>
+<td>小切手用の口座</td>
 <td>借方</td>
 <td>貸方</td>
-<td>受取小切手預入／<strong>小切手振出</strong></td>
 </tr>
 <tr>
 <td>定期預金</td>
-<td>資産</td>
+<td>まとまった預金（期間あり）</td>
 <td>借方</td>
 <td>貸方</td>
-<td>預入（振替で増）／満期解約（振替で減）</td>
 </tr>
 </tbody>
 </table>
+<p><img alt="支払手段→勘定の対応" src="../assets/img/ch05/payment_flow.svg" /></p>
 <div class="admonition tip">
-<p class="admonition-title">支払手段の見分け方</p>
+<p class="admonition-title">覚え方（超シンプル）</p>
 </div>
-<p><span class="badge">小切手支払 → 当座預金が減少</span><br />
- <span class="badge">銀行振込 → 普通預金が減少</span><br />
- <span class="badge">現金支払 → 現金が減少</span></p>
-<h2 id="3">判断フロー（最短3ステップ）</h2>
-<div class="flow-grid">
-  <div class="step"><h5>① 支払手段</h5>現金／小切手／振込</div>
-  <div class="step"><h5>② 何の取引？</h5>売掛回収・買掛支払・預入・解約 など</div>
-  <div class="step"><h5>③ 金額確認</h5><span class="kbd">借方合計 = 貸方合計</span></div>
-</div>
-
+<p><strong>現金で払う→現金が減る</strong><br />
+<strong>振込で払う→普通預金が減る</strong><br />
+<strong>小切手で払う→当座預金が減る</strong></p>
+<h3 id="_2">例：現金を銀行に預けた</h3>
+<table>
+<thead>
+<tr>
+<th>借方科目</th>
+<th style="text-align: right;">金額</th>
+<th>貸方科目</th>
+<th style="text-align: right;">金額</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>普通預金</td>
+<td style="text-align: right;">30,000</td>
+<td>現金</td>
+<td style="text-align: right;">30,000</td>
+</tr>
+</tbody>
+</table>
 <hr />
-<h2 id="3_1">セクションミニクイズ（3問）</h2>
+<h2 id="3">セクションミニクイズ（3問）</h2>
 <div id="quiz-ch05-sec1"
      data-quiz-src="../quizzes/ch05-sec1.json"
      data-quiz-id="ch05-sec1"
      data-accounts-src="../assets/data/accounts.ch05.json"></div>
 
-<p><a href="index.html">章の目次へ</a>　｜　<a href="02-patterns.html">次へ → 2節：よくある取引の型</a></p>
+<p><a href="index.html">章の目次へ</a>｜<a href="02-patterns.html">次へ → 2節</a></p>
 
 
 
@@ -824,8 +844,6 @@
         <script src="../assets/js/exam.js"></script>
       
         <script src="../assets/js/dashboard.js"></script>
-      
-        <script src="../assets/js/quiz.autoload.js"></script>
       
     
   </body>
