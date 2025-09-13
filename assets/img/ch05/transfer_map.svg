@@ -1,37 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260" role="img" aria-label="資金移動の対応図">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260" role="img" aria-label="資金移動の対応図（三角配置：普通預金↔現金・定期預金）">
+  <desc>普通預金から現金へ「現金引出」、普通預金から定期預金へ「定期へ預入」、定期預金から普通預金へ「満期解約」を矢印で示す。</desc>
   <style>
     .box{fill:#ffffff;stroke:#94a3b8;stroke-width:2}
-    .lbl{font:14px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
-    .arrow{stroke:#10b981;stroke-width:2;marker-end:url(#b)}
-    .arrow2{stroke:#f59e0b;stroke-width:2;marker-end:url(#c)}
+    .lbl{font:15px 'Meiryo', 'Noto Sans JP', 'Yu Gothic UI', 'Hiragino Kaku Gothic ProN', system-ui, sans-serif}
+    .cap{font:13px 'Meiryo', 'Noto Sans JP', system-ui, sans-serif; fill:#374151}
+    .arrow{stroke:#10b981;stroke-width:2.5;fill:none;marker-end:url(#arrow-g)}
+    .arrow2{stroke:#f59e0b;stroke-width:2.5;fill:none;marker-end:url(#arrow-o)}
   </style>
   <defs>
-    <marker id="b" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L0,6 L6,3 z" fill="#10b981"/>
+    <marker id="arrow-g" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto">
+      <path d="M0,0 L0,7 L7,3.5 z" fill="#10b981"/>
     </marker>
-    <marker id="c" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L0,6 L6,3 z" fill="#f59e0b"/>
+    <marker id="arrow-o" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto">
+      <path d="M0,0 L0,7 L7,3.5 z" fill="#f59e0b"/>
     </marker>
   </defs>
 
-  <rect x="60" y="40" width="160" height="60" rx="8" class="box"/>
-  <text x="140" y="75" text-anchor="middle" class="lbl">現金</text>
+  <!-- 三角配置: 上=普通預金, 左下=現金, 右下=定期預金 -->
+  <rect x="280" y="30" width="160" height="60" rx="8" class="box"/>
+  <text x="360" y="66" text-anchor="middle" class="lbl">普通預金</text>
 
-  <rect x="280" y="40" width="160" height="60" rx="8" class="box"/>
-  <text x="360" y="75" text-anchor="middle" class="lbl">普通預金</text>
+  <rect x="60" y="150" width="160" height="60" rx="8" class="box"/>
+  <text x="140" y="186" text-anchor="middle" class="lbl">現金</text>
 
-  <rect x="500" y="40" width="160" height="60" rx="8" class="box"/>
-  <text x="580" y="75" text-anchor="middle" class="lbl">定期預金</text>
+  <rect x="500" y="150" width="160" height="60" rx="8" class="box"/>
+  <text x="580" y="186" text-anchor="middle" class="lbl">定期預金</text>
 
-  <text x="170" y="145" text-anchor="middle" class="lbl">預け入れ</text>
-  <line x1="220" y1="70" x2="280" y2="70" class="arrow"/>
+  <!-- 普通 → 現金（現金引出） -->
+  <path d="M360,90 C 300,120 220,135 140,150" class="arrow"/>
+  <text x="230" y="128" text-anchor="middle" class="cap">現金引出</text>
 
-  <text x="440" y="145" text-anchor="middle" class="lbl">定期へ預入</text>
-  <line x1="440" y1="70" x2="500" y2="70" class="arrow"/>
+  <!-- 普通 → 定期（定期へ預入） -->
+  <path d="M360,90 C 420,120 520,135 580,150" class="arrow"/>
+  <text x="490" y="128" text-anchor="middle" class="cap">定期へ預入</text>
 
-  <text x="580" y="180" text-anchor="middle" class="lbl">満期解約</text>
-  <line x1="580" y1="100" x2="360" y2="140" class="arrow2"/>
-
-  <text x="300" y="200" text-anchor="middle" class="lbl">現金引出</text>
-  <line x1="300" y1="100" x2="140" y2="140" class="arrow2"/>
+  <!-- 定期 → 普通（満期解約） -->
+  <path d="M580,150 C 520,120 440,105 360,102" class="arrow2"/>
+  <text x="520" y="112" text-anchor="middle" class="cap">満期解約</text>
 </svg>
