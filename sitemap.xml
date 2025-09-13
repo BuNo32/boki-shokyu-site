@@ -2,34 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://buno32.github.io/boki-shokyu-site/index.html</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-13</lastmod>
     </url>
     <url>
          <loc>https://buno32.github.io/boki-shokyu-site/ch01/index.html</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-13</lastmod>
     </url>
     <url>
          <loc>https://buno32.github.io/boki-shokyu-site/ch05/index.html</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-13</lastmod>
+    </url>
+    <url>
+         <loc>https://buno32.github.io/boki-shokyu-site/ch05/01-basics.html</loc>
+         <lastmod>2025-09-13</lastmod>
+    </url>
+    <url>
+         <loc>https://buno32.github.io/boki-shokyu-site/ch05/02-patterns.html</loc>
+         <lastmod>2025-09-13</lastmod>
+    </url>
+    <url>
+         <loc>https://buno32.github.io/boki-shokyu-site/ch05/03-transfers.html</loc>
+         <lastmod>2025-09-13</lastmod>
+    </url>
+    <url>
+         <loc>https://buno32.github.io/boki-shokyu-site/ch05/99-quiz.html</loc>
+         <lastmod>2025-09-13</lastmod>
     </url>
     <url>
          <loc>https://buno32.github.io/boki-shokyu-site/prototypes/dashboard.html</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-13</lastmod>
     </url>
     <url>
          <loc>https://buno32.github.io/boki-shokyu-site/prototypes/exam-sample.html</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-13</lastmod>
     </url>
     <url>
          <loc>https://buno32.github.io/boki-shokyu-site/prototypes/lesson-sample.html</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-13</lastmod>
     </url>
     <url>
          <loc>https://buno32.github.io/boki-shokyu-site/prototypes/quiz-sample.html</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-13</lastmod>
     </url>
     <url>
          <loc>https://buno32.github.io/boki-shokyu-site/prototypes/typography.html</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-13</lastmod>
     </url>
 </urlset>
