@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 220" role="img" aria-label="証憑→伝票→仕訳→元帳→試算表の流れ">
+  <style>
+    .box{fill:#fff;stroke:#94a3b8;stroke-width:2}
+    .lbl{font:14px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
+    .arrow{stroke:#64748b;stroke-width:2;marker-end:url(#a)}
+  </style>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect x="20" y="70" width="140" height="60" rx="8" class="box"/><text x="90" y="105" text-anchor="middle" class="lbl">証  ひょう</text>
+  <rect x="190" y="70" width="140" height="60" rx="8" class="box"/><text x="260" y="105" text-anchor="middle" class="lbl">伝  票</text>
+  <rect x="360" y="70" width="140" height="60" rx="8" class="box"/><text x="430" y="105" text-anchor="middle" class="lbl">仕  訳  帳</text>
+  <rect x="530" y="70" width="160" height="60" rx="8" class="box"/><text x="610" y="105" text-anchor="middle" class="lbl">総勘定元帳</text>
+  <rect x="720" y="70" width="140" height="60" rx="8" class="box"/><text x="790" y="105" text-anchor="middle" class="lbl">試  算  表</text>
+  <line x1="160" y1="100" x2="190" y2="100" class="arrow"/>
+  <line x1="330" y1="100" x2="360" y2="100" class="arrow"/>
+  <line x1="500" y1="100" x2="530" y2="100" class="arrow"/>
+  <line x1="690" y1="100" x2="720" y2="100" class="arrow"/>
+  <text x="90" y="50" text-anchor="middle" class="lbl">証拠</text>
+  <text x="260" y="50" text-anchor="middle" class="lbl">指示書</text>
+  <text x="430" y="50" text-anchor="middle" class="lbl">時系列</text>
+  <text x="610" y="50" text-anchor="middle" class="lbl">科目別</text>
+  <text x="790" y="50" text-anchor="middle" class="lbl">全体確認</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 280" role="img" aria-label="入金・出金・振替伝票のイメージ">
+  <style>
+    .card{fill:#fff;stroke:#94a3b8;stroke-width:2}
+    .lbl{font:14px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
+    .muted{fill:#f8fafc;stroke:#e5e7eb}
+    .line{stroke:#cbd5e1;stroke-width:1}
+  </style>
+  <!-- 入金 -->
+  <rect x="30" y="30" width="240" height="220" rx="8" class="card"/>
+  <rect x="30" y="60" width="240" height="30" class="muted"/><text x="150" y="80" text-anchor="middle" class="lbl">入金伝票</text>
+  <text x="50" y="120" class="lbl">日付／摘要</text><line x1="50" y1="125" x2="250" y2="125" class="line"/>
+  <text x="50" y="150" class="lbl">借方科目：<tspan>現金</tspan></text>
+  <text x="50" y="180" class="lbl">貸方科目：<tspan>売掛金 等</tspan></text>
+  <text x="50" y="210" class="lbl">金額：＿＿＿＿円</text>
+
+  <!-- 出金 -->
+  <rect x="320" y="30" width="240" height="220" rx="8" class="card"/>
+  <rect x="320" y="60" width="240" height="30" class="muted"/><text x="440" y="80" text-anchor="middle" class="lbl">出金伝票</text>
+  <text x="340" y="120" class="lbl">日付／摘要</text><line x1="340" y1="125" x2="540" y2="125" class="line"/>
+  <text x="340" y="150" class="lbl">借方科目：<tspan>費用・仕入 等</tspan></text>
+  <text x="340" y="180" class="lbl">貸方科目：<tspan>現金</tspan></text>
+  <text x="340" y="210" class="lbl">金額：＿＿＿＿円</text>
+
+  <!-- 振替 -->
+  <rect x="610" y="30" width="240" height="220" rx="8" class="card"/>
+  <rect x="610" y="60" width="240" height="30" class="muted"/><text x="730" y="80" text-anchor="middle" class="lbl">振替伝票</text>
+  <text x="630" y="120" class="lbl">日付／摘要</text><line x1="630" y1="125" x2="830" y2="125" class="line"/>
+  <text x="630" y="150" class="lbl">借方科目：<tspan>普通預金</tspan></text>
+  <text x="630" y="180" class="lbl">貸方科目：<tspan>当座預金 等</tspan></text>
+  <text x="630" y="210" class="lbl">金額：＿＿＿＿円</text>
+</svg>

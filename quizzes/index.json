@@ -1,6 +1,14 @@
 {
   "quizzes": [
+    
     {
+      "quizId": "ch03",
+      "title": "第3章 帳簿と伝票（章末）",
+      "file": "ch03.json",
+      "page": "ch03/99-quiz.html",
+      "basePath": "quizzes/"
+    },
+{
       "quizId": "ch05",
       "title": "第5章 現金・預金",
       "file": "ch05.json",
