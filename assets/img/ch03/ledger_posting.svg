@@ -1,0 +1,14 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 260" role="img" aria-label="転記と残高のイメージ（T字勘定）">
+  <style>
+    .lbl{font:15px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
+    .line{stroke:#94a3b8;stroke-width:2}
+  </style>
+  <text x="430" y="30" text-anchor="middle" class="lbl">T字勘定（例：現金）</text>
+  <line x1="120" y1="50" x2="740" y2="50" class="line"/>
+  <line x1="430" y1="50" x2="430" y2="200" class="line"/>
+  <text x="250" y="75" class="lbl">借方（入る）</text><text x="600" y="75" class="lbl">貸方（出る）</text>
+  <text x="150" y="115" class="lbl">4/10 消耗品費 1,200</text>
+  <text x="520" y="145" class="lbl">4/12 売上 1,000</text>
+  <line x1="120" y1="200" x2="740" y2="200" class="line"/>
+  <text x="430" y="225" text-anchor="middle" class="lbl">残高＝借方合計 − 貸方合計</text>
+</svg>

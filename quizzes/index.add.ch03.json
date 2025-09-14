@@ -1,0 +1,11 @@
+{
+  "quizzes": [
+    {
+      "quizId": "ch03",
+      "title": "第3章 帳簿と伝票（章末）",
+      "file": "ch03.json",
+      "page": "ch03/99-quiz.html",
+      "basePath": "quizzes/"
+    }
+  ]
+}
