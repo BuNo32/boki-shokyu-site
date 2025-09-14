@@ -1,0 +1,80 @@
+[
+  {
+    "id": "ch01-q01",
+    "topic": "スタートガイド",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "次のうち、左（借方）で増える要素はどれ？",
+    "choices": [
+      "資産と費用",
+      "負債と収益",
+      "純資産と負債",
+      "収益と純資産"
+    ],
+    "answer": "資産と費用",
+    "explanation_ja": "資産・費用は借方（左）で増加、負債・純資産・収益は貸方（右）で増加。"
+  },
+  {
+    "id": "ch01-q02",
+    "topic": "スタートガイド",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "次のうち、取引を日付順に記録する帳簿はどれ？",
+    "choices": [
+      "仕訳帳",
+      "総勘定元帳",
+      "試算表",
+      "補助元帳"
+    ],
+    "answer": "仕訳帳",
+    "explanation_ja": "仕訳帳は時系列、元帳は科目別、試算表は全体の合計と残高を一覧にする。"
+  },
+  {
+    "id": "ch01-q03",
+    "topic": "スタートガイド",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】現金売上 1,000円があった。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "現金",
+        "amount": 1000
+      },
+      {
+        "side": "Cr",
+        "account": "売上",
+        "amount": 1000
+      }
+    ],
+    "explanation_ja": "収益（売上）の発生は貸方、現金の増加は借方。"
+  },
+  {
+    "id": "ch01-q04",
+    "topic": "スタートガイド",
+    "difficulty": "standard",
+    "question_type": "journal_mcq",
+    "prompt_ja": "【取引】現金30,000円を銀行（普通預金）に預け入れた。正しい仕訳はどれ？",
+    "choices": [
+      "（借）現金 30,000 / （貸）普通預金 30,000",
+      "（借）普通預金 30,000 / （貸）現金 30,000",
+      "（借）売掛金 30,000 / （貸）現金 30,000",
+      "（借）当座預金 30,000 / （貸）現金 30,000"
+    ],
+    "answer": "（借）普通預金 30,000 / （貸）現金 30,000",
+    "explanation_ja": "資産間の振替。入るのは普通預金（借方）、出るのは現金（貸方）。"
+  },
+  {
+    "id": "ch01-q05",
+    "topic": "スタートガイド",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "「お金が出ていく側」を表す記入はどちら？",
+    "choices": [
+      "借方（左）",
+      "貸方（右）"
+    ],
+    "answer": "貸方（右）",
+    "explanation_ja": "右（貸方）は“出ていく”側。"
+  }
+]

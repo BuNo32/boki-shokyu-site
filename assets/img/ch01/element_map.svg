@@ -1,0 +1,27 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 340" role="img" aria-label="5要素（資産・負債・純資産・収益・費用）の地図">
+  <style>
+    .box{fill:#ffffff;stroke:#94a3b8;stroke-width:2}
+    .lbl{font:15px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
+    .head{font:16px; font-weight:700}
+  </style>
+  <rect x="30" y="30" width="240" height="120" rx="10" class="box"/>
+  <text x="150" y="60" text-anchor="middle" class="head lbl">資 産（左で増える）</text>
+  <text x="150" y="90" text-anchor="middle" class="lbl">現金・普通預金・当座預金</text>
+  <text x="150" y="115" text-anchor="middle" class="lbl">売掛金・備品・定期預金 等</text>
+
+  <rect x="300" y="30" width="240" height="120" rx="10" class="box"/>
+  <text x="420" y="60" text-anchor="middle" class="head lbl">負 債（右で増える）</text>
+  <text x="420" y="90" text-anchor="middle" class="lbl">買掛金・借入金・未払金 等</text>
+
+  <rect x="570" y="30" width="220" height="120" rx="10" class="box"/>
+  <text x="680" y="60" text-anchor="middle" class="head lbl">純資産（右で増える）</text>
+  <text x="680" y="90" text-anchor="middle" class="lbl">資本金・元入金 等</text>
+
+  <rect x="100" y="190" width="280" height="120" rx="10" class="box"/>
+  <text x="240" y="220" text-anchor="middle" class="head lbl">収 益（右で増える）</text>
+  <text x="240" y="250" text-anchor="middle" class="lbl">売上・受取利息 等</text>
+
+  <rect x="440" y="190" width="280" height="120" rx="10" class="box"/>
+  <text x="580" y="220" text-anchor="middle" class="head lbl">費 用（左で増える）</text>
+  <text x="580" y="250" text-anchor="middle" class="lbl">仕入・消耗品費・水道光熱費 等</text>
+</svg>
