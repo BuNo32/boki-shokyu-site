@@ -1,0 +1,38 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 230" role="img" aria-label="取引→仕訳→転記→試算表の流れ">
+  <style>
+    .box{fill:#ffffff;stroke:#94a3b8;stroke-width:2}
+    .lbl{font:15px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
+    .arrow{stroke:#64748b;stroke-width:2;marker-end:url(#a)}
+    .muted{fill:#f8fafc;stroke:#e5e7eb;stroke-width:2}
+  </style>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect x="20" y="70" width="150" height="60" rx="8" class="box"/>
+  <text x="95" y="105" text-anchor="middle" class="lbl">取  引</text>
+
+  <rect x="190" y="70" width="160" height="60" rx="8" class="muted"/>
+  <text x="270" y="105" text-anchor="middle" class="lbl">伝  票（任意/M03）</text>
+
+  <rect x="370" y="70" width="170" height="60" rx="8" class="box"/>
+  <text x="455" y="105" text-anchor="middle" class="lbl">仕  訳  帳</text>
+
+  <rect x="560" y="70" width="170" height="60" rx="8" class="box"/>
+  <text x="645" y="105" text-anchor="middle" class="lbl">総勘定元帳</text>
+
+  <rect x="750" y="70" width="150" height="60" rx="8" class="box"/>
+  <text x="825" y="105" text-anchor="middle" class="lbl">試  算  表</text>
+
+  <line x1="170" y1="100" x2="190" y2="100" class="arrow"/>
+  <line x1="350" y1="100" x2="370" y2="100" class="arrow"/>
+  <line x1="540" y1="100" x2="560" y2="100" class="arrow"/>
+  <line x1="730" y1="100" x2="750" y2="100" class="arrow"/>
+
+  <text x="95" y="50" text-anchor="middle" class="lbl">事実</text>
+  <text x="270" y="50" text-anchor="middle" class="lbl">指示書</text>
+  <text x="455" y="50" text-anchor="middle" class="lbl">時系列</text>
+  <text x="645" y="50" text-anchor="middle" class="lbl">科目別</text>
+  <text x="825" y="50" text-anchor="middle" class="lbl">全体確認</text>
+</svg>

@@ -1,0 +1,11 @@
+{
+  "quizzes": [
+    {
+      "quizId": "ch02",
+      "title": "第2章 取引→仕訳→転記→集計（章末）",
+      "file": "ch02.json",
+      "page": "ch02/99-quiz.html",
+      "basePath": "quizzes/"
+    }
+  ]
+}

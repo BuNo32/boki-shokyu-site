@@ -1,0 +1,102 @@
+[
+  {
+    "id": "ch02-q01",
+    "topic": "取引→仕訳→転記→集計",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "次のうち、取引を日付順に記録する帳簿はどれ？",
+    "choices": [
+      "仕訳帳",
+      "総勘定元帳",
+      "試算表",
+      "補助元帳"
+    ],
+    "answer": "仕訳帳",
+    "explanation_ja": "仕訳帳は時系列、元帳は科目別、試算表は合計・残高の一覧。"
+  },
+  {
+    "id": "ch02-q02",
+    "topic": "取引→仕訳→転記→集計",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "仕訳の右（貸方）を先に決めるために確認するのは？",
+    "choices": [
+      "支払手段",
+      "取引先の住所",
+      "税率",
+      "伝票番号"
+    ],
+    "answer": "支払手段",
+    "explanation_ja": "右は“出ていく側”。現金／振込（普通）／小切手（当座）等の手段で右を先決するのが早道。"
+  },
+  {
+    "id": "ch02-q03",
+    "topic": "取引→仕訳→転記→集計",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】現金売上 1,000円があった。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "現金",
+        "amount": 1000
+      },
+      {
+        "side": "Cr",
+        "account": "売上",
+        "amount": 1000
+      }
+    ],
+    "explanation_ja": "収益（売上）の発生は貸方、現金の増加は借方。"
+  },
+  {
+    "id": "ch02-q04",
+    "topic": "取引→仕訳→転記→集計",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】現金 30,000円を普通預金に預け入れた。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "普通預金",
+        "amount": 30000
+      },
+      {
+        "side": "Cr",
+        "account": "現金",
+        "amount": 30000
+      }
+    ],
+    "explanation_ja": "資産間の振替。入るのは普通預金、出るのは現金。"
+  },
+  {
+    "id": "ch02-q05",
+    "topic": "取引→仕訳→転記→集計",
+    "difficulty": "standard",
+    "question_type": "journal_mcq",
+    "prompt_ja": "【取引】小切手を振り出して備品 20,000円を購入した。正しい仕訳はどれ？",
+    "choices": [
+      "（借）備品 20,000 / （貸）当座預金 20,000",
+      "（借）備品 20,000 / （貸）普通預金 20,000",
+      "（借）消耗品費 20,000 / （貸）現金 20,000",
+      "（借）当座預金 20,000 / （貸）備品 20,000"
+    ],
+    "answer": "（借）備品 20,000 / （貸）当座預金 20,000",
+    "explanation_ja": "小切手の振出は当座預金からの支払。備品の取得は借方。"
+  },
+  {
+    "id": "ch02-q06",
+    "topic": "取引→仕訳→転記→集計",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "試算表で“合計”と“残高”の違いとして正しいのはどれ？",
+    "choices": [
+      "合計＝期間の動き、残高＝期末の位置",
+      "合計＝期末の位置、残高＝期間の動き",
+      "どちらも同じ意味",
+      "合計は費用のみ、残高は資産のみ"
+    ],
+    "answer": "合計＝期間の動き、残高＝期末の位置",
+    "explanation_ja": "合計は借方合計・貸方合計、残高は差額（期末の位置）。"
+  }
+]
