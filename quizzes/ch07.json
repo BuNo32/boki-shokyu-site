@@ -1,0 +1,282 @@
+[
+  {
+    "id": "ch07-q01",
+    "topic": "その他債権債務",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "売買以外の代金をあとで受け取る権利に使う科目は？",
+    "choices": ["売掛金", "未収入金", "前受金", "仮受金"],
+    "answer": "未収入金",
+    "explanation_ja": "商品売買は売掛金、売買以外は未収入金。"
+  },
+  {
+    "id": "ch07-q02",
+    "topic": "その他債権債務",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "内容未確定の前渡しに使う科目は？",
+    "choices": ["前払金", "仮払金", "立替金", "預り金"],
+    "answer": "仮払金",
+    "explanation_ja": "用途が未確定なら仮払金。確定なら前払金。"
+  },
+  {
+    "id": "ch07-q03",
+    "topic": "その他債権債務",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】備品の予約金 30,000 円を振込で支払った。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "前払金",
+        "amount": 30000
+      },
+      {
+        "side": "Cr",
+        "account": "普通預金",
+        "amount": 30000
+      }
+    ],
+    "explanation_ja": "前払金は先払いの前金。"
+  },
+  {
+    "id": "ch07-q04",
+    "topic": "その他債権債務",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】備品（80,000 円）を受け取り、予約時の前払金 30,000 円を充当し、残額を振込で支払った。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "備品",
+        "amount": 80000
+      },
+      {
+        "side": "Cr",
+        "account": "前払金",
+        "amount": 30000
+      },
+      {
+        "side": "Cr",
+        "account": "普通預金",
+        "amount": 50000
+      }
+    ],
+    "explanation_ja": "前払金の消し込み＋不足分の支払。複合は2行以上でもOK（4列の形を維持）。"
+  },
+  {
+    "id": "ch07-q05",
+    "topic": "その他債権債務",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】前受金 10,000 円を受け取った（商品は後日）。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "現金",
+        "amount": 10000
+      },
+      {
+        "side": "Cr",
+        "account": "前受金",
+        "amount": 10000
+      }
+    ],
+    "explanation_ja": "お金が先に入るので前受金（負債）。"
+  },
+  {
+    "id": "ch07-q06",
+    "topic": "その他債権債務",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】上記の商品の出荷（総額 50,000 円。前受 10,000 円を充当、残りは掛け）。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "前受金",
+        "amount": 10000
+      },
+      {
+        "side": "Dr",
+        "account": "売掛金",
+        "amount": 40000
+      },
+      {
+        "side": "Cr",
+        "account": "売上",
+        "amount": 50000
+      }
+    ],
+    "explanation_ja": "前受金を消し込み、残額は売掛金で計上。"
+  },
+  {
+    "id": "ch07-q07",
+    "topic": "その他債権債務",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】備品を掛けで販売した 20,000 円（売買以外の収益として処理）。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "未収入金",
+        "amount": 20000
+      },
+      {
+        "side": "Cr",
+        "account": "雑収入",
+        "amount": 20000
+      }
+    ],
+    "explanation_ja": "売買以外の受取→未収入金。収益科目は状況に応じて（ここでは雑収入）。"
+  },
+  {
+    "id": "ch07-q08",
+    "topic": "その他債権債務",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】備品を掛けで購入した 12,000 円。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "備品",
+        "amount": 12000
+      },
+      {
+        "side": "Cr",
+        "account": "未払金",
+        "amount": 12000
+      }
+    ],
+    "explanation_ja": "売買以外の支払義務→未払金。"
+  },
+  {
+    "id": "ch07-q09",
+    "topic": "その他債権債務",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "従業員のために会社が一時的に支払ったときに使う科目は？",
+    "choices": ["仮払金", "立替金", "前払金", "未収入金"],
+    "answer": "立替金",
+    "explanation_ja": "他人のために支払った＝立替金。"
+  },
+  {
+    "id": "ch07-q10",
+    "topic": "その他債権債務",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "内容不明の入金を一時的に置く科目は？",
+    "choices": ["前受金", "仮受金", "未収入金", "売掛金"],
+    "answer": "仮受金",
+    "explanation_ja": "正体がわかるまで仮受金で仮置き。"
+  },
+  {
+    "id": "ch07-q11",
+    "topic": "その他債権債務",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】社員出張のため、仮払い 20,000 円を現金で渡した。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "仮払金",
+        "amount": 20000
+      },
+      {
+        "side": "Cr",
+        "account": "現金",
+        "amount": 20000
+      }
+    ],
+    "explanation_ja": "用途未確定の前渡し＝仮払金。"
+  },
+  {
+    "id": "ch07-q12",
+    "topic": "その他債権債務",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】上記の精算：旅費 18,000 円の領収書提出、差額 2,000 円が社員から返金された。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "旅費交通費",
+        "amount": 18000
+      },
+      {
+        "side": "Cr",
+        "account": "仮払金",
+        "amount": 20000
+      },
+      {
+        "side": "Dr",
+        "account": "現金",
+        "amount": 2000
+      }
+    ],
+    "explanation_ja": "仮払金を費用と現金返金で解消。"
+  },
+  {
+    "id": "ch07-q13",
+    "topic": "その他債権債務",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】給与から社会保険料 8,000 円を預かった（控除）。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "給料手当",
+        "amount": 8000
+      },
+      {
+        "side": "Cr",
+        "account": "預り金",
+        "amount": 8000
+      }
+    ],
+    "explanation_ja": "預かった分は預り金（負債）。"
+  },
+  {
+    "id": "ch07-q14",
+    "topic": "その他債権債務",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】上記の預り金 8,000 円を振込で納付した。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "預り金",
+        "amount": 8000
+      },
+      {
+        "side": "Cr",
+        "account": "普通預金",
+        "amount": 8000
+      }
+    ],
+    "explanation_ja": "負債（預り金）を減らす。"
+  },
+  {
+    "id": "ch07-q15",
+    "topic": "その他債権債務",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "次のうち、「売買以外の支払い」に関する負債はどれ？",
+    "choices": ["買掛金", "未払金", "仮受金", "前受金"],
+    "answer": "未払金",
+    "explanation_ja": "商品以外の支払義務→未払金。"
+  },
+  {
+    "id": "ch07-q16",
+    "topic": "その他債権債務",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "次の組み合わせで性質が一致しているのはどれ？",
+    "choices": [
+      "前払金＝負債、前受金＝資産",
+      "前払金＝資産、前受金＝負債",
+      "未収入金＝負債、未払金＝資産",
+      "仮払金＝負債、仮受金＝資産"
+    ],
+    "answer": "前払金＝資産、前受金＝負債",
+    "explanation_ja": "前払金は資産（権利）、前受金は負債（義務）。"
+  }
+]

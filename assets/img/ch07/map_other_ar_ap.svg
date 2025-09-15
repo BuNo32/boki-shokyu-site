@@ -1,0 +1,20 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 260" role="img" aria-label="その他の債権・債務マップ">
+  <style>
+    .box{fill:#fff;stroke:#94a3b8;stroke-width:2}
+    .lbl{font:14px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
+    .muted{fill:#f8fafc;stroke:#e5e7eb}
+  </style>
+  <text x="460" y="28" text-anchor="middle" class="lbl">「だれに対して」「何のために」— 科目はここで決まる</text>
+  <rect x="60" y="60" width="360" height="60" rx="10" class="box"/>
+  <text x="240" y="95" text-anchor="middle" class="lbl">売買以外の受け取り → 未収入金（資産）</text>
+  <rect x="500" y="60" width="360" height="60" rx="10" class="box"/>
+  <text x="680" y="95" text-anchor="middle" class="lbl">売買以外の支払い → 未払金（負債）</text>
+  <rect x="60" y="140" width="360" height="60" rx="10" class="box"/>
+  <text x="240" y="175" text-anchor="middle" class="lbl">先に払った前金 → 前払金（資産）</text>
+  <rect x="500" y="140" width="360" height="60" rx="10" class="box"/>
+  <text x="680" y="175" text-anchor="middle" class="lbl">先にもらった前受け → 前受金（負債）</text>
+  <rect x="60" y="200" width="360" height="40" rx="10" class="muted"/>
+  <text x="240" y="228" text-anchor="middle" class="lbl">立替金（資産）／仮払金（資産）</text>
+  <rect x="500" y="200" width="360" height="40" rx="10" class="muted"/>
+  <text x="680" y="228" text-anchor="middle" class="lbl">預り金（負債）／仮受金（負債）</text>
+</svg>

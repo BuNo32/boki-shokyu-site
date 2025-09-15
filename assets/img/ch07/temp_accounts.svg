@@ -1,0 +1,15 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" role="img" aria-label="仮払・仮受・立替・預りの使い分け">
+  <style>
+    .box{fill:#fff;stroke:#94a3b8;stroke-width:2}
+    .lbl{font:14px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
+  </style>
+  <text x="450" y="26" text-anchor="middle" class="lbl">仮払/仮受＝正体不明の一時置き／立替/預り＝“誰かのために”動かした</text>
+  <rect x="80" y="60" width="320" height="60" rx="10" class="box"/>
+  <text x="240" y="95" text-anchor="middle" class="lbl">仮払金（資産）：内容未確定の前渡し</text>
+  <rect x="500" y="60" width="320" height="60" rx="10" class="box"/>
+  <text x="660" y="95" text-anchor="middle" class="lbl">仮受金（負債）：内容未確定の預かり</text>
+  <rect x="80" y="140" width="320" height="60" rx="10" class="box"/>
+  <text x="240" y="175" text-anchor="middle" class="lbl">立替金（資産）：他人の代わりに支出</text>
+  <rect x="500" y="140" width="320" height="60" rx="10" class="box"/>
+  <text x="660" y="175" text-anchor="middle" class="lbl">預り金（負債）：他人から預ったお金</text>
+</svg>

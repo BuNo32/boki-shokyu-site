@@ -1,0 +1,11 @@
+{
+  "quizzes": [
+    {
+      "quizId": "ch07",
+      "title": "第7章 その他の債権・債務（章末）",
+      "file": "ch07.json",
+      "page": "ch07/99-quiz.html",
+      "basePath": "quizzes/"
+    }
+  ]
+}
