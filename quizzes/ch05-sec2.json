@@ -55,12 +55,7 @@
     "difficulty": "basic",
     "question_type": "term_mcq",
     "prompt_ja": "「銀行振込」の支払に通常用いる勘定はどれか？",
-    "choices": [
-      "現金",
-      "普通預金",
-      "当座預金",
-      "受取手形"
-    ],
+    "choices": ["現金", "普通預金", "当座預金", "受取手形"],
     "answer": "普通預金",
     "explanation_ja": "銀行振込は普通預金で処理する。"
   }

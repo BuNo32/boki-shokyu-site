@@ -1,81 +1,140 @@
 /* Minimal styles for prototypes */
 
 /* Progress bar */
-.progress { background: #eee; height: 8px; border-radius: 4px; overflow: hidden; }
-.progress > span { display: block; height: 100%; width: 0; background: #4caf50; transition: width .3s ease; }
+.progress {
+  background: #eee;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.progress > span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: #4caf50;
+  transition: width 0.3s ease;
+}
 
 /* Journal input table */
-table.jrnl { border-collapse: collapse; width: 100%; margin: .5rem 0 1rem; }
-table.jrnl th, table.jrnl td { border: 1px solid #ccc; padding: .4rem; }
+table.jrnl {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0.5rem 0 1rem;
+}
+table.jrnl th,
+table.jrnl td {
+  border: 1px solid #ccc;
+  padding: 0.4rem;
+}
 
 /* T-account quick layout */
-.taccount { display: flex; gap: 12px; }
-.taccount .col { flex: 1; border: 1px solid #ddd; padding: 8px; }
-.taccount .row { display: flex; justify-content: space-between; padding: 2px 0; }
+.taccount {
+  display: flex;
+  gap: 12px;
+}
+.taccount .col {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.taccount .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 0;
+}
 
 /* Trial balance table */
-table.trial-balance { border-collapse: collapse; width: 100%; }
-table.trial-balance th, table.trial-balance td { border: 1px solid #ddd; padding: .4rem; text-align: right; }
-table.trial-balance th:first-child, table.trial-balance td:first-child { text-align: left; }
+table.trial-balance {
+  border-collapse: collapse;
+  width: 100%;
+}
+table.trial-balance th,
+table.trial-balance td {
+  border: 1px solid #ddd;
+  padding: 0.4rem;
+  text-align: right;
+}
+table.trial-balance th:first-child,
+table.trial-balance td:first-child {
+  text-align: left;
+}
 
 /* 4列仕訳（公式方式） */
-table.jrnl4{
-  width:100%;
+table.jrnl4 {
+  width: 100%;
   border-collapse: collapse;
-  margin:.5rem 0 0;
+  margin: 0.5rem 0 0;
 }
-table.jrnl4 th, table.jrnl4 td{
-  border:1px solid #e5e7eb;
-  padding:.35rem .5rem;
+table.jrnl4 th,
+table.jrnl4 td {
+  border: 1px solid #e5e7eb;
+  padding: 0.35rem 0.5rem;
   vertical-align: middle;
 }
-table.jrnl4 th{ background:#f7f7f7; text-align:center; }
-table.jrnl4 td input[type="number"], table.jrnl4 td select{
-  width:100%;
-  box-sizing:border-box;
-  border:2px solid #cbd5e1; /* slate-300 */
-  border-radius:6px;
-  padding:.4rem .5rem;
-  background:#fff;
+table.jrnl4 th {
+  background: #f7f7f7;
+  text-align: center;
 }
-table.jrnl4 td input[type="number"]:focus, table.jrnl4 td select:focus{
-  outline:none;
-  border-color:#1976d2;
-  box-shadow:0 0 0 3px rgba(25,118,210,.15);
+table.jrnl4 td input[type='number'],
+table.jrnl4 td select {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #cbd5e1; /* slate-300 */
+  border-radius: 6px;
+  padding: 0.4rem 0.5rem;
+  background: #fff;
 }
-.jrnl4-total{
-  margin:.4rem 0 .2rem; font-size:.9rem; opacity:.9;
+table.jrnl4 td input[type='number']:focus,
+table.jrnl4 td select:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.15);
+}
+.jrnl4-total {
+  margin: 0.4rem 0 0.2rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
 }
 
 /* 旧 2列仕訳の入力も目立たせる */
-table.jrnl td input[type="number"], table.jrnl td input[type="text"]{
-  width:100%;
-  box-sizing:border-box;
-  border:2px solid #cbd5e1;
-  border-radius:6px;
-  padding:.35rem .5rem;
+table.jrnl td input[type='number'],
+table.jrnl td input[type='text'] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 0.35rem 0.5rem;
 }
-table.jrnl td input:focus{ outline:none; border-color:#1976d2; box-shadow:0 0 0 3px rgba(25,118,210,.15); }
+table.jrnl td input:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.15);
+}
 
 /* 採点ボタンのクリック枠 */
-.q .score-frame{
-  display:inline-block;
-  margin-top:.6rem;
-  border:2px solid #1976d2;
-  background:#1976d2;
-  color:#fff;
-  border-radius:8px;
-  padding:.45rem .9rem;
-  cursor:pointer;
-  user-select:none;
+.q .score-frame {
+  display: inline-block;
+  margin-top: 0.6rem;
+  border: 2px solid #1976d2;
+  background: #1976d2;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.45rem 0.9rem;
+  cursor: pointer;
+  user-select: none;
 }
-.q .score-frame:hover{ background:#1565c0; border-color:#1565c0; }
-.q .score-frame:active{ transform: translateY(1px); }
-.q .score-frame button{
-  background:transparent;
-  border:0;
-  color:inherit;
-  font:inherit;
-  padding:0;
-  cursor:inherit;
+.q .score-frame:hover {
+  background: #1565c0;
+  border-color: #1565c0;
+}
+.q .score-frame:active {
+  transform: translateY(1px);
+}
+.q .score-frame button {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  padding: 0;
+  cursor: inherit;
 }

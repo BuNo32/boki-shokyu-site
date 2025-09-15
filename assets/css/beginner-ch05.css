@@ -1,10 +1,46 @@
 /* beginner-ch05.css */
-.infobox, .note-box, .warn-box { border-radius:.6rem; padding:1rem; margin:1rem 0; }
-.infobox { border:1px solid #e5e7eb; background:#f8fafc; }
-.note-box { border:1px solid #dbeafe; background:#eff6ff; }
-.warn-box { border:1px solid #fde68a; background:#fffbeb; }
-.badge{display:inline-block;padding:.15rem .5rem;border-radius:9999px;background:#eef2ff}
-.kbd{border:1px solid #cbd5e1;border-bottom-width:2px;padding:.06rem .3rem;border-radius:.25rem;font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace}
-.table-compact th,.table-compact td{padding:.38rem .6rem}
-.table-focus tr:hover{background:#fcfcfc}
-svg.block{display:block; max-width:560px; width:100%; margin:.6rem auto;}
+.infobox,
+.note-box,
+.warn-box {
+  border-radius: 0.6rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+.infobox {
+  border: 1px solid #e5e7eb;
+  background: #f8fafc;
+}
+.note-box {
+  border: 1px solid #dbeafe;
+  background: #eff6ff;
+}
+.warn-box {
+  border: 1px solid #fde68a;
+  background: #fffbeb;
+}
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  background: #eef2ff;
+}
+.kbd {
+  border: 1px solid #cbd5e1;
+  border-bottom-width: 2px;
+  padding: 0.06rem 0.3rem;
+  border-radius: 0.25rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+.table-compact th,
+.table-compact td {
+  padding: 0.38rem 0.6rem;
+}
+.table-focus tr:hover {
+  background: #fcfcfc;
+}
+svg.block {
+  display: block;
+  max-width: 560px;
+  width: 100%;
+  margin: 0.6rem auto;
+}

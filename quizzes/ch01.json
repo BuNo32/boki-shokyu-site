@@ -5,12 +5,7 @@
     "difficulty": "basic",
     "question_type": "term_mcq",
     "prompt_ja": "次のうち、左（借方）で増える要素はどれ？",
-    "choices": [
-      "資産と費用",
-      "負債と収益",
-      "純資産と負債",
-      "収益と純資産"
-    ],
+    "choices": ["資産と費用", "負債と収益", "純資産と負債", "収益と純資産"],
     "answer": "資産と費用",
     "explanation_ja": "資産・費用は借方（左）で増加、負債・純資産・収益は貸方（右）で増加。"
   },
@@ -20,12 +15,7 @@
     "difficulty": "basic",
     "question_type": "term_mcq",
     "prompt_ja": "次のうち、取引を日付順に記録する帳簿はどれ？",
-    "choices": [
-      "仕訳帳",
-      "総勘定元帳",
-      "試算表",
-      "補助元帳"
-    ],
+    "choices": ["仕訳帳", "総勘定元帳", "試算表", "補助元帳"],
     "answer": "仕訳帳",
     "explanation_ja": "仕訳帳は時系列、元帳は科目別、試算表は全体の合計と残高を一覧にする。"
   },
@@ -70,10 +60,7 @@
     "difficulty": "basic",
     "question_type": "term_mcq",
     "prompt_ja": "「お金が出ていく側」を表す記入はどちら？",
-    "choices": [
-      "借方（左）",
-      "貸方（右）"
-    ],
+    "choices": ["借方（左）", "貸方（右）"],
     "answer": "貸方（右）",
     "explanation_ja": "右（貸方）は“出ていく”側。"
   }

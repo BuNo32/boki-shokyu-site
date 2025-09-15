@@ -1,0 +1,22 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 260" role="img" aria-label="支払手段→勘定（右側）の早見表">
+  <style>
+    .box{fill:#fff;stroke:#94a3b8;stroke-width:2}
+    .lbl{font:15px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
+    .arrow{stroke:#64748b;stroke-width:2;marker-end:url(#a)}
+  </style>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <text x="430" y="35" text-anchor="middle" class="lbl">支払手段を見たら、まず右（貸方）が決まる</text>
+  <rect x="60" y="60" width="210" height="60" rx="8" class="box"/>
+  <text x="165" y="95" text-anchor="middle" class="lbl">現 金</text>
+  <rect x="320" y="60" width="210" height="60" rx="8" class="box"/>
+  <text x="425" y="95" text-anchor="middle" class="lbl">振 込 → 普通預金</text>
+  <rect x="580" y="60" width="210" height="60" rx="8" class="box"/>
+  <text x="685" y="95" text-anchor="middle" class="lbl">小切手 → 当座預金</text>
+  <text x="165" y="150" text-anchor="middle" class="lbl">→ 右：現金</text>
+  <text x="425" y="150" text-anchor="middle" class="lbl">→ 右：普通預金</text>
+  <text x="685" y="150" text-anchor="middle" class="lbl">→ 右：当座預金</text>
+</svg>

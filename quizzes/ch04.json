@@ -1,0 +1,202 @@
+[
+  {
+    "id": "ch04-q01",
+    "topic": "現金・預金（基礎）",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "支払手段から右（貸方）を先に決めます。小切手で支払った場合、右にくる科目は？",
+    "choices": ["現金", "普通預金", "当座預金", "売掛金"],
+    "answer": "当座預金",
+    "explanation_ja": "小切手の振出は当座預金（右）で処理。"
+  },
+  {
+    "id": "ch04-q02",
+    "topic": "現金・預金（基礎）",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "振込で支払ったとき、右（貸方）に来るのは？",
+    "choices": ["現金", "普通預金", "当座預金", "支払手数料"],
+    "answer": "普通預金",
+    "explanation_ja": "振込は普通預金から出入りするのが基本。"
+  },
+  {
+    "id": "ch04-q03",
+    "topic": "現金・預金（基礎）",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】現金売上 1,000円があった。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "現金",
+        "amount": 1000
+      },
+      {
+        "side": "Cr",
+        "account": "売上",
+        "amount": 1000
+      }
+    ],
+    "explanation_ja": "収益（売上）は右、現金の増加は左。"
+  },
+  {
+    "id": "ch04-q04",
+    "topic": "現金・預金（基礎）",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】現金 30,000円を普通預金に預け入れた。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "普通預金",
+        "amount": 30000
+      },
+      {
+        "side": "Cr",
+        "account": "現金",
+        "amount": 30000
+      }
+    ],
+    "explanation_ja": "資産どうしの振替。入る口座が左、出る口座が右。"
+  },
+  {
+    "id": "ch04-q05",
+    "topic": "現金・預金（基礎）",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】小切手を振り出して備品 20,000円を購入した。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "備品",
+        "amount": 20000
+      },
+      {
+        "side": "Cr",
+        "account": "当座預金",
+        "amount": 20000
+      }
+    ],
+    "explanation_ja": "小切手→当座預金が右。備品の取得は左。"
+  },
+  {
+    "id": "ch04-q06",
+    "topic": "現金・預金（基礎）",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "「右（貸方）」のイメージとして適切なのはどれ？",
+    "choices": ["入ってくる側", "出ていく側", "どちらでもない", "必ず収益のこと"],
+    "answer": "出ていく側",
+    "explanation_ja": "まず“出ていく側”と覚えると仕訳が速くなる。"
+  },
+  {
+    "id": "ch04-q07",
+    "topic": "現金・預金（基礎）",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】得意先から売掛金 50,000円の振込入金があった。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "普通預金",
+        "amount": 50000
+      },
+      {
+        "side": "Cr",
+        "account": "売掛金",
+        "amount": 50000
+      }
+    ],
+    "explanation_ja": "振込入金→普通預金が左、売掛金の減少が右。"
+  },
+  {
+    "id": "ch04-q08",
+    "topic": "現金・預金（基礎）",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】買掛金 90,000円を現金で支払った。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "買掛金",
+        "amount": 90000
+      },
+      {
+        "side": "Cr",
+        "account": "現金",
+        "amount": 90000
+      }
+    ],
+    "explanation_ja": "負債の減少は左、現金の支払は右。"
+  },
+  {
+    "id": "ch04-q09",
+    "topic": "現金・預金（基礎）",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "4列仕訳の並びとして正しいものはどれ？",
+    "choices": [
+      "借方科目・金額／貸方科目・金額",
+      "金額・借方科目／金額・貸方科目",
+      "貸方科目・金額／借方科目・金額",
+      "借方科目・貸方科目／金額・金額"
+    ],
+    "answer": "借方科目・金額／貸方科目・金額",
+    "explanation_ja": "公式の解答様式に合わせる。"
+  },
+  {
+    "id": "ch04-q10",
+    "topic": "現金・預金（基礎）",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】現金で消耗品 1,200円を購入した。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "消耗品費",
+        "amount": 1200
+      },
+      {
+        "side": "Cr",
+        "account": "現金",
+        "amount": 1200
+      }
+    ],
+    "explanation_ja": "費用の発生は左、現金の支払は右。"
+  },
+  {
+    "id": "ch04-q11",
+    "topic": "現金・預金（基礎）",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "「手段で右／目的で左」とは何を短く言い換えたもの？",
+    "choices": [
+      "支払手段が右（貸方）を決め、取引の目的が左（借方）を決める",
+      "目的が右、手段が左を決める",
+      "常に現金が右、売上が左",
+      "意味はない語呂合わせ"
+    ],
+    "answer": "支払手段が右（貸方）を決め、取引の目的が左（借方）を決める",
+    "explanation_ja": "本章の最重要ルール。"
+  },
+  {
+    "id": "ch04-q12",
+    "topic": "現金・預金（基礎）",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】現金 40,000円を当座預金に預け入れた。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "当座預金",
+        "amount": 40000
+      },
+      {
+        "side": "Cr",
+        "account": "現金",
+        "amount": 40000
+      }
+    ],
+    "explanation_ja": "資産どうしの振替。入る口座が左、出る口座が右。"
+  }
+]

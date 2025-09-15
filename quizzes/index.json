@@ -14,9 +14,20 @@
       "page": "ch02/99-quiz.html",
       "basePath": "quizzes/"
     },
-  { "quizId":"ch03", "title":"第3章 帳簿と伝票（章末）",
-  "file":"ch03.json", "page":"ch03/99-quiz.html", "basePath":"quizzes/" }
-
+    {
+      "quizId": "ch03",
+      "title": "第3章 帳簿と伝票（章末）",
+      "file": "ch03.json",
+      "page": "ch03/99-quiz.html",
+      "basePath": "quizzes/"
+    },
+    {
+      "quizId": "ch04",
+      "title": "第4章 現金・預金（基礎）",
+      "file": "ch04.json",
+      "page": "ch04/99-quiz.html",
+      "basePath": "quizzes/"
+    },
     {
       "quizId": "ch05",
       "title": "第5章 現金・預金",
