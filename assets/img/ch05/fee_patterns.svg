@@ -1,0 +1,27 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" role="img" aria-label="振込手数料の2パターン">
+  <style>
+    .box{fill:#fff;stroke:#94a3b8;stroke-width:2}
+    .lbl{font:14px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
+    .arrow{stroke:#64748b;stroke-width:2;marker-end:url(#a)}
+    .muted{fill:#f8fafc;stroke:#e5e7eb}
+  </style>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <text x="450" y="28" text-anchor="middle" class="lbl">A: 送金者が手数料を払う（仕向）／ B: 受取側の口座から差引（被仕向）</text>
+  <!-- A -->
+  <rect x="40" y="60" width="380" height="150" rx="10" class="box"/>
+  <text x="230" y="85" text-anchor="middle" class="lbl">A. 仕向手数料（こちらが払う）</text>
+  <text x="70" y="120" class="lbl">買掛金の支払 90,000</text>
+  <text x="70" y="150" class="lbl">支払手数料 550 を同時に引落</text>
+  <text x="70" y="180" class="lbl">→ 普通預金から 90,550 出る</text>
+
+  <!-- B -->
+  <rect x="480" y="60" width="380" height="150" rx="10" class="box"/>
+  <text x="670" y="85" text-anchor="middle" class="lbl">B. 被仕向手数料（こちらの口座で差引）</text>
+  <text x="510" y="120" class="lbl">売掛金 50,000 の入金があったが</text>
+  <text x="510" y="150" class="lbl">入金手数料 330 が差引かれて 49,670 入金</text>
+  <text x="510" y="180" class="lbl">→ 普通預金 +49,670、手数料 330 を費用で計上</text>
+</svg>

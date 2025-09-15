@@ -1,0 +1,23 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 230" role="img" aria-label="現金過不足の流れ">
+  <style>
+    .box{fill:#fff;stroke:#94a3b8;stroke-width:2}
+    .lbl{font:14px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
+    .arrow{stroke:#64748b;stroke-width:2;marker-end:url(#a)}
+  </style>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <text x="440" y="28" text-anchor="middle" class="lbl">現金の数が合わない！ → その場で「現金過不足」へ → 後で原因判明 or 期末処理</text>
+  <rect x="60" y="70" width="220" height="60" rx="8" class="box"/>
+  <text x="170" y="105" text-anchor="middle" class="lbl">数が合わない</text>
+  <line x1="280" y1="100" x2="340" y2="100" class="arrow"/>
+  <rect x="340" y="70" width="220" height="60" rx="8" class="box"/>
+  <text x="450" y="105" text-anchor="middle" class="lbl">現金過不足で一時処理</text>
+  <line x1="560" y1="100" x2="620" y2="100" class="arrow"/>
+  <rect x="620" y="50" width="220" height="40" rx="8" class="box"/>
+  <text x="730" y="75" text-anchor="middle" class="lbl">原因判明 → 科目で修正</text>
+  <rect x="620" y="120" width="220" height="40" rx="8" class="box"/>
+  <text x="730" y="145" text-anchor="middle" class="lbl">判明せず → 期末：雑損失/雑収入</text>
+</svg>

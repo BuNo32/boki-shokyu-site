@@ -1,0 +1,12 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 210" role="img" aria-label="差引入金の4列の書き方（2行でバランス）">
+  <style>
+    .lbl{font:14px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
+    .line{stroke:#94a3b8;stroke-width:2}
+  </style>
+  <text x="440" y="30" text-anchor="middle" class="lbl">差引入金は「2行」に分けると4列が崩れない</text>
+  <line x1="80" y1="50" x2="800" y2="50" class="line"/>
+  <text x="140" y="80" class="lbl">① 借：普通預金 49,670 ／ 貸：売掛金 49,670</text>
+  <text x="140" y="120" class="lbl">② 借：支払手数料 330 ／ 貸：売掛金 330</text>
+  <line x1="80" y1="150" x2="800" y2="150" class="line"/>
+  <text x="440" y="178" text-anchor="middle" class="lbl">合計で売掛金 50,000 が消え、預金 49,670 と手数料 330 を記録</text>
+</svg>

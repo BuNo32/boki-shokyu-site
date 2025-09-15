@@ -1,115 +1,272 @@
 [
   {
-    "id": "ch05-q0001",
-    "topic": "現金・預金",
+    "id": "ch05-q01",
+    "topic": "応用",
     "difficulty": "basic",
     "question_type": "term_mcq",
-    "prompt_ja": "小切手を振り出して支払ったとき、主に減少する勘定科目はどれか？",
-    "choices": ["現金", "当座預金", "普通預金", "定期預金"],
-    "answer": "当座預金",
-    "explanation_ja": "小切手の振出は当座預金口座からの支払で処理する。",
-    "metadata": { "accounts_used": ["当座預金"], "tags": ["小切手"] }
+    "prompt_ja": "振込手数料をこちら（送金者）が負担した。右（貸方）に来る科目の組み合わせとして正しいのは？",
+    "choices": ["普通預金のみ", "支払手数料のみ", "普通預金と支払手数料", "売掛金と支払手数料"],
+    "answer": "普通預金と支払手数料",
+    "explanation_ja": "振込代金本体と手数料がいずれも普通預金から出る。手数料は費用（借方）。"
   },
   {
-    "id": "ch05-q0002",
-    "topic": "現金・預金",
+    "id": "ch05-q02",
+    "topic": "応用",
     "difficulty": "standard",
-    "question_type": "journal_mcq",
-    "prompt_ja": "【取引】仕入先へ買掛金¥90,000を振込で支払った。正しい仕訳はどれか？",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】買掛金 90,000 円を振込で支払った。振込手数料 550 円が同時に引き落とされた。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "買掛金",
+        "amount": 90000
+      },
+      {
+        "side": "Cr",
+        "account": "普通預金",
+        "amount": 90000
+      },
+      {
+        "side": "Dr",
+        "account": "支払手数料",
+        "amount": 550
+      },
+      {
+        "side": "Cr",
+        "account": "普通預金",
+        "amount": 550
+      }
+    ],
+    "explanation_ja": "複合は2行で4列を守る。"
+  },
+  {
+    "id": "ch05-q03",
+    "topic": "応用",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】売掛金 50,000 円の振込入金があった。入金手数料 330 円が差引かれて、49,670 円が口座に入金。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "普通預金",
+        "amount": 49670
+      },
+      {
+        "side": "Cr",
+        "account": "売掛金",
+        "amount": 49670
+      },
+      {
+        "side": "Dr",
+        "account": "支払手数料",
+        "amount": 330
+      },
+      {
+        "side": "Cr",
+        "account": "売掛金",
+        "amount": 330
+      }
+    ],
+    "explanation_ja": "差引入金は売掛金を金額で2行に割ると4列が崩れない。"
+  },
+  {
+    "id": "ch05-q04",
+    "topic": "応用",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "受取利息が口座に入金された。正しい仕訳はどれ？",
     "choices": [
-      "（借）買掛金 90,000 / （貸）普通預金 90,000",
-      "（借）買掛金 90,000 / （貸）当座預金 90,000",
-      "（借）現金 90,000 / （貸）買掛金 90,000",
-      "（借）仕入 90,000 / （貸）普通預金 90,000"
+      "（借）受取利息 ／（貸）普通預金",
+      "（借）普通預金 ／（貸）受取利息",
+      "（借）現金 ／（貸）受取利息",
+      "（借）受取利息 ／（貸）現金"
     ],
-    "answer": "（借）買掛金 90,000 / （貸）普通預金 90,000",
-    "explanation_ja": "振込は普通預金で処理するのが原則。買掛金の支払は負債の減少（借方）。",
-    "metadata": { "accounts_used": ["買掛金", "普通預金"], "tags": ["振込", "買掛金"] }
+    "answer": "（借）普通預金 ／（貸）受取利息",
+    "explanation_ja": "口座が増えるので借方は普通預金、収益は貸方。"
   },
   {
-    "id": "ch05-q0003",
-    "topic": "現金・預金",
+    "id": "ch05-q05",
+    "topic": "応用",
     "difficulty": "standard",
     "question_type": "journal_input",
-    "prompt_ja": "【取引】普通預金から現金¥30,000を引き出した。",
+    "prompt_ja": "【取引】ATM 手数料 220 円が口座から引き落とされた。",
     "answer": [
-      { "side": "Dr", "account": "現金", "amount": 30000 },
-      { "side": "Cr", "account": "普通預金", "amount": 30000 }
+      {
+        "side": "Dr",
+        "account": "支払手数料",
+        "amount": 220
+      },
+      {
+        "side": "Cr",
+        "account": "普通預金",
+        "amount": 220
+      }
     ],
-    "explanation_ja": "資産間の振替。現金が増加（借方）、普通預金が減少（貸方）。",
-    "metadata": { "accounts_used": ["現金", "普通預金"], "tags": ["資金移動"] }
+    "explanation_ja": "費用（手数料）が増え、普通預金が減る。"
   },
   {
-    "id": "ch05-q0016",
-    "topic": "現金・預金",
-    "difficulty": "plus",
-    "question_type": "journal_input",
-    "prompt_ja": "【取引】仕入先への買掛金¥90,000を振込で支払い、振込手数料¥550も普通預金から引き落とされた。",
-    "answer": [
-      { "side": "Dr", "account": "買掛金", "amount": 90000 },
-      { "side": "Dr", "account": "支払手数料", "amount": 550 },
-      { "side": "Cr", "account": "普通預金", "amount": 90550 }
+    "id": "ch05-q06",
+    "topic": "応用",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "現金が数えたら足りなかった。発見時の一時処理として正しいのは？",
+    "choices": [
+      "（借）現金 ／（貸）現金過不足",
+      "（借）現金過不足 ／（貸）現金",
+      "（借）雑損失 ／（貸）現金過不足",
+      "（借）現金 ／（貸）雑収入"
     ],
-    "explanation_ja": "振込は普通預金の減少。手数料は費用（支払手数料）。複合仕訳のため借方2行・貸方1行。",
-    "metadata": {
-      "accounts_used": ["買掛金", "支払手数料", "普通預金"],
-      "tags": ["振込", "複合仕訳"]
-    }
+    "answer": "（借）現金過不足 ／（貸）現金",
+    "explanation_ja": "不足は一旦「現金過不足（借）」に置いて現金を減らす。"
   },
   {
-    "id": "ch05-q0017",
-    "topic": "現金・預金",
-    "difficulty": "plus",
-    "question_type": "journal_input",
-    "prompt_ja": "【取引】定期預金¥100,000を満期解約し、利息¥400とともに普通預金に入金された（税等は考慮しない）。",
-    "answer": [
-      { "side": "Dr", "account": "普通預金", "amount": 100400 },
-      { "side": "Cr", "account": "定期預金", "amount": 100000 },
-      { "side": "Cr", "account": "受取利息", "amount": 400 }
+    "id": "ch05-q07",
+    "topic": "応用",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "期末まで原因不明の現金不足が解消しない。正しい処理は？",
+    "choices": [
+      "（借）雑収入 ／（貸）現金過不足",
+      "（借）現金過不足 ／（貸）雑収入",
+      "（借）雑損失 ／（貸）現金過不足",
+      "（借）現金過不足 ／（貸）雑損失"
     ],
-    "explanation_ja": "解約により定期預金が減少、同時に利息を受け取り、入金先の普通預金が増加。",
-    "metadata": {
-      "accounts_used": ["普通預金", "定期預金", "受取利息"],
-      "tags": ["満期", "利息", "複合仕訳"]
-    }
+    "answer": "（借）雑損失 ／（貸）現金過不足",
+    "explanation_ja": "不足は損失（雑損失）へ、過剰は収入（雑収入）へ。"
   },
   {
-    "id": "ch05-q0018",
-    "topic": "現金・預金",
+    "id": "ch05-q08",
+    "topic": "応用",
     "difficulty": "standard",
     "question_type": "journal_input",
-    "prompt_ja": "【取引】広告宣伝費¥20,000を小切手を振り出して支払った。",
+    "prompt_ja": "【取引】現金が多かった（過剰）ので、その場で記帳した。金額は 1,000 円。",
     "answer": [
-      { "side": "Dr", "account": "広告宣伝費", "amount": 20000 },
-      { "side": "Cr", "account": "当座預金", "amount": 20000 }
+      {
+        "side": "Dr",
+        "account": "現金",
+        "amount": 1000
+      },
+      {
+        "side": "Cr",
+        "account": "現金過不足",
+        "amount": 1000
+      }
     ],
-    "explanation_ja": "小切手支払は当座預金の減少で処理。",
-    "metadata": { "accounts_used": ["広告宣伝費", "当座預金"], "tags": ["小切手"] }
+    "explanation_ja": "過剰は現金が増える（借）、差額は現金過不足（貸）。"
   },
   {
-    "id": "ch05-q0019",
-    "topic": "現金・預金",
+    "id": "ch05-q09",
+    "topic": "応用",
     "difficulty": "standard",
     "question_type": "journal_input",
-    "prompt_ja": "【取引】普通預金から定期預金¥200,000を預け入れた。",
+    "prompt_ja": "【取引】現金不足の原因が、旅費交通費の記帳漏れだと判明した（1,000 円）。",
     "answer": [
-      { "side": "Dr", "account": "定期預金", "amount": 200000 },
-      { "side": "Cr", "account": "普通預金", "amount": 200000 }
+      {
+        "side": "Dr",
+        "account": "旅費交通費",
+        "amount": 1000
+      },
+      {
+        "side": "Cr",
+        "account": "現金過不足",
+        "amount": 1000
+      }
     ],
-    "explanation_ja": "資産間の振替で借貸同額。",
-    "metadata": { "accounts_used": ["定期預金", "普通預金"], "tags": ["預入", "振替"] }
+    "explanation_ja": "原因判明時は該当科目で現金過不足を解消。"
   },
   {
-    "id": "ch05-q0020",
-    "topic": "現金・預金",
+    "id": "ch05-q10",
+    "topic": "応用",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "通帳に「貸」と表示されるのはどんなとき？",
+    "choices": [
+      "あなたの口座に入金があったとき",
+      "あなたの口座から出金があったとき",
+      "どちらでもない",
+      "銀行の都合による"
+    ],
+    "answer": "あなたの口座に入金があったとき",
+    "explanation_ja": "銀行から見た“あなたへの負債”が増える（貸）。"
+  },
+  {
+    "id": "ch05-q11",
+    "topic": "応用",
     "difficulty": "standard",
     "question_type": "journal_input",
-    "prompt_ja": "【取引】銀行から¥150,000を借り入れ、当座預金口座に入金を受けた。",
+    "prompt_ja": "【取引】受取利息 150 円が普通預金に入金された。",
     "answer": [
-      { "side": "Dr", "account": "当座預金", "amount": 150000 },
-      { "side": "Cr", "account": "借入金", "amount": 150000 }
+      {
+        "side": "Dr",
+        "account": "普通預金",
+        "amount": 150
+      },
+      {
+        "side": "Cr",
+        "account": "受取利息",
+        "amount": 150
+      }
     ],
-    "explanation_ja": "借入により当座預金が増加、対応する負債は借入金。",
-    "metadata": { "accounts_used": ["当座預金", "借入金"], "tags": ["借入金"] }
+    "explanation_ja": "口座が増える（借）、収益が発生（貸）。"
+  },
+  {
+    "id": "ch05-q12",
+    "topic": "応用",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】売掛金 120,000 円の入金。入金手数料 660 円が差引かれて入金された。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "普通預金",
+        "amount": 119340
+      },
+      {
+        "side": "Cr",
+        "account": "売掛金",
+        "amount": 119340
+      },
+      {
+        "side": "Dr",
+        "account": "支払手数料",
+        "amount": 660
+      },
+      {
+        "side": "Cr",
+        "account": "売掛金",
+        "amount": 660
+      }
+    ],
+    "explanation_ja": "差引入金の定型（2行）。"
+  },
+  {
+    "id": "ch05-q13",
+    "topic": "応用",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "差引入金を“1行の複合仕訳”で書こうとすると、4列が崩れがち。どうする？",
+    "choices": ["合計を丸める", "2行に分ける", "金額を書かない", "摘要だけ書く"],
+    "answer": "2行に分ける",
+    "explanation_ja": "公式4列に合わせるため、金額で2行に割る。"
+  },
+  {
+    "id": "ch05-q14",
+    "topic": "応用",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】口座維持手数料 330 円が自動的に引き落とされた。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "支払手数料",
+        "amount": 330
+      },
+      {
+        "side": "Cr",
+        "account": "普通預金",
+        "amount": 330
+      }
+    ],
+    "explanation_ja": "費用（支払手数料）が発生、普通預金が減少。"
   }
 ]
