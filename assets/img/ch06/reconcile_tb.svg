@@ -1,0 +1,15 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 230" role="img" aria-label="売掛・買掛の照合（試算表と補助）">
+  <style>
+    .box{fill:#fff;stroke:#94a3b8;stroke-width:2}
+    .lbl{font:14px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
+  </style>
+  <text x="440" y="30" text-anchor="middle" class="lbl">試算表（総勘定元帳の残高）と、相手先別の明細（補助）をざっくり突合</text>
+  <rect x="110" y="60" width="280" height="140" rx="10" class="box"/>
+  <text x="250" y="90" text-anchor="middle" class="lbl">試算表の残高</text>
+  <text x="250" y="130" text-anchor="middle" class="lbl">売掛金：◯◯◯</text>
+  <text x="250" y="160" text-anchor="middle" class="lbl">買掛金：◯◯◯</text>
+  <rect x="490" y="60" width="280" height="140" rx="10" class="box"/>
+  <text x="630" y="90" text-anchor="middle" class="lbl">相手先別の合計</text>
+  <text x="630" y="130" text-anchor="middle" class="lbl">A社＋B社＋…＝◯◯◯</text>
+  <text x="440" y="200" text-anchor="middle" class="lbl">※ 初級では概念だけ。実務は補助簿で詳しく管理。</text>
+</svg>

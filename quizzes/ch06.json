@@ -1,0 +1,297 @@
+[
+  {
+    "id": "ch06-q01",
+    "topic": "掛けの基本",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "売掛金の説明として最も適切なのはどれ？",
+    "choices": [
+      "あとで払う義務（負債）",
+      "あとでもらう権利（資産）",
+      "手数料のこと",
+      "カード会社への支払"
+    ],
+    "answer": "あとでもらう権利（資産）",
+    "explanation_ja": "売掛金は将来の受取権利。買掛金は将来の支払義務。"
+  },
+  {
+    "id": "ch06-q02",
+    "topic": "掛けの基本",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "買掛金の仕訳で正しいのはどれ？（掛けで仕入れた 80,000 円）",
+    "choices": [
+      "（借）仕入 80,000／（貸）買掛金 80,000",
+      "（借）買掛金 80,000／（貸）仕入 80,000",
+      "（借）売掛金 80,000／（貸）仕入 80,000",
+      "（借）現金 80,000／（貸）買掛金 80,000"
+    ],
+    "answer": "（借）仕入 80,000／（貸）買掛金 80,000",
+    "explanation_ja": "掛け仕入は費用（仕入）が増え、義務（買掛金）が増える。"
+  },
+  {
+    "id": "ch06-q03",
+    "topic": "掛けの基本",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】商品を掛けで 120,000 円販売した。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "売掛金",
+        "amount": 120000
+      },
+      {
+        "side": "Cr",
+        "account": "売上",
+        "amount": 120000
+      }
+    ],
+    "explanation_ja": "売上発生（貸）、売掛金増加（借）。"
+  },
+  {
+    "id": "ch06-q04",
+    "topic": "掛けの基本",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】売掛金 120,000 円の入金が普通預金にあった。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "普通預金",
+        "amount": 120000
+      },
+      {
+        "side": "Cr",
+        "account": "売掛金",
+        "amount": 120000
+      }
+    ],
+    "explanation_ja": "口座が増える（借）、売掛金が減る（貸）。"
+  },
+  {
+    "id": "ch06-q05",
+    "topic": "クレジット売掛金",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "クレジット売掛金が用いられる場面はどれ？",
+    "choices": [
+      "現金売上のとき",
+      "カードで販売し、カード会社から後日入金されるとき",
+      "仕入の支払を現金で行うとき",
+      "小切手で備品を購入したとき"
+    ],
+    "answer": "カードで販売し、カード会社から後日入金されるとき",
+    "explanation_ja": "カード会社に対する債権をクレジット売掛金で表す。"
+  },
+  {
+    "id": "ch06-q06",
+    "topic": "クレジット売掛金",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】カード売上 50,000 円が発生した（手数料は入金時）。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "クレジット売掛金",
+        "amount": 50000
+      },
+      {
+        "side": "Cr",
+        "account": "売上",
+        "amount": 50000
+      }
+    ],
+    "explanation_ja": "発生時は総額でクレジット売掛金を計上。"
+  },
+  {
+    "id": "ch06-q07",
+    "topic": "クレジット売掛金",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】上記 50,000 円が入金。手数料 1,000 円が差引かれ、普通預金 49,000 円の入金となった。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "普通預金",
+        "amount": 49000
+      },
+      {
+        "side": "Cr",
+        "account": "クレジット売掛金",
+        "amount": 49000
+      },
+      {
+        "side": "Dr",
+        "account": "支払手数料",
+        "amount": 1000
+      },
+      {
+        "side": "Cr",
+        "account": "クレジット売掛金",
+        "amount": 1000
+      }
+    ],
+    "explanation_ja": "2行に分けてクレジット売掛金 50,000 を消す。"
+  },
+  {
+    "id": "ch06-q08",
+    "topic": "返品・値引",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "掛け売上の一部 10,000 円が返品となった。適切な仕訳はどれ？",
+    "choices": [
+      "（借）売掛金 10,000／（貸）売上 10,000",
+      "（借）売上 10,000／（貸）売掛金 10,000",
+      "（借）売上返品 10,000／（貸）売掛金 10,000",
+      "（借）現金 10,000／（貸）売上返品 10,000"
+    ],
+    "answer": "（借）売上返品 10,000／（貸）売掛金 10,000",
+    "explanation_ja": "売上の取り消しは売上返品で処理し、売掛金を減らす。"
+  },
+  {
+    "id": "ch06-q09",
+    "topic": "返品・値引",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】掛け仕入 6,000 円分を返品した。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "買掛金",
+        "amount": 6000
+      },
+      {
+        "side": "Cr",
+        "account": "仕入返品",
+        "amount": 6000
+      }
+    ],
+    "explanation_ja": "買掛金（義務）が減り、仕入の取り消し（仕入返品）。"
+  },
+  {
+    "id": "ch06-q10",
+    "topic": "掛けの基本",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "次のうち、売掛金が減少する取引はどれ？",
+    "choices": [
+      "掛け売上を行った",
+      "売掛金の入金があった",
+      "掛け仕入を行った",
+      "買掛金の支払を行った"
+    ],
+    "answer": "売掛金の入金があった",
+    "explanation_ja": "入金で売掛金は減少。掛け売上は増加。"
+  },
+  {
+    "id": "ch06-q11",
+    "topic": "掛けの基本",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】買掛金 80,000 円を振込で支払った（手数料なし）。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "買掛金",
+        "amount": 80000
+      },
+      {
+        "side": "Cr",
+        "account": "普通預金",
+        "amount": 80000
+      }
+    ],
+    "explanation_ja": "義務の減少（借）、口座の減少（貸）。"
+  },
+  {
+    "id": "ch06-q12",
+    "topic": "クレジット売掛金",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "「クレジット売掛金」の性質として正しいのはどれ？",
+    "choices": ["負債", "資産", "費用", "収益"],
+    "answer": "資産",
+    "explanation_ja": "カード会社に対する受取権利＝資産。"
+  },
+  {
+    "id": "ch06-q13",
+    "topic": "掛けの基本",
+    "difficulty": "standard",
+    "question_type": "journal_mcq",
+    "prompt_ja": "【取引】掛け売上 30,000 円のうち、5,000 円を返品された。正しい仕訳はどれ？",
+    "choices": [
+      "（借）売上 5,000／（貸）売掛金 5,000",
+      "（借）売上返品 5,000／（貸）売掛金 5,000",
+      "（借）売掛金 5,000／（貸）売上返品 5,000",
+      "（借）現金 5,000／（貸）売上 5,000"
+    ],
+    "answer": "（借）売上返品 5,000／（貸）売掛金 5,000",
+    "explanation_ja": "売上の取り消しは売上返品、売掛金を減らす。"
+  },
+  {
+    "id": "ch06-q14",
+    "topic": "掛けの基本",
+    "difficulty": "standard",
+    "question_type": "journal_mcq",
+    "prompt_ja": "【取引】掛け仕入 40,000 円の支払を小切手で行った。正しい仕訳はどれ？",
+    "choices": [
+      "（借）買掛金 40,000／（貸）現金 40,000",
+      "（借）買掛金 40,000／（貸）当座預金 40,000",
+      "（借）当座預金 40,000／（貸）買掛金 40,000",
+      "（借）仕入 40,000／（貸）当座預金 40,000"
+    ],
+    "answer": "（借）買掛金 40,000／（貸）当座預金 40,000",
+    "explanation_ja": "小切手＝当座預金から支払。"
+  },
+  {
+    "id": "ch06-q15",
+    "topic": "クレジット売掛金",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】カード売上 120,000 円が発生した（発生時、手数料は未計上）。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "クレジット売掛金",
+        "amount": 120000
+      },
+      {
+        "side": "Cr",
+        "account": "売上",
+        "amount": 120000
+      }
+    ],
+    "explanation_ja": "発生時は総額で債権計上。"
+  },
+  {
+    "id": "ch06-q16",
+    "topic": "クレジット売掛金",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】上記 120,000 円が入金。手数料 2,400 円が差引かれ、普通預金 117,600 円の入金。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "普通預金",
+        "amount": 117600
+      },
+      {
+        "side": "Cr",
+        "account": "クレジット売掛金",
+        "amount": 117600
+      },
+      {
+        "side": "Dr",
+        "account": "支払手数料",
+        "amount": 2400
+      },
+      {
+        "side": "Cr",
+        "account": "クレジット売掛金",
+        "amount": 2400
+      }
+    ],
+    "explanation_ja": "差引入金は2行で処理。"
+  }
+]

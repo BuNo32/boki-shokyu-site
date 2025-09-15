@@ -36,6 +36,13 @@
       "basePath": "quizzes/"
     },
     {
+      "quizId": "ch06",
+      "title": "第6章 売掛金・買掛金・クレジット売掛金（章末）",
+      "file": "ch06.json",
+      "page": "ch06/99-quiz.html",
+      "basePath": "quizzes/"
+    },
+    {
       "quizId": "proto",
       "title": "デザイン見本クイズ",
       "file": "prototype.json",

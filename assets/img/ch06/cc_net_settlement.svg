@@ -1,0 +1,12 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 210" role="img" aria-label="クレジット入金の差引方式（2行で4列維持）">
+  <style>
+    .lbl{font:14px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
+    .line{stroke:#94a3b8;stroke-width:2}
+  </style>
+  <text x="440" y="30" text-anchor="middle" class="lbl">入金は手数料差引が多い → 2行で「クレジット売掛金」を消す</text>
+  <line x1="80" y1="50" x2="800" y2="50" class="line"/>
+  <text x="140" y="80" class="lbl">① 借：普通預金（入金額） ／ 貸：クレジット売掛金（入金額）</text>
+  <text x="140" y="120" class="lbl">② 借：支払手数料（差引分） ／ 貸：クレジット売掛金（差引分）</text>
+  <line x1="80" y1="150" x2="800" y2="150" class="line"/>
+  <text x="440" y="178" text-anchor="middle" class="lbl">合計で「クレジット売掛金（総額）」がなくなる</text>
+</svg>
