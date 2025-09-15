@@ -1,0 +1,11 @@
+{
+  "quizzes": [
+    {
+      "quizId": "ch08",
+      "title": "第8章 手形・電子記録債権債務（章末）",
+      "file": "ch08.json",
+      "page": "ch08/99-quiz.html",
+      "basePath": "quizzes/"
+    }
+  ]
+}

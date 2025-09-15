@@ -1,0 +1,287 @@
+[
+  {
+    "id": "ch08-q01",
+    "topic": "手形・でんさい",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "受け取る権利を表す“紙の約束”はどれ？",
+    "choices": ["受取手形", "支払手形", "電子記録債務", "売掛金"],
+    "answer": "受取手形",
+    "explanation_ja": "受取手形＝将来の入金の約束（資産）。"
+  },
+  {
+    "id": "ch08-q02",
+    "topic": "手形・でんさい",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "支払う義務を表す“紙の約束”はどれ？",
+    "choices": ["受取手形", "支払手形", "電子記録債権", "買掛金"],
+    "answer": "支払手形",
+    "explanation_ja": "支払手形＝将来の支払の約束（負債）。"
+  },
+  {
+    "id": "ch08-q03",
+    "topic": "手形・でんさい",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】受取手形で 100,000 円の売上が発生した。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "受取手形",
+        "amount": 100000
+      },
+      {
+        "side": "Cr",
+        "account": "売上",
+        "amount": 100000
+      }
+    ],
+    "explanation_ja": "発生時は現金は動かない。"
+  },
+  {
+    "id": "ch08-q04",
+    "topic": "手形・でんさい",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】支払手形で 80,000 円の仕入を行った。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "仕入",
+        "amount": 80000
+      },
+      {
+        "side": "Cr",
+        "account": "支払手形",
+        "amount": 80000
+      }
+    ],
+    "explanation_ja": "負債（支払手形）が増加。"
+  },
+  {
+    "id": "ch08-q05",
+    "topic": "手形・でんさい",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】受取手形 100,000 円を満期に取立入金した。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "普通預金",
+        "amount": 100000
+      },
+      {
+        "side": "Cr",
+        "account": "受取手形",
+        "amount": 100000
+      }
+    ],
+    "explanation_ja": "権利が現金（口座）に変わる。"
+  },
+  {
+    "id": "ch08-q06",
+    "topic": "手形・でんさい",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】支払手形 80,000 円を満期に決済した。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "支払手形",
+        "amount": 80000
+      },
+      {
+        "side": "Cr",
+        "account": "普通預金",
+        "amount": 80000
+      }
+    ],
+    "explanation_ja": "義務が口座の減少で解消。"
+  },
+  {
+    "id": "ch08-q07",
+    "topic": "手形・でんさい",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "受取手形をそのまま別の支払に回すことを何という？（イメージだけでOK）",
+    "choices": ["裏書譲渡", "割引", "不渡", "延払"],
+    "answer": "裏書譲渡",
+    "explanation_ja": "裏書＝手形の権利を次の相手へ渡す。"
+  },
+  {
+    "id": "ch08-q08",
+    "topic": "手形・でんさい",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】受取手形 60,000 円を買掛金の支払に充当した（裏書）。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "買掛金",
+        "amount": 60000
+      },
+      {
+        "side": "Cr",
+        "account": "受取手形",
+        "amount": 60000
+      }
+    ],
+    "explanation_ja": "受取手形が減り、買掛金が消える。"
+  },
+  {
+    "id": "ch08-q09",
+    "topic": "手形・でんさい",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "紙の代わりにデータで管理する将来の受取権利はどれ？",
+    "choices": ["電子記録債権", "電子記録債務", "受取手形", "売掛金"],
+    "answer": "電子記録債権",
+    "explanation_ja": "でんさいの債権側。"
+  },
+  {
+    "id": "ch08-q10",
+    "topic": "手形・でんさい",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "紙の代わりにデータで管理する将来の支払義務はどれ？",
+    "choices": ["電子記録債権", "電子記録債務", "支払手形", "買掛金"],
+    "answer": "電子記録債務",
+    "explanation_ja": "でんさいの債務側。"
+  },
+  {
+    "id": "ch08-q11",
+    "topic": "手形・でんさい",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】電子記録債権で 120,000 円の売上が発生。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "電子記録債権",
+        "amount": 120000
+      },
+      {
+        "side": "Cr",
+        "account": "売上",
+        "amount": 120000
+      }
+    ],
+    "explanation_ja": "手形と同様に処理。"
+  },
+  {
+    "id": "ch08-q12",
+    "topic": "手形・でんさい",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】電子記録債務で 90,000 円の仕入を行った。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "仕入",
+        "amount": 90000
+      },
+      {
+        "side": "Cr",
+        "account": "電子記録債務",
+        "amount": 90000
+      }
+    ],
+    "explanation_ja": "負債が増加。"
+  },
+  {
+    "id": "ch08-q13",
+    "topic": "手形・でんさい",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】電子記録債権 120,000 円の入金が口座にあった。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "普通預金",
+        "amount": 120000
+      },
+      {
+        "side": "Cr",
+        "account": "電子記録債権",
+        "amount": 120000
+      }
+    ],
+    "explanation_ja": "権利が現金化。"
+  },
+  {
+    "id": "ch08-q14",
+    "topic": "手形・でんさい",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】電子記録債務 90,000 円を口座振替で支払った。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "電子記録債務",
+        "amount": 90000
+      },
+      {
+        "side": "Cr",
+        "account": "普通預金",
+        "amount": 90000
+      }
+    ],
+    "explanation_ja": "義務の解消。"
+  },
+  {
+    "id": "ch08-q15",
+    "topic": "手形・でんさい",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "電子記録に関する手数料は初級ではどの科目で処理してよい？",
+    "choices": ["支払手数料", "雑費", "売上原価", "受取利息"],
+    "answer": "支払手数料",
+    "explanation_ja": "実務で名称は様々だが、初級では支払手数料で十分。"
+  },
+  {
+    "id": "ch08-q16",
+    "topic": "手形・でんさい",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "次の組み合わせで性質が一致しているのはどれ？",
+    "choices": [
+      "受取手形＝負債、支払手形＝資産",
+      "受取手形＝資産、支払手形＝負債",
+      "電子記録債権＝負債、電子記録債務＝資産",
+      "売掛金＝負債、買掛金＝資産"
+    ],
+    "answer": "受取手形＝資産、支払手形＝負債",
+    "explanation_ja": "将来もらう権利は資産、払う義務は負債。"
+  },
+  {
+    "id": "ch08-q17",
+    "topic": "手形・でんさい",
+    "difficulty": "standard",
+    "question_type": "journal_mcq",
+    "prompt_ja": "【取引】受取手形 60,000 円を買掛金の支払に裏書で回した。正しい仕訳はどれ？",
+    "choices": [
+      "（借）買掛金 60,000／（貸）受取手形 60,000",
+      "（借）受取手形 60,000／（貸）買掛金 60,000",
+      "（借）普通預金 60,000／（貸）受取手形 60,000",
+      "（借）買掛金 60,000／（貸）普通預金 60,000"
+    ],
+    "answer": "（借）買掛金 60,000／（貸）受取手形 60,000",
+    "explanation_ja": "裏書は“受け取る権利”を支払に回す処理。"
+  },
+  {
+    "id": "ch08-q18",
+    "topic": "手形・でんさい",
+    "difficulty": "standard",
+    "question_type": "journal_mcq",
+    "prompt_ja": "【取引】手数料 330 円が電子記録関連で引き落とされた。正しい仕訳はどれ？",
+    "choices": [
+      "（借）支払手数料 330／（貸）普通預金 330",
+      "（借）普通預金 330／（貸）支払手数料 330",
+      "（借）雑費 330／（貸）現金 330",
+      "（借）受取利息 330／（貸）普通預金 330"
+    ],
+    "answer": "（借）支払手数料 330／（貸）普通預金 330",
+    "explanation_ja": "初級では支払手数料で処理。"
+  }
+]
