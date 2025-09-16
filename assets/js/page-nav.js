@@ -1,9 +1,9 @@
 (function(){
-  function createPager(container){
+  function createPagerNodes(){
     const prevLink = document.querySelector('link[rel="prev"]');
     const nextLink = document.querySelector('link[rel="next"]');
     if(!prevLink && !nextLink){
-      return;
+      return null;
     }
 
     const nav = document.createElement('nav');
@@ -25,12 +25,7 @@
       actions.appendChild(buildPagerLink(nextLink, '次へ →'));
     }
 
-    const firstContentElement = container.firstElementChild;
-    if(firstContentElement){
-      container.insertBefore(nav, firstContentElement);
-    }else{
-      container.appendChild(nav);
-    }
+    return nav;
   }
 
   function buildPagerLink(linkElement, label){
@@ -55,39 +50,22 @@
     return a;
   }
 
-  function createSectionNav(container){
-    const headings = Array.from(container.querySelectorAll('.md-typeset h2[id]'))
-      .filter((node)=>!node.classList.contains('no-section-nav'));
-    if(headings.length < 2){
+  function createTopLink(container){
+    const logoLink = document.querySelector('a.md-header__button.md-logo');
+    if(!logoLink){
       return;
     }
+    const href = logoLink.getAttribute('href') || 'index.html';
 
     const nav = document.createElement('nav');
-    nav.className = 'section-pills';
+    nav.className = 'page-toplink';
 
-    const label = document.createElement('span');
-    label.className = 'section-pills__label';
-    label.textContent = '節へ移動';
-    nav.appendChild(label);
+    const link = document.createElement('a');
+    link.href = href;
+    link.textContent = '学習トップへ戻る';
+    nav.appendChild(link);
 
-    const list = document.createElement('div');
-    list.className = 'section-pills__list';
-    nav.appendChild(list);
-
-    headings.forEach((heading)=>{
-      const pill = document.createElement('a');
-      pill.className = 'section-pills__item';
-      pill.href = `#${heading.id}`;
-      pill.textContent = heading.textContent.trim();
-      list.appendChild(pill);
-    });
-
-    const target = container.querySelector('.md-typeset h1');
-    if(target && target.parentNode){
-      target.parentNode.insertBefore(nav, target.nextSibling);
-    }else{
-      container.insertBefore(nav, container.firstChild);
-    }
+    container.insertBefore(nav, container.firstChild);
   }
 
   function enhanceTables(container){
@@ -102,13 +80,18 @@
   }
 
   function init(){
-    const content = document.querySelector('.md-content');
+    const content = document.querySelector('.md-content__inner');
     if(!content){
       return;
     }
 
-    createPager(content);
-    createSectionNav(content);
+    const pager = createPagerNodes();
+    if(pager){
+      const bottomPager = pager.cloneNode(true);
+      content.insertBefore(pager, content.firstChild);
+      content.appendChild(bottomPager);
+    }
+    createTopLink(content);
     enhanceTables(content);
   }
 
@@ -118,4 +101,3 @@
     init();
   }
 })();
-
