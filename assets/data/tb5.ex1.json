@@ -1,5 +1,5 @@
 {
-  "title": "ドリルA（小型：5科目）",
+  "title": "ドリルA（TB5：5科目・バランス済み）",
   "columns": [
     "借方残高",
     "借方合計",
@@ -18,25 +18,25 @@
       "account": "売掛金",
       "nature": "D",
       "debit_total": 120000,
-      "credit_total": 50000
+      "credit_total": 30000
+    },
+    {
+      "account": "売上",
+      "nature": "C",
+      "debit_total": 0,
+      "credit_total": 320000
+    },
+    {
+      "account": "仕入",
+      "nature": "D",
+      "debit_total": 220000,
+      "credit_total": 0
     },
     {
       "account": "買掛金",
       "nature": "C",
       "debit_total": 40000,
       "credit_total": 150000
-    },
-    {
-      "account": "資本金",
-      "nature": "C",
-      "debit_total": 0,
-      "credit_total": 300000
-    },
-    {
-      "account": "仕入",
-      "nature": "D",
-      "debit_total": 200000,
-      "credit_total": 0
     }
   ]
 }

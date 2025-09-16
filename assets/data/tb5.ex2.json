@@ -1,5 +1,5 @@
 {
-  "title": "ドリルB（標準：10科目）",
+  "title": "ドリルB（TB5：標準バランス・14科目）",
   "columns": [
     "借方残高",
     "借方合計",
@@ -8,65 +8,19 @@
     "貸方残高"
   ],
   "rows": [
-    {
-      "account": "現金",
-      "nature": "D",
-      "debit_total": 420000,
-      "credit_total": 350000
-    },
-    {
-      "account": "普通預金",
-      "nature": "D",
-      "debit_total": 260000,
-      "credit_total": 220000
-    },
-    {
-      "account": "売掛金",
-      "nature": "D",
-      "debit_total": 300000,
-      "credit_total": 240000
-    },
-    {
-      "account": "買掛金",
-      "nature": "C",
-      "debit_total": 120000,
-      "credit_total": 260000
-    },
-    {
-      "account": "資本金",
-      "nature": "C",
-      "debit_total": 0,
-      "credit_total": 500000
-    },
-    {
-      "account": "売上",
-      "nature": "C",
-      "debit_total": 0,
-      "credit_total": 780000
-    },
-    {
-      "account": "仕入",
-      "nature": "D",
-      "debit_total": 520000,
-      "credit_total": 0
-    },
-    {
-      "account": "給料手当",
-      "nature": "D",
-      "debit_total": 120000,
-      "credit_total": 0
-    },
-    {
-      "account": "水道光熱費",
-      "nature": "D",
-      "debit_total": 38000,
-      "credit_total": 0
-    },
-    {
-      "account": "通信費",
-      "nature": "D",
-      "debit_total": 22000,
-      "credit_total": 0
-    }
+    {"account": "現金", "nature": "D", "debit_total": 500000, "credit_total": 420000},
+    {"account": "普通預金", "nature": "D", "debit_total": 320000, "credit_total": 290000},
+    {"account": "売掛金", "nature": "D", "debit_total": 450000, "credit_total": 380000},
+    {"account": "備品", "nature": "D", "debit_total": 300000, "credit_total": 0},
+    {"account": "減価償却累計額（備品）", "nature": "C", "debit_total": 0, "credit_total": 80000},
+    {"account": "買掛金", "nature": "C", "debit_total": 90000, "credit_total": 260000},
+    {"account": "短期借入金", "nature": "C", "debit_total": 0, "credit_total": 200000},
+    {"account": "資本金", "nature": "C", "debit_total": 0, "credit_total": 400000},
+    {"account": "売上", "nature": "C", "debit_total": 0, "credit_total": 920000},
+    {"account": "仕入", "nature": "D", "debit_total": 850000, "credit_total": 0},
+    {"account": "給料手当", "nature": "D", "debit_total": 180000, "credit_total": 0},
+    {"account": "水道光熱費", "nature": "D", "debit_total": 90000, "credit_total": 0},
+    {"account": "通信費", "nature": "D", "debit_total": 70000, "credit_total": 0},
+    {"account": "減価償却費", "nature": "D", "debit_total": 100000, "credit_total": 0}
   ]
 }

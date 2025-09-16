@@ -1,6 +1,6 @@
 [
   {
-    "id": "gx-tb5-q01",
+    "id": "gx-tb5-ord",
     "topic": "TB5の列",
     "difficulty": "basic",
     "question_type": "term_mcq",
@@ -12,249 +12,133 @@
       "借方合計｜勘定科目｜貸方合計｜借方残高｜貸方残高"
     ],
     "answer": "借方残高｜借方合計｜勘定科目｜貸方合計｜貸方残高",
-    "explanation_ja": "サンプル問題の形式に合わせます。"
+    "explanation_ja": "本講座のTB5の標準形式です。"
   },
   {
-    "id": "gx-tb5-q02",
-    "topic": "TB読み取り",
-    "difficulty": "standard",
-    "question_type": "term_mcq",
-    "prompt_ja": "上の試算表の<strong>借方合計</strong>はいくら？（端数のない単位）",
-    "choices": [
-      "2,420,000",
-      "2,400,000",
-      "2,225,000",
-      "2,500,000"
-    ],
-    "answer": "2,420,000",
-    "explanation_ja": "TB全体で借方合計＝貸方合計です。"
-  },
-  {
-    "id": "gx-tb5-q03",
-    "topic": "TB読み取り",
-    "difficulty": "standard",
-    "question_type": "term_mcq",
-    "prompt_ja": "上の試算表の<strong>現金の借方残高</strong>はいくら？",
-    "choices": [
-      "20,000",
-      "70,000",
-      "80,000",
-      "140,000"
-    ],
-    "answer": "70,000",
-    "explanation_ja": "現金（D 250,000／C 180,000）→ 借方残 70,000。"
-  },
-  {
-    "id": "gx-tb5-q04",
-    "topic": "TB読み取り",
-    "difficulty": "standard",
-    "question_type": "term_mcq",
-    "prompt_ja": "上の試算表の<strong>買掛金の貸方残高</strong>はいくら？",
-    "choices": [
-      "140,000",
-      "60,000",
-      "240,000",
-      "100,000"
-    ],
-    "answer": "140,000",
-    "explanation_ja": "買掛金（D 100,000／C 240,000）→ 貸方残 140,000。"
-  },
-  {
-    "id": "gx-tb5-q05",
-    "topic": "TB読み取り",
-    "difficulty": "standard",
-    "question_type": "term_mcq",
-    "prompt_ja": "上の試算表の<strong>売上の貸方合計</strong>はいくら？",
-    "choices": [
-      "600,000",
-      "700,000",
-      "900,000",
-      "1,200,000"
-    ],
-    "answer": "900,000",
-    "explanation_ja": "売上の貸方合計は 900,000。"
-  },
-  {
-    "id": "gx-tb5-q06",
-    "topic": "TB読み取り",
-    "difficulty": "standard",
-    "question_type": "term_mcq",
-    "prompt_ja": "上の試算表の<strong>仕入の借方合計</strong>はいくら？",
-    "choices": [
-      "540,000",
-      "700,000",
-      "520,000",
-      "600,000"
-    ],
-    "answer": "700,000",
-    "explanation_ja": "仕入の借方合計は 700,000。"
-  },
-  {
-    "id": "gx-tb5-q07",
-    "topic": "TB読み取り",
-    "difficulty": "standard",
-    "question_type": "term_mcq",
-    "prompt_ja": "上の試算表の<strong>資本金の貸方残高</strong>はいくら？",
-    "choices": [
-      "500,000",
-      "600,000",
-      "900,000",
-      "0"
-    ],
-    "answer": "600,000",
-    "explanation_ja": "資本金（C 600,000）→ 貸方残 600,000。"
-  },
-  {
-    "id": "gx-tb5-q08",
+    "id": "gx-tb5-side-1",
     "topic": "配置",
     "difficulty": "basic",
     "question_type": "term_mcq",
-    "prompt_ja": "次の科目（<strong>売上</strong>）は通常どちらに残高が出る？",
-    "choices": [
-      "借方残高",
-      "貸方残高"
-    ],
-    "answer": "貸方残高",
-    "explanation_ja": "収益は右（貸方）に残りやすい。"
-  },
-  {
-    "id": "gx-tb5-q09",
-    "topic": "配置",
-    "difficulty": "basic",
-    "question_type": "term_mcq",
-    "prompt_ja": "次の科目（<strong>仕入</strong>）は通常どちらに残高が出る？（三分法）",
+    "prompt_ja": "次の科目（現金）は通常どちらに残高が出る？",
     "choices": [
       "借方残高",
       "貸方残高"
     ],
     "answer": "借方残高",
-    "explanation_ja": "費用は左。"
+    "explanation_ja": "資産・費用は左（借方）、負債・純資産・収益は右（貸方）。"
   },
   {
-    "id": "gx-tb5-q10",
+    "id": "gx-tb5-side-2",
     "topic": "配置",
     "difficulty": "basic",
     "question_type": "term_mcq",
-    "prompt_ja": "次の科目（<strong>現金</strong>）は通常どちらに残高が出る？",
-    "choices": [
-      "借方残高",
-      "貸方残高"
-    ],
-    "answer": "借方残高",
-    "explanation_ja": "資産は左。"
-  },
-  {
-    "id": "gx-tb5-q11",
-    "topic": "配置",
-    "difficulty": "basic",
-    "question_type": "term_mcq",
-    "prompt_ja": "次の科目（<strong>買掛金</strong>）は通常どちらに残高が出る？",
+    "prompt_ja": "次の科目（売上）は通常どちらに残高が出る？",
     "choices": [
       "借方残高",
       "貸方残高"
     ],
     "answer": "貸方残高",
-    "explanation_ja": "負債は右。"
+    "explanation_ja": "資産・費用は左（借方）、負債・純資産・収益は右（貸方）。"
   },
   {
-    "id": "gx-tb5-q12",
+    "id": "gx-tb5-side-3",
     "topic": "配置",
     "difficulty": "basic",
     "question_type": "term_mcq",
-    "prompt_ja": "次の科目（<strong>水道光熱費</strong>）は通常どちらに残高が出る？",
-    "choices": [
-      "借方残高",
-      "貸方残高"
-    ],
-    "answer": "借方残高",
-    "explanation_ja": "費用は左。"
-  },
-  {
-    "id": "gx-tb5-q13",
-    "topic": "配置",
-    "difficulty": "basic",
-    "question_type": "term_mcq",
-    "prompt_ja": "次の科目（<strong>資本金</strong>）は通常どちらに残高が出る？",
+    "prompt_ja": "次の科目（買掛金）は通常どちらに残高が出る？",
     "choices": [
       "借方残高",
       "貸方残高"
     ],
     "answer": "貸方残高",
-    "explanation_ja": "純資産は右。"
+    "explanation_ja": "資産・費用は左（借方）、負債・純資産・収益は右（貸方）。"
   },
   {
-    "id": "gx-tb5-q14",
-    "topic": "差分感覚",
-    "difficulty": "standard",
-    "question_type": "term_mcq",
-    "prompt_ja": "ある科目の左発生120,000／右発生90,000（左に残る性質）。残高は？",
-    "choices": [
-      "借方残高30,000",
-      "貸方残高30,000",
-      "借方残高210,000",
-      "貸方残高210,000"
-    ],
-    "answer": "借方残高30,000",
-    "explanation_ja": "120,000−90,000=30,000。左に残る。"
-  },
-  {
-    "id": "gx-tb5-q15",
-    "topic": "差分感覚",
-    "difficulty": "standard",
-    "question_type": "term_mcq",
-    "prompt_ja": "左発生200,000／右発生260,000（右に残る性質）。残高は？",
-    "choices": [
-      "借方残高60,000",
-      "貸方残高60,000",
-      "借方残高460,000",
-      "貸方残高460,000"
-    ],
-    "answer": "貸方残高60,000",
-    "explanation_ja": "右が多いので右に60,000残る。"
-  },
-  {
-    "id": "gx-tb5-q16",
-    "topic": "整合",
+    "id": "gx-tb5-side-4",
+    "topic": "配置",
     "difficulty": "basic",
     "question_type": "term_mcq",
-    "prompt_ja": "TB5で最後に必ず確認するのは？",
+    "prompt_ja": "次の科目（仕入）は通常どちらに残高が出る？",
     "choices": [
-      "科目の五十音順",
-      "借方合計＝貸方合計",
-      "残高の桁数",
-      "科目名の長さ"
+      "借方残高",
+      "貸方残高"
     ],
-    "answer": "借方合計＝貸方合計",
-    "explanation_ja": "左右の合計一致が最重要。"
+    "answer": "借方残高",
+    "explanation_ja": "資産・費用は左（借方）、負債・純資産・収益は右（貸方）。"
   },
   {
-    "id": "gx-tb5-q17",
+    "id": "gx-tb5-read-01",
     "topic": "TB読み取り",
     "difficulty": "standard",
     "question_type": "term_mcq",
-    "prompt_ja": "上の試算表の<strong>売掛金の借方残高</strong>はいくら？",
-    "choices": [
-      "80,000",
-      "20,000",
-      "70,000",
-      "140,000"
-    ],
-    "answer": "80,000",
-    "explanation_ja": "売掛金（D 280,000／C 200,000）→ 借方残 80,000。"
-  },
-  {
-    "id": "gx-tb5-q18",
-    "topic": "TB読み取り",
-    "difficulty": "standard",
-    "question_type": "term_mcq",
-    "prompt_ja": "上の試算表の<strong>現金の貸方合計</strong>はいくら？",
+    "prompt_ja": "上の試算表の『1月中に売掛金を回収した額』は？",
     "choices": [
       "180,000",
-      "250,000",
-      "320,000",
-      "200,000"
+      "190,000",
+      "200,000",
+      "220,000"
     ],
-    "answer": "180,000",
-    "explanation_ja": "現金の貸方合計は 180,000。"
+    "answer": "200,000",
+    "explanation_ja": "試算表（5列）から該当する合計または残高を読み取ります。"
+  },
+  {
+    "id": "gx-tb5-read-02",
+    "topic": "TB読み取り",
+    "difficulty": "standard",
+    "question_type": "term_mcq",
+    "prompt_ja": "上の試算表の『1月末時点での備品の帳簿価額』は？",
+    "choices": [
+      "135,000",
+      "140,000",
+      "150,000",
+      "165,000"
+    ],
+    "answer": "150,000",
+    "explanation_ja": "試算表（5列）から該当する合計または残高を読み取ります。"
+  },
+  {
+    "id": "gx-tb5-read-03",
+    "topic": "TB読み取り",
+    "difficulty": "standard",
+    "question_type": "term_mcq",
+    "prompt_ja": "上の試算表の『1月末時点での負債の総額（買掛金・短期借入金）』は？",
+    "choices": [
+      "270,000",
+      "290,000",
+      "300,000",
+      "330,000"
+    ],
+    "answer": "300,000",
+    "explanation_ja": "試算表（5列）から該当する合計または残高を読み取ります。"
+  },
+  {
+    "id": "gx-tb5-read-04",
+    "topic": "TB読み取り",
+    "difficulty": "standard",
+    "question_type": "term_mcq",
+    "prompt_ja": "上の試算表の『1月中に発生した費用の総額』は？",
+    "choices": [
+      "1,332,000",
+      "1,470,000",
+      "1,480,000",
+      "1,628,000"
+    ],
+    "answer": "1,480,000",
+    "explanation_ja": "試算表（5列）から該当する合計または残高を読み取ります。"
+  },
+  {
+    "id": "gx-tb5-read-05",
+    "topic": "TB読み取り",
+    "difficulty": "standard",
+    "question_type": "term_mcq",
+    "prompt_ja": "上の試算表の『1月中に発生した収益の総額』は？",
+    "choices": [
+      "810,000",
+      "890,000",
+      "900,000",
+      "990,000"
+    ],
+    "answer": "900,000",
+    "explanation_ja": "試算表（5列）から該当する合計または残高を読み取ります。"
   }
 ]

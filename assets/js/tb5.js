@@ -1,3 +1,4 @@
+
 (function(){
   function fmt(n){
     if(n===null||n===undefined||n==='') return '';
@@ -13,7 +14,16 @@
     return isFinite(v)?v:NaN;
   }
 
-  function buildTable(container, data){
+  function getRowMap(rows){
+    const m = {}; rows.forEach(r=>{ m[r.account]=r; }); return m;
+  }
+  function balanceOf(row){
+    const D = row.debit_total||0, C=row.credit_total||0;
+    if(row.nature==='D'){ return Math.max(D-C,0); }
+    return Math.max(C-D,0);
+  }
+
+  function buildTB(container, data){
     const readonly = !!data.readonly;
     const tbl = document.createElement('table');
     const thead = document.createElement('thead');
@@ -28,40 +38,32 @@
     const inputs = [];
     (data.rows||[]).forEach(row=>{
       const tr = document.createElement('tr');
-      // 借方残高
+
       let td = document.createElement('td');
       if(readonly){
-        const D = row.debit_total||0, C=row.credit_total||0;
-        td.textContent = (row.nature==='D') ? fmt(Math.max(D-C,0)) : '';
+        const bal = (row.nature==='D') ? Math.max((row.debit_total||0)-(row.credit_total||0),0) : 0;
+        td.textContent = bal?fmt(bal):'';
       }else{
-        const inDrBal = document.createElement('input');
-        inDrBal.type='number'; inDrBal.inputMode='numeric'; inDrBal.step='1';
+        const inDrBal = document.createElement('input'); inDrBal.type='number'; inDrBal.inputMode='numeric'; inDrBal.step='1';
         td.appendChild(inDrBal);
-        inputs.push({row, inDrBal});
+        inputs.push({row,inDrBal});
       }
       tr.appendChild(td);
 
-      // 借方合計
       td = document.createElement('td'); td.textContent = fmt(row.debit_total||0); tr.appendChild(td);
 
-      // 科目
       td = document.createElement('td'); td.textContent = row.account; td.className='account'; tr.appendChild(td);
 
-      // 貸方合計
       td = document.createElement('td'); td.textContent = fmt(row.credit_total||0); tr.appendChild(td);
 
-      // 貸方残高
       td = document.createElement('td');
       if(readonly){
-        const D = row.debit_total||0, C=row.credit_total||0;
-        td.textContent = (row.nature==='C') ? fmt(Math.max(C-D,0)) : '';
+        const bal = (row.nature==='C') ? Math.max((row.credit_total||0)-(row.debit_total||0),0) : 0;
+        td.textContent = bal?fmt(bal):'';
       }else{
-        const inCrBal = document.createElement('input');
-        inCrBal.type='number'; inCrBal.inputMode='numeric'; inCrBal.step='1';
+        const inCrBal = document.createElement('input'); inCrBal.type='number'; inCrBal.inputMode='numeric'; inCrBal.step='1';
         td.appendChild(inCrBal);
-        // pair it with the same index object
-        const last = inputs[inputs.length-1];
-        last.inCrBal = inCrBal;
+        inputs[inputs.length-1].inCrBal = inCrBal;
       }
       tr.appendChild(td);
 
@@ -69,7 +71,6 @@
     });
     tbl.appendChild(tbody);
 
-    // Footer: totals & status
     const tfoot = document.createElement('tfoot');
     const trf = document.createElement('tr');
     const td1 = document.createElement('td'); td1.colSpan=5;
@@ -94,16 +95,9 @@
         const D = row.debit_total||0, C = row.credit_total||0;
         const expectedDr = (row.nature==='D') ? Math.max(D-C,0) : 0;
         const expectedCr = (row.nature==='C') ? Math.max(C-D,0) : 0;
-
-        // user inputs (no comma formatting for number type)
         const dr = parseNum(inDrBal);
         const cr = parseNum(inCrBal);
-
-        // Count totals
-        debitSum += D;
-        creditSum += C;
-
-        // Rule: fill exactly one side with exact expected
+        debitSum += D; creditSum += C;
         const filledDr = !isNaN(dr) && inDrBal.value!=='';
         const filledCr = !isNaN(cr) && inCrBal.value!=='';
         let rowOk = false;
@@ -126,19 +120,113 @@
         badge.style.borderColor='#fca5a5'; badge.style.background='#fef2f2'; badge.style.color='#991b1b';
       }
     }
-
     container.addEventListener('input', evaluate);
     evaluate();
   }
 
+  // QA builder (sample problem (2) style)
+  function buildQA(container, qa, tb){
+    const map = getRowMap(tb.rows||[]);
+    const wrap = document.createElement('div');
+    const title = document.createElement('div'); title.textContent = qa.title || '読み取り演習'; title.style.margin='0 0 .5rem'; wrap.appendChild(title);
+
+    const tbl = document.createElement('table');
+    const thead = document.createElement('thead');
+    const trh = document.createElement('tr');
+    ['設問','解答欄'].forEach(h=>{ const th=document.createElement('th'); th.textContent=h; trh.appendChild(th); });
+    thead.appendChild(trh); tbl.appendChild(thead);
+    const tbody = document.createElement('tbody');
+
+    const rows = [];
+    (qa.questions||[]).forEach((q,i)=>{
+      const tr = document.createElement('tr');
+      const tdq = document.createElement('td'); tdq.textContent = (i+1)+'. '+q.label; tr.appendChild(tdq);
+      const tda = document.createElement('td');
+      const inp = document.createElement('input'); inp.type='number'; inp.inputMode='numeric'; inp.step='1'; inp.style.width='10em';
+      tda.appendChild(inp); tr.appendChild(tda);
+      tbody.appendChild(tr);
+      rows.push({q, inp});
+    });
+    tbl.appendChild(tbody);
+    wrap.appendChild(tbl);
+
+    const status = document.createElement('div'); status.className='tb5-badge'; status.style.display='inline-block'; status.style.marginTop='.5rem'; status.textContent='未採点';
+    wrap.appendChild(status);
+
+    function calc(q){
+      const type = q.formula && q.formula.type;
+      const f = q.formula || {};
+      const g = (name)=> map[name] || {debit_total:0, credit_total:0, nature:'D'};
+      switch(type){
+        case 'credit_total': return (g(f.account).credit_total||0);
+        case 'debit_total': return (g(f.account).debit_total||0);
+        case 'balance': {
+          const r = g(f.account);
+          return balanceOf(r);
+        }
+        case 'book_value': {
+          const a = g(f.asset), c = g(f.contra);
+          const aBal = (a.debit_total||0) - (a.credit_total||0); // asset is D-nature
+          const cBal = (c.credit_total||0) - (c.debit_total||0); // contra asset is C-nature
+          return Math.max(aBal,0) - Math.max(cBal,0);
+        }
+        case 'sum_balance': {
+          const side = f.side || 'C';
+          const accs = f.accounts||[];
+          let s = 0;
+          accs.forEach(name=>{
+            const r = g(name);
+            const bal = balanceOf(r);
+            if(side==='D' && r.nature==='D') s+=bal;
+            if(side==='C' && r.nature==='C') s+=bal;
+          });
+          return s;
+        }
+        case 'sum_debit_total': {
+          let s=0; (f.accounts||[]).forEach(name=>{ s += (g(name).debit_total||0); }); return s;
+        }
+        case 'sum_credit_total': {
+          let s=0; (f.accounts||[]).forEach(name=>{ s += (g(name).credit_total||0); }); return s;
+        }
+      }
+      return 0;
+    }
+
+    function evaluate(){
+      let ok=true;
+      rows.forEach(({q,inp})=>{
+        const ans = calc(q);
+        const v = Number((inp.value||'').replace(/,/g,''));
+        const good = (String(v) !== 'NaN') && (v===ans);
+        if(!good) ok=false;
+      });
+      status.textContent = ok ? '✔ すべて正解' : '× 未正解あり';
+      status.style.borderColor = ok ? '#34d399' : '#fca5a5';
+      status.style.background = ok ? '#ecfdf5' : '#fef2f2';
+      status.style.color = ok ? '#065f46' : '#991b1b';
+    }
+    wrap.addEventListener('input', evaluate);
+    container.appendChild(wrap);
+  }
+
   function init(){
+    // TB builders
     document.querySelectorAll('.tb5-wrap[id]').forEach(function(el){
       const src = el.getAttribute('data-tb-src');
       if(!src) return;
-      fetch(src).then(r=>r.json()).then(data=>buildTable(el,data)).catch(err=>{
+      fetch(src).then(r=>r.json()).then(data=>buildTB(el,data)).catch(err=>{
         el.innerHTML = '<p class="tb5-ng">データの読み込みに失敗しました。</p>';
         console.error(err);
       });
+    });
+    // QA builders
+    document.querySelectorAll('.tb5-qa').forEach(function(el){
+      const tbSrc = el.getAttribute('data-tb-src');
+      const qaSrc = el.getAttribute('data-qa-src');
+      if(!tbSrc || !qaSrc) return;
+      Promise.all([fetch(tbSrc).then(r=>r.json()), fetch(qaSrc).then(r=>r.json())])
+        .then(([tb,qa])=>buildQA(el,qa,tb))
+        .catch(err=>{ el.innerHTML = '<p class="tb5-ng">QAの読み込みに失敗しました。</p>'; console.error(err); });
     });
   }
   if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded', init); } else { init(); }

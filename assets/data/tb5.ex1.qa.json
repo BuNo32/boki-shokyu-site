@@ -1,0 +1,44 @@
+{
+  "title": "読み取り演習A（5科目）— サンプル(2)の型になれる",
+  "questions": [
+    {
+      "id": "q1",
+      "label": "① 1月中に売掛金を回収した額",
+      "formula": {
+        "type": "credit_total",
+        "account": "売掛金"
+      }
+    },
+    {
+      "id": "q3",
+      "label": "③ 1月末時点での負債の総額（買掛金のみ）",
+      "formula": {
+        "type": "sum_balance",
+        "side": "C",
+        "accounts": [
+          "買掛金"
+        ]
+      }
+    },
+    {
+      "id": "q4",
+      "label": "④ 1月中に発生した費用の総額（仕入のみ）",
+      "formula": {
+        "type": "sum_debit_total",
+        "accounts": [
+          "仕入"
+        ]
+      }
+    },
+    {
+      "id": "q5",
+      "label": "⑤ 1月中に発生した収益の総額（売上）",
+      "formula": {
+        "type": "sum_credit_total",
+        "accounts": [
+          "売上"
+        ]
+      }
+    }
+  ]
+}

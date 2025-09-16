@@ -1,5 +1,5 @@
 {
-  "title": "クイズ用TB（閲覧）",
+  "title": "クイズ用TB（閲覧）— 別問題",
   "readonly": true,
   "columns": [
     "借方残高",
@@ -34,6 +34,12 @@
       "credit_total": 240000
     },
     {
+      "account": "短期借入金",
+      "nature": "C",
+      "debit_total": 20000,
+      "credit_total": 180000
+    },
+    {
       "account": "資本金",
       "nature": "C",
       "debit_total": 0,
@@ -48,7 +54,7 @@
     {
       "account": "仕入",
       "nature": "D",
-      "debit_total": 700000,
+      "debit_total": 1230000,
       "credit_total": 0
     },
     {
@@ -76,21 +82,15 @@
       "credit_total": 0
     },
     {
-      "account": "前払費用",
-      "nature": "D",
-      "debit_total": 100000,
-      "credit_total": 0
-    },
-    {
-      "account": "支払家賃",
-      "nature": "D",
-      "debit_total": 120000,
-      "credit_total": 0
+      "account": "減価償却累計額（備品）",
+      "nature": "C",
+      "debit_total": 0,
+      "credit_total": 50000
     },
     {
       "account": "減価償却費",
       "nature": "D",
-      "debit_total": 125000,
+      "debit_total": 25000,
       "credit_total": 0
     }
   ]

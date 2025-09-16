@@ -1,0 +1,58 @@
+{
+  "title": "読み取り演習B（標準）— サンプル(2)をフル攻略",
+  "questions": [
+    {
+      "id": "q1",
+      "label": "① 1月中に売掛金を回収した額",
+      "formula": {
+        "type": "credit_total",
+        "account": "売掛金"
+      }
+    },
+    {
+      "id": "q2",
+      "label": "② 1月末時点での備品の帳簿価額",
+      "formula": {
+        "type": "book_value",
+        "asset": "備品",
+        "contra": "減価償却累計額（備品）"
+      }
+    },
+    {
+      "id": "q3",
+      "label": "③ 1月末時点での負債の総額（買掛金・短期借入金）",
+      "formula": {
+        "type": "sum_balance",
+        "side": "C",
+        "accounts": [
+          "買掛金",
+          "短期借入金"
+        ]
+      }
+    },
+    {
+      "id": "q4",
+      "label": "④ 1月中に発生した費用の総額（仕入・諸費用・減価償却費）",
+      "formula": {
+        "type": "sum_debit_total",
+        "accounts": [
+          "仕入",
+          "給料手当",
+          "水道光熱費",
+          "通信費",
+          "減価償却費"
+        ]
+      }
+    },
+    {
+      "id": "q5",
+      "label": "⑤ 1月中に発生した収益の総額（売上）",
+      "formula": {
+        "type": "sum_credit_total",
+        "accounts": [
+          "売上"
+        ]
+      }
+    }
+  ]
+}
