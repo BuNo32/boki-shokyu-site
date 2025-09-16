@@ -1,0 +1,42 @@
+{
+  "title": "ドリルA（小型：5科目）",
+  "columns": [
+    "借方残高",
+    "借方合計",
+    "勘定科目",
+    "貸方合計",
+    "貸方残高"
+  ],
+  "rows": [
+    {
+      "account": "現金",
+      "nature": "D",
+      "debit_total": 300000,
+      "credit_total": 180000
+    },
+    {
+      "account": "売掛金",
+      "nature": "D",
+      "debit_total": 120000,
+      "credit_total": 50000
+    },
+    {
+      "account": "買掛金",
+      "nature": "C",
+      "debit_total": 40000,
+      "credit_total": 150000
+    },
+    {
+      "account": "資本金",
+      "nature": "C",
+      "debit_total": 0,
+      "credit_total": 300000
+    },
+    {
+      "account": "仕入",
+      "nature": "D",
+      "debit_total": 200000,
+      "credit_total": 0
+    }
+  ]
+}

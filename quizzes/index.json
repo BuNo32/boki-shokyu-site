@@ -86,7 +86,7 @@
     },
     {
       "quizId": "gx",
-      "title": "GX 総合：試算表と数値読解（章末）",
+      "title": "GX 総合：試算表と数値読解（TB5対応・章末）",
       "file": "gx.json",
       "page": "gx/99-quiz.html",
       "basePath": "quizzes/"

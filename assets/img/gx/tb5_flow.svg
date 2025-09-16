@@ -1,0 +1,10 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 260" role="img" aria-label="TB5の作り方フロー">
+  <style>.lbl{font:14px system-ui,-apple-system,Segoe UI,Roboto,Noto Sans JP,sans-serif}.box{fill:#fff;stroke:#94a3b8;stroke-width:2}.arrow{stroke:#64748b;stroke-width:2;marker-end:url(#a)}</style>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#64748b"/></marker></defs>
+  <text x="490" y="28" text-anchor="middle" class="lbl">①残高の向きを決める → ②合計欄に動きを積む → ③左右一致を確認</text>
+  <rect x="80" y="70" width="240" height="60" rx="10" class="box"/><text x="200" y="105" text-anchor="middle" class="lbl">① 残高の向き</text>
+  <line x1="320" y1="100" x2="380" y2="100" class="arrow"/>
+  <rect x="380" y="70" width="240" height="60" rx="10" class="box"/><text x="500" y="105" text-anchor="middle" class="lbl">② 合計（発生）を積む</text>
+  <line x1="620" y1="100" x2="680" y2="100" class="arrow"/>
+  <rect x="680" y="70" width="240" height="60" rx="10" class="box"/><text x="800" y="105" text-anchor="middle" class="lbl">③ 一致チェック</text>
+</svg>

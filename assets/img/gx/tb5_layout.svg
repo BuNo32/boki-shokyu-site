@@ -1,0 +1,10 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 300" role="img" aria-label="5列試算表の型">
+  <style>.box{fill:#fff;stroke:#94a3b8;stroke-width:2}.lbl{font:14px system-ui,-apple-system,Segoe UI,Roboto,Noto Sans JP,sans-serif}</style>
+  <text x="490" y="28" text-anchor="middle" class="lbl">5列試算表：借方残高｜借方合計｜勘定科目｜貸方合計｜貸方残高</text>
+  <rect x="40" y="70" width="170" height="70" rx="10" class="box"/><text x="125" y="110" text-anchor="middle" class="lbl">借方残高</text>
+  <rect x="220" y="70" width="170" height="70" rx="10" class="box"/><text x="305" y="110" text-anchor="middle" class="lbl">借方合計</text>
+  <rect x="400" y="70" width="180" height="70" rx="10" class="box"/><text x="490" y="110" text-anchor="middle" class="lbl">勘定科目</text>
+  <rect x="590" y="70" width="170" height="70" rx="10" class="box"/><text x="675" y="110" text-anchor="middle" class="lbl">貸方合計</text>
+  <rect x="770" y="70" width="170" height="70" rx="10" class="box"/><text x="855" y="110" text-anchor="middle" class="lbl">貸方残高</text>
+  <text x="490" y="190" text-anchor="middle" class="lbl">左右の合計は一致（借方合計＝貸方合計）</text>
+</svg>
