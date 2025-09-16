@@ -1,0 +1,21 @@
+/* tables-fix.css — normalize Markdown tables across chapters
+   Scope to Material's md-typeset to avoid bleeding into nav/sidebars */
+.md-typeset table:not([class]){
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td{
+  padding: .5rem .75rem;
+  border: 1px solid var(--md-typeset-table-color);
+  vertical-align: top;
+}
+/* Right-align numeric columns (2nd & 4th) for our 4列仕訳表 */
+.md-typeset table:not([class]) tr > :nth-child(2),
+.md-typeset table:not([class]) tr > :nth-child(4){
+  text-align: right;
+}
+/* Compact helper */
+.table-compact th,.table-compact td{padding:.4rem .6rem}
