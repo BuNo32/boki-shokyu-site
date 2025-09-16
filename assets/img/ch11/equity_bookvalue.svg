@@ -1,0 +1,12 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 220" role="img" aria-label="純資産のイメージ">
+  <style>
+    .box{fill:#fff;stroke:#94a3b8;stroke-width:2}
+    .lbl{font:14px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
+  </style>
+  <rect x="100" y="60" width="240" height="80" rx="10" class="box"/>
+  <text x="220" y="100" text-anchor="middle" class="lbl">資 産</text>
+  <rect x="380" y="60" width="240" height="80" rx="10" class="box"/>
+  <text x="500" y="100" text-anchor="middle" class="lbl">負 債</text>
+  <rect x="660" y="60" width="160" height="80" rx="10" class="box"/>
+  <text x="740" y="100" text-anchor="middle" class="lbl">純資産</text>
+</svg>

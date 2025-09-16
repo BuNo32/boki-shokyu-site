@@ -1,0 +1,292 @@
+[
+  {
+    "id": "ch11-q01",
+    "topic": "純資産",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "純資産を最も近い言葉で表すと？",
+    "choices": ["お店の売上", "お店の借金", "お店の持ち主の取り分", "お店の現金だけ"],
+    "answer": "お店の持ち主の取り分",
+    "explanation_ja": "純資産＝資産−負債。"
+  },
+  {
+    "id": "ch11-q02",
+    "topic": "資本金・元入金",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "会社の設立時に使う科目は？",
+    "choices": ["資本金", "元入金", "売上", "引出金"],
+    "answer": "資本金",
+    "explanation_ja": "会社は資本金、個人事業は元入金。"
+  },
+  {
+    "id": "ch11-q03",
+    "topic": "資本金",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】会社設立時、出資 500,000 円が普通預金に入金された。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "普通預金",
+        "amount": 500000
+      },
+      {
+        "side": "Cr",
+        "account": "資本金",
+        "amount": 500000
+      }
+    ],
+    "explanation_ja": "純資産（資本金）が増加。"
+  },
+  {
+    "id": "ch11-q04",
+    "topic": "元入金",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】個人事業主が現金 300,000 円を事業に持ち込んだ。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "現金",
+        "amount": 300000
+      },
+      {
+        "side": "Cr",
+        "account": "元入金",
+        "amount": 300000
+      }
+    ],
+    "explanation_ja": "元入金（純資産）が増える。"
+  },
+  {
+    "id": "ch11-q05",
+    "topic": "引出金",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "事業の口座から生活費を出したときに使う科目は？",
+    "choices": ["通信費", "引出金", "雑費", "給料手当"],
+    "answer": "引出金",
+    "explanation_ja": "生活費など私用支出は引出金。"
+  },
+  {
+    "id": "ch11-q06",
+    "topic": "引出金",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】生活費 20,000 円を普通預金から引き出した。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "引出金",
+        "amount": 20000
+      },
+      {
+        "side": "Cr",
+        "account": "普通預金",
+        "amount": 20000
+      }
+    ],
+    "explanation_ja": "引出金は一時科目。"
+  },
+  {
+    "id": "ch11-q07",
+    "topic": "引出金",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】私用の買い物 5,000 円を現金で支払った。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "引出金",
+        "amount": 5000
+      },
+      {
+        "side": "Cr",
+        "account": "現金",
+        "amount": 5000
+      }
+    ],
+    "explanation_ja": "事業の現金を私用に使った。"
+  },
+  {
+    "id": "ch11-q08",
+    "topic": "期末振替",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】期末、当期の引出金合計 100,000 円を元入金へ振り替えた。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "元入金",
+        "amount": 100000
+      },
+      {
+        "side": "Cr",
+        "account": "引出金",
+        "amount": 100000
+      }
+    ],
+    "explanation_ja": "引出金を純資産に戻す。"
+  },
+  {
+    "id": "ch11-q09",
+    "topic": "元入金",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】事業主が私財で事業の通信費 5,500 円を支払った（追加の元入として処理）。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "通信費",
+        "amount": 5500
+      },
+      {
+        "side": "Cr",
+        "account": "元入金",
+        "amount": 5500
+      }
+    ],
+    "explanation_ja": "個人→事業の立替＝実質、元入の追加。"
+  },
+  {
+    "id": "ch11-q10",
+    "topic": "元入金",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】事業主が現金 10,000 円を事業へ戻した。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "現金",
+        "amount": 10000
+      },
+      {
+        "side": "Cr",
+        "account": "元入金",
+        "amount": 10000
+      }
+    ],
+    "explanation_ja": "元入金の増加として処理。"
+  },
+  {
+    "id": "ch11-q11",
+    "topic": "位置づけ",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "次のうち、収益でも費用でもないものはどれ？",
+    "choices": ["資本金・元入金", "売上", "仕入", "通信費"],
+    "answer": "資本金・元入金",
+    "explanation_ja": "純資産の科目。"
+  },
+  {
+    "id": "ch11-q12",
+    "topic": "位置づけ",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "引出金の説明として正しいのはどれ？",
+    "choices": ["費用である", "負債である", "一時科目で、期末に元入金へ振替える", "収益である"],
+    "answer": "一時科目で、期末に元入金へ振替える",
+    "explanation_ja": "当期は引出金にためて、期末に元入へ。"
+  },
+  {
+    "id": "ch11-q13",
+    "topic": "相違",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "会社と個人の組み合わせで正しいのはどれ？",
+    "choices": [
+      "会社＝元入金、個人＝資本金",
+      "会社＝資本金、個人＝元入金",
+      "どちらも資本金",
+      "どちらも元入金"
+    ],
+    "answer": "会社＝資本金、個人＝元入金",
+    "explanation_ja": "立ち位置の基本。"
+  },
+  {
+    "id": "ch11-q14",
+    "topic": "混合",
+    "difficulty": "standard",
+    "question_type": "journal_mcq",
+    "prompt_ja": "【取引】生活費 20,000 円を事業の口座から支払った。正しい仕訳はどれ？",
+    "choices": [
+      "（借）雑費 20,000／（貸）普通預金 20,000",
+      "（借）引出金 20,000／（貸）普通預金 20,000",
+      "（借）給料手当 20,000／（貸）普通預金 20,000",
+      "（借）売上 20,000／（貸）普通預金 20,000"
+    ],
+    "answer": "（借）引出金 20,000／（貸）普通預金 20,000",
+    "explanation_ja": "私用は引出金で。"
+  },
+  {
+    "id": "ch11-q15",
+    "topic": "混合",
+    "difficulty": "standard",
+    "question_type": "journal_mcq",
+    "prompt_ja": "【取引】期末に引出金 100,000 円を元入金へ振り替えた。正しい仕訳はどれ？",
+    "choices": [
+      "（借）引出金 100,000／（貸）元入金 100,000",
+      "（借）元入金 100,000／（貸）引出金 100,000",
+      "（借）元入金 100,000／（貸）現金 100,000",
+      "（借）現金 100,000／（貸）引出金 100,000"
+    ],
+    "answer": "（借）元入金 100,000／（貸）引出金 100,000",
+    "explanation_ja": "引出金を元入へ戻す。"
+  },
+  {
+    "id": "ch11-q16",
+    "topic": "混合",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "次のうち、純資産の科目はどれ？",
+    "choices": ["売掛金", "資本金", "仕入", "通信費"],
+    "answer": "資本金",
+    "explanation_ja": "純資産の代表科目。"
+  },
+  {
+    "id": "ch11-q17",
+    "topic": "混合",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "次の説明のうち正しいものは？",
+    "choices": [
+      "元入金は費用である",
+      "引出金は収益である",
+      "引出金は一時科目で、期末に元入金へ振替える",
+      "資本金は負債である"
+    ],
+    "answer": "引出金は一時科目で、期末に元入金へ振替える",
+    "explanation_ja": "大事なルール。"
+  },
+  {
+    "id": "ch11-q18",
+    "topic": "総合",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【総合】次の2つの取引を4列で書きなさい。（1）個人が 50,000 円を口座へ追加で入金した（2）その後、生活費 10,000 円を現金で支払った。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "普通預金",
+        "amount": 50000
+      },
+      {
+        "side": "Cr",
+        "account": "元入金",
+        "amount": 50000
+      },
+      {
+        "side": "Dr",
+        "account": "引出金",
+        "amount": 10000
+      },
+      {
+        "side": "Cr",
+        "account": "現金",
+        "amount": 10000
+      }
+    ],
+    "explanation_ja": "（1）追加の元入（2）引出金は一時科目。"
+  }
+]

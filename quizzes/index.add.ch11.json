@@ -1,0 +1,11 @@
+{
+  "quizzes": [
+    {
+      "quizId": "ch11",
+      "title": "第11章 純資産（資本金・元入・引出）（章末）",
+      "file": "ch11.json",
+      "page": "ch11/99-quiz.html",
+      "basePath": "quizzes/"
+    }
+  ]
+}

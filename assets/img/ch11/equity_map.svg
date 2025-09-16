@@ -1,0 +1,12 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 260" role="img" aria-label="純資産マップ（会社と個人）">
+  <style>
+    .box{fill:#fff;stroke:#94a3b8;stroke-width:2}
+    .lbl{font:14px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
+  </style>
+  <text x="460" y="28" text-anchor="middle" class="lbl">純資産＝資産−負債＝「お店の持ち主の取り分」</text>
+  <rect x="80" y="70" width="320" height="70" rx="10" class="box"/>
+  <text x="240" y="110" text-anchor="middle" class="lbl">会社：資本金（株主からの出資）</text>
+  <rect x="520" y="70" width="320" height="70" rx="10" class="box"/>
+  <text x="680" y="110" text-anchor="middle" class="lbl">個人：元入金（事業主の持ち込み）</text>
+  <text x="460" y="190" text-anchor="middle" class="lbl">引出金＝一時科目（期末に元入金へ戻す）</text>
+</svg>
