@@ -1,0 +1,287 @@
+[
+  {
+    "id": "ch10-q01",
+    "topic": "取得原価",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "取得原価に含めるのが適切なのはどれ？",
+    "choices": ["通常の修繕費", "機能を上げる改良費", "文房具の購入費", "交際費"],
+    "answer": "機能を上げる改良費",
+    "explanation_ja": "使える状態にするまでの必要額や性能向上は取得原価に含めます（初級の考え方）。"
+  },
+  {
+    "id": "ch10-q02",
+    "topic": "取得原価",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】備品を現金で 150,000 円購入し、運搬費 5,000 円も現金で支払った。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "備品",
+        "amount": 150000
+      },
+      {
+        "side": "Cr",
+        "account": "現金",
+        "amount": 150000
+      },
+      {
+        "side": "Dr",
+        "account": "備品",
+        "amount": 5000
+      },
+      {
+        "side": "Cr",
+        "account": "現金",
+        "amount": 5000
+      }
+    ],
+    "explanation_ja": "取得原価の積み上げ。複合は2行で4列の形を保つ。"
+  },
+  {
+    "id": "ch10-q03",
+    "topic": "償却の式",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "定額法の年間減価償却費の計算式として最も近いものは？（残存価額は0とする）",
+    "choices": ["取得原価 × 定率", "取得原価 ÷ 耐用年数", "帳簿価額 × 定率", "取得原価 ÷ 月数"],
+    "answer": "取得原価 ÷ 耐用年数",
+    "explanation_ja": "初級では定額法（毎期同額）が中心です。"
+  },
+  {
+    "id": "ch10-q04",
+    "topic": "仕訳",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】当期の減価償却費 30,000 円を計上した。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "減価償却費",
+        "amount": 30000
+      },
+      {
+        "side": "Cr",
+        "account": "減価償却累計額",
+        "amount": 30000
+      }
+    ],
+    "explanation_ja": "費用（左）と累計額（右）。資産を直接減らさないのがポイント。"
+  },
+  {
+    "id": "ch10-q05",
+    "topic": "帳簿価額",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "帳簿価額を表すのに最も近いのはどれ？",
+    "choices": [
+      "取得原価 − 減価償却累計額",
+      "取得原価 + 減価償却費",
+      "減価償却費 ÷ 耐用年数",
+      "売上 − 仕入"
+    ],
+    "answer": "取得原価 − 減価償却累計額",
+    "explanation_ja": "“今の価値”の目安として帳簿上で把握します。"
+  },
+  {
+    "id": "ch10-q06",
+    "topic": "月次",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】PC（取得原価 120,000、耐用年数4年）の月次償却 2,500 円を計上。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "減価償却費",
+        "amount": 2500
+      },
+      {
+        "side": "Cr",
+        "account": "減価償却累計額",
+        "amount": 2500
+      }
+    ],
+    "explanation_ja": "定額法の月割り。"
+  },
+  {
+    "id": "ch10-q07",
+    "topic": "改良",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "寿命が延びる・機能が上がる支出は原則どう扱う？",
+    "choices": ["修繕費（費用）", "資本的支出（資産）", "雑費", "租税公課"],
+    "answer": "資本的支出（資産）",
+    "explanation_ja": "初級では“良くなる”支出は資産へ。"
+  },
+  {
+    "id": "ch10-q08",
+    "topic": "修繕",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "壊れた部分を元に戻す通常の修理費は？",
+    "choices": ["備品", "修繕費", "減価償却費", "雑損失"],
+    "answer": "修繕費",
+    "explanation_ja": "価値や寿命を元に戻す支出＝費用。"
+  },
+  {
+    "id": "ch10-q09",
+    "topic": "取得原価",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】備品 200,000 円を普通預金で購入し、設置費 10,000 円を現金で支払った。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "備品",
+        "amount": 200000
+      },
+      {
+        "side": "Cr",
+        "account": "普通預金",
+        "amount": 200000
+      },
+      {
+        "side": "Dr",
+        "account": "備品",
+        "amount": 10000
+      },
+      {
+        "side": "Cr",
+        "account": "現金",
+        "amount": 10000
+      }
+    ],
+    "explanation_ja": "取得原価＝本体＋設置費。"
+  },
+  {
+    "id": "ch10-q10",
+    "topic": "判定",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "次のうち、取得原価に含めないのは？",
+    "choices": ["運搬費", "設置費", "初期設定費", "消耗品費"],
+    "answer": "消耗品費",
+    "explanation_ja": "日々の消耗品は費用。"
+  },
+  {
+    "id": "ch10-q11",
+    "topic": "仕訳",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】メモリ増設 22,000 円を普通預金で支払った（性能アップ）。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "備品",
+        "amount": 22000
+      },
+      {
+        "side": "Cr",
+        "account": "普通預金",
+        "amount": 22000
+      }
+    ],
+    "explanation_ja": "資本的支出として資産計上。"
+  },
+  {
+    "id": "ch10-q12",
+    "topic": "仕訳",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】PCファン交換 6,600 円を現金で支払った（通常修理）。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "修繕費",
+        "amount": 6600
+      },
+      {
+        "side": "Cr",
+        "account": "現金",
+        "amount": 6600
+      }
+    ],
+    "explanation_ja": "修繕費として費用処理。"
+  },
+  {
+    "id": "ch10-q13",
+    "topic": "定額法",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "定額法の説明として最も適切なのは？",
+    "choices": [
+      "毎期同額を費用化する方法",
+      "当期の帳簿価額に一定率をかける方法",
+      "売上に比例して費用化する方法",
+      "在庫が増えるほど費用化する方法"
+    ],
+    "answer": "毎期同額を費用化する方法",
+    "explanation_ja": "初級では定額法を中心に学びます。"
+  },
+  {
+    "id": "ch10-q14",
+    "topic": "用語",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "次のうち、費用科目はどれ？",
+    "choices": ["減価償却累計額", "備品", "減価償却費", "普通預金"],
+    "answer": "減価償却費",
+    "explanation_ja": "減価償却費＝費用、累計額＝評価性の控除項目（資産のマイナスの箱）。"
+  },
+  {
+    "id": "ch10-q15",
+    "topic": "用語",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "次のうち、資産を直接減らさず費用化の合計を貯める“箱”は？",
+    "choices": ["減価償却累計額", "修繕費", "売掛金", "繰越商品"],
+    "answer": "減価償却累計額",
+    "explanation_ja": "“資産のマイナスの箱”として扱います。"
+  },
+  {
+    "id": "ch10-q16",
+    "topic": "月次",
+    "difficulty": "standard",
+    "question_type": "journal_mcq",
+    "prompt_ja": "【取引】PC（120,000、4年）の月次償却 2,500 円。正しい仕訳はどれ？",
+    "choices": [
+      "（借）減価償却費 2,500／（貸）減価償却累計額 2,500",
+      "（借）備品 2,500／（貸）減価償却費 2,500",
+      "（借）減価償却累計額 2,500／（貸）減価償却費 2,500",
+      "（借）現金 2,500／（貸）減価償却費 2,500"
+    ],
+    "answer": "（借）減価償却費 2,500／（貸）減価償却累計額 2,500",
+    "explanation_ja": "費用と累計額のセット。"
+  },
+  {
+    "id": "ch10-q17",
+    "topic": "判定",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "次の組み合わせで性質が一致しているのはどれ？",
+    "choices": [
+      "備品＝費用、減価償却費＝資産",
+      "備品＝資産、減価償却累計額＝資産のマイナス箱",
+      "修繕費＝資産、減価償却費＝負債",
+      "普通預金＝費用、現金＝収益"
+    ],
+    "answer": "備品＝資産、減価償却累計額＝資産のマイナス箱",
+    "explanation_ja": "用語の位置付けを確認。"
+  },
+  {
+    "id": "ch10-q18",
+    "topic": "取得原価",
+    "difficulty": "standard",
+    "question_type": "journal_mcq",
+    "prompt_ja": "【取引】備品 200,000 円を普通預金で購入、設置費 10,000 円を現金で支払。正しい仕訳の組合せはどれ？",
+    "choices": [
+      "（借）備品 200,000／（貸）普通預金 200,000 と （借）修繕費 10,000／（貸）現金 10,000",
+      "（借）備品 200,000／（貸）現金 200,000 と （借）備品 10,000／（貸）現金 10,000",
+      "（借）備品 200,000／（貸）普通預金 200,000 と （借）備品 10,000／（貸）現金 10,000",
+      "（借）修繕費 200,000／（貸）普通預金 200,000 と （借）備品 10,000／（貸）現金 10,000"
+    ],
+    "answer": "（借）備品 200,000／（貸）普通預金 200,000 と （借）備品 10,000／（貸）現金 10,000",
+    "explanation_ja": "設置費も取得原価に含める。"
+  }
+]

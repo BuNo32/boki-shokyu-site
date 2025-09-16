@@ -64,6 +64,13 @@
       "basePath": "quizzes/"
     },
     {
+      "quizId": "ch10",
+      "title": "第10章 固定資産（取得・減価償却）（章末）",
+      "file": "ch10.json",
+      "page": "ch10/99-quiz.html",
+      "basePath": "quizzes/"
+    },
+    {
       "quizId": "proto",
       "title": "デザイン見本クイズ",
       "file": "prototype.json",

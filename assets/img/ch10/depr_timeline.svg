@@ -1,0 +1,11 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 240" role="img" aria-label="耐用年数・残存価額のタイムライン">
+  <style>
+    .lbl{font:14px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
+    .line{stroke:#94a3b8;stroke-width:2}
+  </style>
+  <text x="460" y="28" text-anchor="middle" class="lbl">取得原価 →（各期の減価償却）→ 帳簿価額</text>
+  <line x1="120" y1="100" x2="800" y2="100" class="line"/>
+  <text x="120" y="120" class="lbl">取得時</text>
+  <text x="460" y="120" class="lbl">耐用年数のあいだ、毎期費用化</text>
+  <text x="780" y="120" text-anchor="end" class="lbl">終了（残存価額）</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 260" role="img" aria-label="取得原価の考え方">
+  <style>
+    .box{fill:#fff;stroke:#94a3b8;stroke-width:2}
+    .lbl{font:14px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
+  </style>
+  <text x="460" y="28" text-anchor="middle" class="lbl">取得原価＝買った値段＋使える状態にするまでの必要コスト</text>
+  <rect x="80" y="70" width="220" height="60" rx="10" class="box"/>
+  <text x="190" y="105" text-anchor="middle" class="lbl">本体代</text>
+  <rect x="350" y="70" width="220" height="60" rx="10" class="box"/>
+  <text x="460" y="105" text-anchor="middle" class="lbl">運搬・設置</text>
+  <rect x="620" y="70" width="220" height="60" rx="10" class="box"/>
+  <text x="730" y="105" text-anchor="middle" class="lbl">初期設定 等</text>
+  <text x="460" y="190" text-anchor="middle" class="lbl">修繕や消耗品は通常「費用」へ</text>
+</svg>

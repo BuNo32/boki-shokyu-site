@@ -1,0 +1,12 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 220" role="img" aria-label="帳簿価額＝取得原価−減価償却累計額">
+  <style>
+    .box{fill:#fff;stroke:#94a3b8;stroke-width:2}
+    .lbl{font:14px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
+  </style>
+  <rect x="100" y="60" width="280" height="80" rx="10" class="box"/>
+  <text x="240" y="100" text-anchor="middle" class="lbl">取得原価</text>
+  <rect x="400" y="60" width="280" height="80" rx="10" class="box"/>
+  <text x="540" y="100" text-anchor="middle" class="lbl">減価償却累計額</text>
+  <rect x="700" y="60" width="120" height="80" rx="10" class="box"/>
+  <text x="760" y="100" text-anchor="middle" class="lbl">＝帳簿価額</text>
+</svg>
