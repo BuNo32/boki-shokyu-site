@@ -2168,37 +2168,152 @@
 <li><strong>前払金</strong>（先払い）→ 後日、商品を受け取ったら <strong>前払金を消して</strong>「仕入」などへ</li>
 <li><strong>前受金</strong>（先にもらい）→ 後日、商品を渡したら <strong>前受金を消して</strong>「売上」へ</li>
 </ul>
-<p><strong>例1：前金を払って備品を予約 30,000円</strong>
-| 借方科目 | 金額 | 貸方科目 | 金額 |
-|---|---:|---|---:|
-| 前払金 | 30,000 | 普通預金 | 30,000 |</p>
-<p><strong>後日、備品を受け取った（総額 80,000円。前金充当 30,000円を含む）</strong>
-| 借方科目 | 金額 | 貸方科目 | 金額 |
-|---|---:|---|---:|
-| 備品 | 80,000 | 前払金 | 30,000 |
-| | | 普通預金 | 50,000 |</p>
-<p><strong>例2：前受金をもらってから商品を出荷（総額 50,000円。前受 10,000円）</strong>
-| 借方科目 | 金額 | 貸方科目 | 金額 |
-|---|---:|---|---:|
-| 前受金 | 10,000 | 売上 | 50,000 |
-| 売掛金 | 40,000 | | |</p>
+<p><strong>例1：前金を払って備品を予約 30,000円</strong></p>
+<table>
+<thead>
+<tr>
+<th>借方科目</th>
+<th style="text-align: right;">金額</th>
+<th>貸方科目</th>
+<th style="text-align: right;">金額</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>前払金</td>
+<td style="text-align: right;">30,000</td>
+<td>普通預金</td>
+<td style="text-align: right;">30,000</td>
+</tr>
+</tbody>
+</table>
+<p><strong>後日、備品を受け取った（総額 80,000円。前金充当 30,000円を含む）</strong></p>
+<table>
+<thead>
+<tr>
+<th>借方科目</th>
+<th style="text-align: right;">金額</th>
+<th>貸方科目</th>
+<th style="text-align: right;">金額</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>備品</td>
+<td style="text-align: right;">80,000</td>
+<td>前払金</td>
+<td style="text-align: right;">30,000</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align: right;"></td>
+<td>普通預金</td>
+<td style="text-align: right;">50,000</td>
+</tr>
+</tbody>
+</table>
+<p><strong>例2：前受金をもらってから商品を出荷（総額 50,000円。前受 10,000円）</strong></p>
+<table>
+<thead>
+<tr>
+<th>借方科目</th>
+<th style="text-align: right;">金額</th>
+<th>貸方科目</th>
+<th style="text-align: right;">金額</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>前受金</td>
+<td style="text-align: right;">10,000</td>
+<td>売上</td>
+<td style="text-align: right;">50,000</td>
+</tr>
+<tr>
+<td>売掛金</td>
+<td style="text-align: right;">40,000</td>
+<td></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
 <h2 id="b">B. 未収入金・未払金（モノ/サービスが先）</h2>
-<p><strong>例3：備品を掛けで売った（代金は後日） 20,000円</strong>
-| 借方科目 | 金額 | 貸方科目 | 金額 |
-|---|---:|---|---:|
-| 未収入金 | 20,000 | 雑収入 | 20,000 |</p>
-<p><strong>後日、現金で受け取った</strong>
-| 借方科目 | 金額 | 貸方科目 | 金額 |
-|---|---:|---|---:|
-| 現金 | 20,000 | 未収入金 | 20,000 |</p>
-<p><strong>例4：備品を掛けで買った（代金は後日） 12,000円</strong>
-| 借方科目 | 金額 | 貸方科目 | 金額 |
-|---|---:|---|---:|
-| 備品 | 12,000 | 未払金 | 12,000 |</p>
-<p><strong>後日、振込で支払った</strong>
-| 借方科目 | 金額 | 貸方科目 | 金額 |
-|---|---:|---|---:|
-| 未払金 | 12,000 | 普通預金 | 12,000 |</p>
+<p><strong>例3：備品を掛けで売った（代金は後日） 20,000円</strong></p>
+<table>
+<thead>
+<tr>
+<th>借方科目</th>
+<th style="text-align: right;">金額</th>
+<th>貸方科目</th>
+<th style="text-align: right;">金額</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>未収入金</td>
+<td style="text-align: right;">20,000</td>
+<td>雑収入</td>
+<td style="text-align: right;">20,000</td>
+</tr>
+</tbody>
+</table>
+<p><strong>後日、現金で受け取った</strong></p>
+<table>
+<thead>
+<tr>
+<th>借方科目</th>
+<th style="text-align: right;">金額</th>
+<th>貸方科目</th>
+<th style="text-align: right;">金額</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>現金</td>
+<td style="text-align: right;">20,000</td>
+<td>未収入金</td>
+<td style="text-align: right;">20,000</td>
+</tr>
+</tbody>
+</table>
+<p><strong>例4：備品を掛けで買った（代金は後日） 12,000円</strong></p>
+<table>
+<thead>
+<tr>
+<th>借方科目</th>
+<th style="text-align: right;">金額</th>
+<th>貸方科目</th>
+<th style="text-align: right;">金額</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>備品</td>
+<td style="text-align: right;">12,000</td>
+<td>未払金</td>
+<td style="text-align: right;">12,000</td>
+</tr>
+</tbody>
+</table>
+<p><strong>後日、振込で支払った</strong></p>
+<table>
+<thead>
+<tr>
+<th>借方科目</th>
+<th style="text-align: right;">金額</th>
+<th>貸方科目</th>
+<th style="text-align: right;">金額</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>未払金</td>
+<td style="text-align: right;">12,000</td>
+<td>普通預金</td>
+<td style="text-align: right;">12,000</td>
+</tr>
+</tbody>
+</table>
 
 
 
