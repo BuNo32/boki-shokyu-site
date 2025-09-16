@@ -1,0 +1,30 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 260" role="img" aria-label="税抜方式の考え方：仮受と仮払のイメージ">
+  <style>
+    .box{fill:#fff;stroke:#94a3b8;stroke-width:2}
+    .lbl{font:14px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
+    .arrow{stroke:#64748b;stroke-width:2;marker-end:url(#a)}
+  </style>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <text x="470" y="26" text-anchor="middle" class="lbl">税抜方式＝本体は売上・仕入、消費税は仮受・仮払に分ける</text>
+  <rect x="60" y="70" width="240" height="60" rx="10" class="box"/>
+  <text x="180" y="105" text-anchor="middle" class="lbl">売上（税抜）</text>
+  <line x1="300" y1="100" x2="360" y2="100" class="arrow"/>
+  <rect x="360" y="70" width="200" height="60" rx="10" class="box"/>
+  <text x="460" y="105" text-anchor="middle" class="lbl">仮受消費税</text>
+  <line x1="560" y1="100" x2="620" y2="100" class="arrow"/>
+  <rect x="620" y="70" width="260" height="60" rx="10" class="box"/>
+  <text x="750" y="105" text-anchor="middle" class="lbl">期末に差額を精算（未払/未収）</text>
+
+  <rect x="60" y="150" width="240" height="60" rx="10" class="box"/>
+  <text x="180" y="185" text-anchor="middle" class="lbl">仕入・費用（税抜）</text>
+  <line x1="300" y1="180" x2="360" y2="180" class="arrow"/>
+  <rect x="360" y="150" width="200" height="60" rx="10" class="box"/>
+  <text x="460" y="185" text-anchor="middle" class="lbl">仮払消費税</text>
+  <line x1="560" y1="180" x2="620" y2="180" class="arrow"/>
+  <rect x="620" y="150" width="260" height="60" rx="10" class="box"/>
+  <text x="750" y="185" text-anchor="middle" class="lbl">期末に仮受と相殺</text>
+</svg>

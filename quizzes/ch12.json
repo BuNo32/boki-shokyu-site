@@ -1,0 +1,347 @@
+[
+  {
+    "id": "ch12-q01",
+    "topic": "税抜方式",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "税抜方式の説明として最も近いものは？",
+    "choices": [
+      "税込金額だけで処理する方法",
+      "本体は売上・仕入で、税は仮受・仮払に分ける方法",
+      "税を費用に混ぜる方法",
+      "期末にだけ税を計上する方法"
+    ],
+    "answer": "本体は売上・仕入で、税は仮受・仮払に分ける方法",
+    "explanation_ja": "税抜は本体と税を分けて記録します。"
+  },
+  {
+    "id": "ch12-q02",
+    "topic": "売上（税抜）",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】現金売上 110,000 円（税率10%）。税抜方式で仕訳しなさい。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "現金",
+        "amount": 110000
+      },
+      {
+        "side": "Cr",
+        "account": "売上",
+        "amount": 100000
+      },
+      {
+        "side": "Cr",
+        "account": "仮受消費税",
+        "amount": 10000
+      }
+    ],
+    "explanation_ja": "本体10万は売上、税1万は仮受消費税へ。"
+  },
+  {
+    "id": "ch12-q03",
+    "topic": "仕入（税抜）",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】掛けで 55,000 円の仕入（税率10%）。税抜方式で仕訳。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "仕入",
+        "amount": 50000
+      },
+      {
+        "side": "Dr",
+        "account": "仮払消費税",
+        "amount": 5000
+      },
+      {
+        "side": "Cr",
+        "account": "買掛金",
+        "amount": 55000
+      }
+    ],
+    "explanation_ja": "本体は仕入、税は仮払へ。"
+  },
+  {
+    "id": "ch12-q04",
+    "topic": "費用（税抜）",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】旅費交通費 11,000 円を現金で支払（税率10%）。税抜方式で仕訳。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "旅費交通費",
+        "amount": 10000
+      },
+      {
+        "side": "Dr",
+        "account": "仮払消費税",
+        "amount": 1000
+      },
+      {
+        "side": "Cr",
+        "account": "現金",
+        "amount": 11000
+      }
+    ],
+    "explanation_ja": "費用本体と税を分ける。"
+  },
+  {
+    "id": "ch12-q05",
+    "topic": "位置づけ",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "売上時に計上する税の科目は？（税抜方式）",
+    "choices": ["仮払消費税", "未払消費税", "仮受消費税", "雑収入"],
+    "answer": "仮受消費税",
+    "explanation_ja": "売上側は仮受。"
+  },
+  {
+    "id": "ch12-q06",
+    "topic": "位置づけ",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "仕入や費用で計上する税の科目は？（税抜方式）",
+    "choices": ["仮払消費税", "仮受消費税", "未収消費税", "売上返品"],
+    "answer": "仮払消費税",
+    "explanation_ja": "買った側は仮払。"
+  },
+  {
+    "id": "ch12-q07",
+    "topic": "期末精算",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】期末、仮受 50,000 と仮払 38,000 を相殺し、差額 12,000 を未払消費税に振り替えた。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "仮受消費税",
+        "amount": 50000
+      },
+      {
+        "side": "Cr",
+        "account": "仮払消費税",
+        "amount": 38000
+      },
+      {
+        "side": "Cr",
+        "account": "未払消費税",
+        "amount": 12000
+      }
+    ],
+    "explanation_ja": "仮受＞仮払＝納付予定。"
+  },
+  {
+    "id": "ch12-q08",
+    "topic": "期末精算",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】期末、仮受 30,000 と仮払 36,000 を相殺し、差額 6,000 を未収消費税に振り替えた。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "仮受消費税",
+        "amount": 30000
+      },
+      {
+        "side": "Dr",
+        "account": "未収消費税",
+        "amount": 6000
+      },
+      {
+        "side": "Cr",
+        "account": "仮払消費税",
+        "amount": 36000
+      }
+    ],
+    "explanation_ja": "仮受＜仮払＝還付見込み。"
+  },
+  {
+    "id": "ch12-q09",
+    "topic": "判定",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "次のうち、消費税の対象外として扱ってよいもの（初級の学習範囲の感覚）は？",
+    "choices": ["給与手当", "売上", "仕入", "消耗品費"],
+    "answer": "給与手当",
+    "explanation_ja": "給与は消費税の対象外。"
+  },
+  {
+    "id": "ch12-q10",
+    "topic": "売掛・買掛",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】掛け売上 110,000 円（税率10%）を計上した。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "売掛金",
+        "amount": 110000
+      },
+      {
+        "side": "Cr",
+        "account": "売上",
+        "amount": 100000
+      },
+      {
+        "side": "Cr",
+        "account": "仮受消費税",
+        "amount": 10000
+      }
+    ],
+    "explanation_ja": "売掛金は税込額。"
+  },
+  {
+    "id": "ch12-q11",
+    "topic": "売掛・買掛",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】掛けで消耗品 5,500 円を購入（税率10%）。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "消耗品費",
+        "amount": 5000
+      },
+      {
+        "side": "Dr",
+        "account": "仮払消費税",
+        "amount": 500
+      },
+      {
+        "side": "Cr",
+        "account": "未払金",
+        "amount": 5500
+      }
+    ],
+    "explanation_ja": "未払金（課税仕入の雑費系）。"
+  },
+  {
+    "id": "ch12-q12",
+    "topic": "選択",
+    "difficulty": "standard",
+    "question_type": "journal_mcq",
+    "prompt_ja": "【取引】現金売上 110,000 円。正しい仕訳はどれ？（税率10%）",
+    "choices": [
+      "（借）現金 110,000／（貸）売上 110,000",
+      "（借）現金 110,000／（貸）売上 100,000, 仮受消費税 10,000",
+      "（借）現金 100,000／（貸）売上 100,000, 仮受消費税 10,000",
+      "（借）現金 110,000／（貸）売上 100,000, 仮払消費税 10,000"
+    ],
+    "answer": "（借）現金 110,000／（貸）売上 100,000, 仮受消費税 10,000",
+    "explanation_ja": "売上側は仮受。"
+  },
+  {
+    "id": "ch12-q13",
+    "topic": "理解",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "税抜方式で“本体”として計上するのはどれ？",
+    "choices": [
+      "売上や仕入・費用の金額",
+      "仮受消費税・仮払消費税の金額",
+      "未払消費税だけ",
+      "全て税込金額"
+    ],
+    "answer": "売上や仕入・費用の金額",
+    "explanation_ja": "税は仮受・仮払で別管理。"
+  },
+  {
+    "id": "ch12-q14",
+    "topic": "費用（税抜）",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】通信費 3,300 円を未払とした（税率10%）。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "通信費",
+        "amount": 3000
+      },
+      {
+        "side": "Dr",
+        "account": "仮払消費税",
+        "amount": 300
+      },
+      {
+        "side": "Cr",
+        "account": "未払金",
+        "amount": 3300
+      }
+    ],
+    "explanation_ja": "費用の税は仮払へ。"
+  },
+  {
+    "id": "ch12-q15",
+    "topic": "期末精算",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "仮受＞仮払 の場合の期末仕訳で正しい科目は？",
+    "choices": [
+      "未収消費税（借方）",
+      "未払消費税（貸方）",
+      "仮受消費税（貸方）",
+      "仮払消費税（貸方）"
+    ],
+    "answer": "未払消費税（貸方）",
+    "explanation_ja": "納付予定なら未払。"
+  },
+  {
+    "id": "ch12-q16",
+    "topic": "混合",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "次の組み合わせで性質が一致しているのはどれ？",
+    "choices": [
+      "仮受消費税＝資産、仮払消費税＝負債",
+      "仮受消費税＝負債性、仮払消費税＝資産性",
+      "未払消費税＝資産、未収消費税＝負債",
+      "売上＝費用、仕入＝収益"
+    ],
+    "answer": "仮受消費税＝負債性、仮払消費税＝資産性",
+    "explanation_ja": "学習上の位置付けとして把握。"
+  },
+  {
+    "id": "ch12-q17",
+    "topic": "売掛・買掛",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】掛けで 11,000 円の旅費交通費（税率10%）が発生。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "旅費交通費",
+        "amount": 10000
+      },
+      {
+        "side": "Dr",
+        "account": "仮払消費税",
+        "amount": 1000
+      },
+      {
+        "side": "Cr",
+        "account": "未払金",
+        "amount": 11000
+      }
+    ],
+    "explanation_ja": "費用＋仮払＝未払金。"
+  },
+  {
+    "id": "ch12-q18",
+    "topic": "総合",
+    "difficulty": "standard",
+    "question_type": "journal_mcq",
+    "prompt_ja": "【総合】期末、仮受 30,000／仮払 36,000。正しい仕訳はどれ？",
+    "choices": [
+      "（借）仮受 30,000, 未収 6,000／（貸）仮払 36,000",
+      "（借）仮受 36,000／（貸）仮払 30,000, 未払 6,000",
+      "（借）仮払 36,000／（貸）仮受 30,000, 未収 6,000",
+      "（借）未払 6,000／（貸）仮受 6,000"
+    ],
+    "answer": "（借）仮受 30,000, 未収 6,000／（貸）仮払 36,000",
+    "explanation_ja": "仮受＜仮払なので未収（還付見込み）。"
+  }
+]

@@ -78,6 +78,13 @@
       "basePath": "quizzes/"
     },
     {
+      "quizId": "ch12",
+      "title": "第12章 収益・費用と税金（税抜）（章末）",
+      "file": "ch12.json",
+      "page": "ch12/99-quiz.html",
+      "basePath": "quizzes/"
+    },
+    {
       "quizId": "proto",
       "title": "デザイン見本クイズ",
       "file": "prototype.json",
