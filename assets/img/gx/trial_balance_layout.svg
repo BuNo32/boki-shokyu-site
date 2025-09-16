@@ -1,0 +1,9 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 300" role="img" aria-label="試算表のざっくりレイアウト">
+  <style>.box{fill:#fff;stroke:#94a3b8;stroke-width:2}.lbl{font:14px system-ui,-apple-system,Segoe UI,Roboto,Noto Sans JP,sans-serif}</style>
+  <text x="475" y="28" text-anchor="middle" class="lbl">試算表＝借方合計＝貸方合計（数字の健康診断）</text>
+  <rect x="60" y="70" width="250" height="70" rx="10" class="box"/><text x="185" y="110" text-anchor="middle" class="lbl">資産（左）</text>
+  <rect x="350" y="70" width="250" height="70" rx="10" class="box"/><text x="475" y="110" text-anchor="middle" class="lbl">負債（右）</text>
+  <rect x="640" y="70" width="250" height="70" rx="10" class="box"/><text x="765" y="110" text-anchor="middle" class="lbl">純資産（右）</text>
+  <rect x="60" y="170" width="410" height="70" rx="10" class="box"/><text x="265" y="210" text-anchor="middle" class="lbl">費用（左）</text>
+  <rect x="500" y="170" width="390" height="70" rx="10" class="box"/><text x="695" y="210" text-anchor="middle" class="lbl">収益（右）</text>
+</svg>

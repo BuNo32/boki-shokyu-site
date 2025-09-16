@@ -1,0 +1,8 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 260" role="img" aria-label="共通サイズ（構成比）を見る">
+  <style>.lbl{font:14px system-ui,-apple-system,Segoe UI,Roboto,Noto Sans JP,sans-serif}.bar{fill:#dbeafe;stroke:#93c5fd}</style>
+  <text x="480" y="28" text-anchor="middle" class="lbl">構成比（共通サイズ）：売上＝100% に対して、原価・販管費の割合を見る</text>
+  <rect x="120" y="80" width="680" height="24" class="bar"/>
+  <text x="120" y="120" class="lbl">原価 60%</text>
+  <text x="280" y="120" class="lbl">販管費 25%</text>
+  <text x="420" y="120" class="lbl">営業利益 15%</text>
+</svg>

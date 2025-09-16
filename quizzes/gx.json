@@ -1,0 +1,272 @@
+[
+  {
+    "id": "gx-q01",
+    "topic": "試算表",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "試算表の基本として正しいのはどれ？",
+    "choices": [
+      "借方合計が貸方合計より大きい",
+      "借方合計＝貸方合計",
+      "費用は右に出る",
+      "収益は左に出る"
+    ],
+    "answer": "借方合計＝貸方合計",
+    "explanation_ja": "試算表は左右の合計が一致します。"
+  },
+  {
+    "id": "gx-q02",
+    "topic": "並び",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "一般に左側に多いのはどれ？",
+    "choices": [
+      "負債・純資産",
+      "収益",
+      "資産・費用",
+      "営業外収益"
+    ],
+    "answer": "資産・費用",
+    "explanation_ja": "資産・費用は借方側に並びます（学習用のざっくりイメージ）。"
+  },
+  {
+    "id": "gx-q03",
+    "topic": "損益の流れ",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "正しい順番はどれ？",
+    "choices": [
+      "売上→販管費→売上原価→粗利",
+      "売上→売上原価→粗利→販管費",
+      "販管費→粗利→売上→売上原価",
+      "売上原価→売上→販管費→粗利"
+    ],
+    "answer": "売上→売上原価→粗利→販管費",
+    "explanation_ja": "まず売上から原価を引いて粗利、次に販管費。"
+  },
+  {
+    "id": "gx-q04",
+    "topic": "構成比",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "売上100に対し原価60なら、原価率は？",
+    "choices": [
+      "40%",
+      "50%",
+      "60%",
+      "75%"
+    ],
+    "answer": "60%",
+    "explanation_ja": "60/100=60%。"
+  },
+  {
+    "id": "gx-q05",
+    "topic": "粗利率",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "売上100、原価62のとき粗利率は？",
+    "choices": [
+      "38%",
+      "62%",
+      "15%",
+      "25%"
+    ],
+    "answer": "38%",
+    "explanation_ja": "粗利=38、粗利率=38/100。"
+  },
+  {
+    "id": "gx-q06",
+    "topic": "営業利益率",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "売上120、原価70、販管費30。営業利益率は？",
+    "choices": [
+      "16.7%",
+      "20.0%",
+      "25.0%",
+      "33.3%"
+    ],
+    "answer": "16.7%",
+    "explanation_ja": "粗利50−販管費30=20、20/120≒16.7%。"
+  },
+  {
+    "id": "gx-q07",
+    "topic": "在庫回転",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "売上原価60、平均在庫20。在庫回転は？",
+    "choices": [
+      "2.0回",
+      "3.0回",
+      "4.0回",
+      "0.3回"
+    ],
+    "answer": "3.0回",
+    "explanation_ja": "60/20=3回。"
+  },
+  {
+    "id": "gx-q08",
+    "topic": "回収回転",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "売上100、平均売掛30。売掛回収回転は？",
+    "choices": [
+      "2.0回",
+      "3.0回",
+      "3.33回",
+      "30回"
+    ],
+    "answer": "3.33回",
+    "explanation_ja": "100/30≒3.33回。"
+  },
+  {
+    "id": "gx-q09",
+    "topic": "流動比率",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "流動資産120、流動負債80。流動比率は？",
+    "choices": [
+      "120%",
+      "150%",
+      "66%",
+      "80%"
+    ],
+    "answer": "150%",
+    "explanation_ja": "120/80=1.5→150%。"
+  },
+  {
+    "id": "gx-q10",
+    "topic": "ケース",
+    "difficulty": "standard",
+    "question_type": "term_mcq",
+    "prompt_ja": "前期：売上100/原価60/販管費25、今期：売上98/原価62/販管費24。営業利益の減少要因として最も直接的なのは？",
+    "choices": [
+      "販管費率の上昇",
+      "原価率の上昇",
+      "売上の増加",
+      "固定資産の取得"
+    ],
+    "answer": "原価率の上昇",
+    "explanation_ja": "原価の増加が粗利を圧迫。"
+  },
+  {
+    "id": "gx-q11",
+    "topic": "ケース",
+    "difficulty": "standard",
+    "question_type": "term_mcq",
+    "prompt_ja": "売上は横ばい、粗利率が低下した。最もあり得る説明は？",
+    "choices": [
+      "原価率上昇",
+      "販管費率上昇",
+      "営業外損失の発生",
+      "流動比率の改善"
+    ],
+    "answer": "原価率上昇",
+    "explanation_ja": "粗利率の低下は多くが原価率の上昇。"
+  },
+  {
+    "id": "gx-q12",
+    "topic": "ケース",
+    "difficulty": "standard",
+    "question_type": "term_mcq",
+    "prompt_ja": "在庫回転が低下（回数減）した場合、一般に懸念されるのは？",
+    "choices": [
+      "在庫過多・滞留",
+      "売掛金の増加",
+      "固定資産の老朽化",
+      "資本金の減少"
+    ],
+    "answer": "在庫過多・滞留",
+    "explanation_ja": "回転が遅い＝滞留の可能性。"
+  },
+  {
+    "id": "gx-q13",
+    "topic": "4列仕訳",
+    "difficulty": "standard",
+    "question_type": "journal_mcq",
+    "prompt_ja": "【確認】当月末、未払の通信費 5,000 円を計上した。正しい仕訳は？",
+    "choices": [
+      "（借）未払金 5,000／（貸）通信費 5,000",
+      "（借）通信費 5,000／（貸）未払金 5,000",
+      "（借）現金 5,000／（貸）通信費 5,000",
+      "（借）通信費 5,000／（貸）現金 5,000"
+    ],
+    "answer": "（借）通信費 5,000／（貸）未払金 5,000",
+    "explanation_ja": "発生主義の調整の基本例。"
+  },
+  {
+    "id": "gx-q14",
+    "topic": "4列仕訳",
+    "difficulty": "standard",
+    "question_type": "journal_mcq",
+    "prompt_ja": "【確認】前払家賃 12,000 円があることが分かった（当月分は費用）。正しい仕訳は？",
+    "choices": [
+      "（借）前払費用 12,000／（貸）支払家賃 12,000",
+      "（借）支払家賃 12,000／（貸）前払費用 12,000",
+      "（借）未払費用 12,000／（貸）支払家賃 12,000",
+      "（借）支払家賃 12,000／（貸）未払費用 12,000"
+    ],
+    "answer": "（借）前払費用 12,000／（貸）支払家賃 12,000",
+    "explanation_ja": "資産へ振替。"
+  },
+  {
+    "id": "gx-q15",
+    "topic": "概念",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "構成比（共通サイズ）の基準は？（損益計算の文脈）",
+    "choices": [
+      "売上を100%とする",
+      "粗利を100%とする",
+      "販管費を100%とする",
+      "当期純利益を100%とする"
+    ],
+    "answer": "売上を100%とする",
+    "explanation_ja": "P/Lの共通サイズは売上基準が定石。"
+  },
+  {
+    "id": "gx-q16",
+    "topic": "概念",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "流動比率の改善に直接つながる可能性が高いのは？",
+    "choices": [
+      "固定資産の増加",
+      "長期借入金の増加",
+      "売掛金回収の加速",
+      "減価償却費の増加"
+    ],
+    "answer": "売掛金回収の加速",
+    "explanation_ja": "流動資産の増加や流動負債の減少に効く。"
+  },
+  {
+    "id": "gx-q17",
+    "topic": "計算",
+    "difficulty": "standard",
+    "question_type": "term_mcq",
+    "prompt_ja": "売上98、原価62、販管費24。営業利益率は？",
+    "choices": [
+      "12.2%",
+      "14.3%",
+      "10.2%",
+      "18.0%"
+    ],
+    "answer": "12.2%",
+    "explanation_ja": "粗利36−販管費24=12、12/98≒12.24%。"
+  },
+  {
+    "id": "gx-q18",
+    "topic": "計算",
+    "difficulty": "standard",
+    "question_type": "term_mcq",
+    "prompt_ja": "売上100、平均売掛25。売掛回収回転は？",
+    "choices": [
+      "2.5回",
+      "4.0回",
+      "5.0回",
+      "0.25回"
+    ],
+    "answer": "4.0回",
+    "explanation_ja": "100/25=4回。"
+  }
+]

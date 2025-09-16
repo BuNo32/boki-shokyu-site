@@ -1,0 +1,7 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 260" role="img" aria-label="指標の地図">
+  <style>.box{fill:#fff;stroke:#94a3b8;stroke-width:2}.lbl{font:14px system-ui,-apple-system,Segoe UI,Roboto,Noto Sans JP,sans-serif}</style>
+  <text x="480" y="28" text-anchor="middle" class="lbl">基本指標：粗利率・営業利益率／回転（在庫・売掛）／安全性（流動比率）</text>
+  <rect x="80" y="70" width="240" height="60" rx="10" class="box"/><text x="200" y="105" text-anchor="middle" class="lbl">収益性（粗利・営業利益率）</text>
+  <rect x="360" y="70" width="240" height="60" rx="10" class="box"/><text x="480" y="105" text-anchor="middle" class="lbl">回転（在庫・売掛）</text>
+  <rect x="640" y="70" width="240" height="60" rx="10" class="box"/><text x="760" y="105" text-anchor="middle" class="lbl">安全性（流動比率）</text>
+</svg>

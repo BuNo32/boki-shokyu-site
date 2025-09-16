@@ -85,6 +85,13 @@
       "basePath": "quizzes/"
     },
     {
+      "quizId": "gx",
+      "title": "GX 総合：試算表と数値読解（章末）",
+      "file": "gx.json",
+      "page": "gx/99-quiz.html",
+      "basePath": "quizzes/"
+    },
+    {
       "quizId": "proto",
       "title": "デザイン見本クイズ",
       "file": "prototype.json",

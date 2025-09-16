@@ -1,0 +1,13 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 260" role="img" aria-label="損益の流れ">
+  <style>.lbl{font:14px system-ui,-apple-system,Segoe UI,Roboto,Noto Sans JP,sans-serif}.arrow{stroke:#64748b;stroke-width:2;marker-end:url(#a)}</style>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#64748b"/></marker></defs>
+  <text x="480" y="28" text-anchor="middle" class="lbl">売上 → 売上原価 → 粗利 → 販売管理費 → 営業利益 →（営業外）→ 経常利益 → 当期純利益</text>
+  <line x1="80" y1="90" x2="880" y2="90" class="arrow"/>
+  <text x="120" y="110" class="lbl">売上</text>
+  <text x="260" y="110" class="lbl">売上原価</text>
+  <text x="360" y="110" class="lbl">粗利</text>
+  <text x="500" y="110" class="lbl">販管費</text>
+  <text x="620" y="110" class="lbl">営業利益</text>
+  <text x="740" y="110" class="lbl">営業外</text>
+  <text x="860" y="110" class="lbl">経常→純利益</text>
+</svg>
