@@ -1,0 +1,11 @@
+{
+  "quizzes": [
+    {
+      "quizId": "ch09",
+      "title": "第9章 商品売買（三分法）・返品（章末）",
+      "file": "ch09.json",
+      "page": "ch09/99-quiz.html",
+      "basePath": "quizzes/"
+    }
+  ]
+}

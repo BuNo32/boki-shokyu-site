@@ -1,0 +1,11 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" role="img" aria-label="返品・値引の型">
+  <style>
+    .box{fill:#fff;stroke:#94a3b8;stroke-width:2}
+    .lbl{font:14px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
+  </style>
+  <text x="450" y="28" text-anchor="middle" class="lbl">売上返品＝売上のマイナス（借）／仕入返品＝仕入のマイナス（貸）</text>
+  <rect x="100" y="70" width="280" height="70" rx="10" class="box"/>
+  <text x="240" y="105" text-anchor="middle" class="lbl">売上返品：借（売上返品）／貸（売掛金 or 現金）</text>
+  <rect x="520" y="70" width="280" height="70" rx="10" class="box"/>
+  <text x="660" y="105" text-anchor="middle" class="lbl">仕入返品：借（買掛金 or 現金）／貸（仕入返品）</text>
+</svg>

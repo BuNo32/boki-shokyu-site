@@ -1,0 +1,312 @@
+[
+  {
+    "id": "ch09-q01",
+    "topic": "三分法",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "三分法の期中処理として正しいのはどれ？",
+    "choices": [
+      "在庫の増減を毎回記録する",
+      "買ったら仕入、売ったら売上で処理する",
+      "在庫は常に資産で増減させる",
+      "売上原価を毎回計算する"
+    ],
+    "answer": "買ったら仕入、売ったら売上で処理する",
+    "explanation_ja": "在庫の増減は期末にまとめて調整するのが三分法。"
+  },
+  {
+    "id": "ch09-q02",
+    "topic": "三分法",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "期末に在庫の分だけ仕入を減らすために使う科目は？",
+    "choices": ["売掛金", "繰越商品", "売上返品", "仕入返品"],
+    "answer": "繰越商品",
+    "explanation_ja": "在庫（資産）を表す科目。"
+  },
+  {
+    "id": "ch09-q03",
+    "topic": "日常処理",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】商品を掛けで 120,000 円仕入れた。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "仕入",
+        "amount": 120000
+      },
+      {
+        "side": "Cr",
+        "account": "買掛金",
+        "amount": 120000
+      }
+    ],
+    "explanation_ja": "三分法では仕入で処理。"
+  },
+  {
+    "id": "ch09-q04",
+    "topic": "日常処理",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】商品を掛けで 180,000 円販売した。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "売掛金",
+        "amount": 180000
+      },
+      {
+        "side": "Cr",
+        "account": "売上",
+        "amount": 180000
+      }
+    ],
+    "explanation_ja": "売上を計上、売掛金が増える。"
+  },
+  {
+    "id": "ch09-q05",
+    "topic": "現金売買",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】現金で 50,000 円仕入れた。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "仕入",
+        "amount": 50000
+      },
+      {
+        "side": "Cr",
+        "account": "現金",
+        "amount": 50000
+      }
+    ],
+    "explanation_ja": "現金の支払は右（貸）。"
+  },
+  {
+    "id": "ch09-q06",
+    "topic": "現金売買",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】現金で 80,000 円販売した。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "現金",
+        "amount": 80000
+      },
+      {
+        "side": "Cr",
+        "account": "売上",
+        "amount": 80000
+      }
+    ],
+    "explanation_ja": "現金の受取は左（借）。"
+  },
+  {
+    "id": "ch09-q07",
+    "topic": "運賃・送料",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "商品の発送費はどの科目で処理する？",
+    "choices": ["仕入", "荷造運賃", "支払手数料", "雑費"],
+    "answer": "荷造運賃",
+    "explanation_ja": "売って送るコストは販売費。"
+  },
+  {
+    "id": "ch09-q08",
+    "topic": "運賃・送料",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】仕入商品の引取運賃 1,000 円を現金で支払った。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "仕入",
+        "amount": 1000
+      },
+      {
+        "side": "Cr",
+        "account": "現金",
+        "amount": 1000
+      }
+    ],
+    "explanation_ja": "買って持ち込む運賃は仕入に含める。"
+  },
+  {
+    "id": "ch09-q09",
+    "topic": "売上返品",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】掛け売上 20,000 円のうち、5,000 円が返品になった。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "売上返品",
+        "amount": 5000
+      },
+      {
+        "side": "Cr",
+        "account": "売掛金",
+        "amount": 5000
+      }
+    ],
+    "explanation_ja": "売上の取り消しは売上返品で。"
+  },
+  {
+    "id": "ch09-q10",
+    "topic": "売上返品",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】現金売上 10,000 円の返品に対し、現金で返金した。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "売上返品",
+        "amount": 10000
+      },
+      {
+        "side": "Cr",
+        "account": "現金",
+        "amount": 10000
+      }
+    ],
+    "explanation_ja": "返金なので現金が減る（貸）。"
+  },
+  {
+    "id": "ch09-q11",
+    "topic": "仕入返品",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】掛け仕入 15,000 円のうち 3,000 円を返品。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "買掛金",
+        "amount": 3000
+      },
+      {
+        "side": "Cr",
+        "account": "仕入返品",
+        "amount": 3000
+      }
+    ],
+    "explanation_ja": "仕入の取り消しは仕入返品で。"
+  },
+  {
+    "id": "ch09-q12",
+    "topic": "仕入返品",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】現金仕入 8,000 円を返品し、現金で返金を受けた。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "現金",
+        "amount": 8000
+      },
+      {
+        "side": "Cr",
+        "account": "仕入返品",
+        "amount": 8000
+      }
+    ],
+    "explanation_ja": "返金で現金が増える（借）。"
+  },
+  {
+    "id": "ch09-q13",
+    "topic": "混合",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "次のうち、売上のマイナス（収益の減少）として扱うのはどれ？",
+    "choices": ["仕入返品", "売上返品", "繰越商品", "荷造運賃"],
+    "answer": "売上返品",
+    "explanation_ja": "売上返品は売上の取り消し。"
+  },
+  {
+    "id": "ch09-q14",
+    "topic": "混合",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "次の組み合わせで性質が一致するのはどれ？",
+    "choices": [
+      "仕入＝収益、売上＝費用",
+      "仕入＝費用、売上＝収益",
+      "売上返品＝資産、仕入返品＝負債",
+      "繰越商品＝負債"
+    ],
+    "answer": "仕入＝費用、売上＝収益",
+    "explanation_ja": "三分法の基本の立ち位置。"
+  },
+  {
+    "id": "ch09-q15",
+    "topic": "日常処理",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】買掛金 120,000 円を小切手で支払った。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "買掛金",
+        "amount": 120000
+      },
+      {
+        "side": "Cr",
+        "account": "当座預金",
+        "amount": 120000
+      }
+    ],
+    "explanation_ja": "小切手＝当座預金が右（貸）。"
+  },
+  {
+    "id": "ch09-q16",
+    "topic": "日常処理",
+    "difficulty": "standard",
+    "question_type": "journal_input",
+    "prompt_ja": "【取引】売掛金 180,000 円の入金が口座にあった。",
+    "answer": [
+      {
+        "side": "Dr",
+        "account": "普通預金",
+        "amount": 180000
+      },
+      {
+        "side": "Cr",
+        "account": "売掛金",
+        "amount": 180000
+      }
+    ],
+    "explanation_ja": "口座が増える（借）。"
+  },
+  {
+    "id": "ch09-q17",
+    "topic": "期末イメージ",
+    "difficulty": "basic",
+    "question_type": "term_mcq",
+    "prompt_ja": "三分法で期末に行うイメージとして適切なのはどれ？",
+    "choices": [
+      "仕入を期末在庫の分だけ増やす",
+      "仕入を期末在庫の分だけ減らす",
+      "売上を期末在庫の分だけ減らす",
+      "繰越商品を費用として計上する"
+    ],
+    "answer": "仕入を期末在庫の分だけ減らす",
+    "explanation_ja": "期末在庫は資産（繰越商品）へ、仕入はその分だけ減る。"
+  },
+  {
+    "id": "ch09-q18",
+    "topic": "運賃・送料",
+    "difficulty": "standard",
+    "question_type": "journal_mcq",
+    "prompt_ja": "【取引】お客様に商品を発送し、送料 800 円を現金で支払った。正しい仕訳はどれ？",
+    "choices": [
+      "（借）仕入 800／（貸）現金 800",
+      "（借）荷造運賃 800／（貸）現金 800",
+      "（借）支払手数料 800／（貸）現金 800",
+      "（借）売上 800／（貸）現金 800"
+    ],
+    "answer": "（借）荷造運賃 800／（貸）現金 800",
+    "explanation_ja": "発送費は販売費（荷造運賃）。"
+  }
+]

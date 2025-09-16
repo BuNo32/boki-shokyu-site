@@ -1,0 +1,11 @@
+<svg class="svg-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" role="img" aria-label="運賃・送料の使い分け">
+  <style>
+    .box{fill:#fff;stroke:#94a3b8;stroke-width:2}
+    .lbl{font:14px system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
+  </style>
+  <text x="450" y="28" text-anchor="middle" class="lbl">買って持ち込む運賃＝仕入に含める／売って送る運賃＝荷造運賃（販売費）</text>
+  <rect x="120" y="70" width="300" height="70" rx="10" class="box"/>
+  <text x="270" y="105" text-anchor="middle" class="lbl">引取運賃 → 仕入（増える）</text>
+  <rect x="480" y="70" width="300" height="70" rx="10" class="box"/>
+  <text x="630" y="105" text-anchor="middle" class="lbl">発送費 → 荷造運賃（販売費）</text>
+</svg>
