@@ -50,24 +50,6 @@
     return a;
   }
 
-  function createTopLink(container){
-    const logoLink = document.querySelector('a.md-header__button.md-logo');
-    if(!logoLink){
-      return;
-    }
-    const href = logoLink.getAttribute('href') || 'index.html';
-
-    const nav = document.createElement('nav');
-    nav.className = 'page-toplink';
-
-    const link = document.createElement('a');
-    link.href = href;
-    link.textContent = '学習トップへ戻る';
-    nav.appendChild(link);
-
-    container.insertBefore(nav, container.firstChild);
-  }
-
   function enhanceTables(container){
     container.querySelectorAll('.tb5-wrap, .tb5-qa table').forEach((node)=>{
       if(node.classList.contains('tb5-qa-table')){
@@ -91,8 +73,22 @@
       content.insertBefore(pager, content.firstChild);
       content.appendChild(bottomPager);
     }
-    createTopLink(content);
+    linkifyTitle();
     enhanceTables(content);
+  }
+
+  function linkifyTitle(){
+    const topic = document.querySelector('.md-header__title .md-header__topic .md-ellipsis');
+    if(!topic || topic.tagName === 'A'){
+      return;
+    }
+    const logoLink = document.querySelector('a.md-header__button.md-logo');
+    const href = logoLink ? (logoLink.getAttribute('href') || 'index.html') : 'index.html';
+    const anchor = document.createElement('a');
+    anchor.href = href;
+    anchor.textContent = topic.textContent;
+    anchor.className = 'md-header__title-link';
+    topic.replaceWith(anchor);
   }
 
   if(document.readyState === 'loading'){

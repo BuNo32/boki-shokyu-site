@@ -1,27 +1,11 @@
-.page-toplink {
-  margin-bottom: 0.75rem;
-}
-
-.page-toplink a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 0.5rem 0.75rem;
-  border-radius: 9999px;
-  background: var(--md-primary-fg-color--transparent, rgba(63,81,181,0.08));
+.md-header__title-link {
   text-decoration: none;
-  font-size: 0.85rem;
   color: inherit;
 }
 
-.page-toplink a::before {
-  content: '⌂';
-  font-size: 0.85rem;
-}
-
-.page-toplink a:hover,
-.page-toplink a:focus-visible {
-  background: var(--md-primary-fg-color, rgba(63,81,181,0.15));
+.md-header__title-link:hover,
+.md-header__title-link:focus-visible {
+  text-decoration: underline;
 }
 
 .page-pager {
